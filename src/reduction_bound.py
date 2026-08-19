@@ -77,12 +77,16 @@ def main():
     ap.add_argument("--n", type=int, default=20)
     ap.add_argument("--temperature", type=float, default=0.7)
     ap.add_argument("--low-temperature", type=float, default=0.3)
+    ap.add_argument("--dtype", default="float32",
+                    help="float16 pour les modèles >1B sur MPS")
     args = ap.parse_args()
 
     device = "mps" if torch.backends.mps.is_available() else "cpu"
     tok = AutoTokenizer.from_pretrained(args.model)
     tok.pad_token = tok.eos_token
-    model = AutoModelForCausalLM.from_pretrained(args.model).to(device).eval()
+    dt = getattr(torch, args.dtype)
+    model = AutoModelForCausalLM.from_pretrained(
+        args.model, torch_dtype=dt).to(device).eval()
 
     cats = Counter()
     rows = []
@@ -186,11 +190,12 @@ def main():
     out = "\n".join(lines)
     print(out)
     stamp = datetime.now().strftime("%Y%m%d_%H%M")
-    (ROOT / "results" / f"reduction_bound_{stamp}.txt").write_text(out + "\n")
-    (ROOT / "results" / f"reduction_bound_{stamp}.json").write_text(
+    tag = args.model.split("/")[-1]
+    (ROOT / "results" / f"reduction_bound_{tag}_{stamp}.txt").write_text(out + "\n")
+    (ROOT / "results" / f"reduction_bound_{tag}_{stamp}.json").write_text(
         json.dumps({"categories": dict(cats), "strategies": strat, "rows": rows},
                    indent=1, ensure_ascii=False))
-    print(f"\n-> results/reduction_bound_{stamp}.txt")
+    print(f"\n-> results/reduction_bound_{tag}_{stamp}.txt")
 
 
 if __name__ == "__main__":

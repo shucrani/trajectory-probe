@@ -73,3 +73,59 @@ séquentielle avec bornes de délai. C'est un sujet chaud, pas une case vide.
 Ce qui reste éventuellement libre est plus étroit : le **protocole de validation**
 (garde-fou triple) et la **gradation de récupérabilité** — à condition qu'ils
 soient testés.
+
+---
+
+## Cadre incertitude / confabulation (recherche du 20/08/2026)
+
+Le recadrage sur la **réduction** place le projet dans une littérature différente
+de celle de la géométrie latente. Vérifié inline, sources primaires.
+
+**Farquhar et al., « Detecting hallucinations in large language models using
+semantic entropy », Nature 630, 625-630 (2024).**
+Entropie calculée au niveau du **sens** et non des tokens : les réponses sont
+regroupées par implication bidirectionnelle (A entraîne B et B entraîne A), puis
+l'entropie est calculée sur les grappes. Une seule grappe = modèle confiant ;
+beaucoup de petites grappes = confabulation. Ne demande aucune vérité terrain.
+→ C'est notre catégorie **BIFURQUANT**, avec une mesure plus fine que notre
+simple accord d'entités (0.666 d'AUC chez nous — l'entropie sémantique ferait
+mieux).
+→ Les auteurs précisent qu'ils **ne distinguent pas** incertitude aléatoire et
+épistémique.
+
+**Définition de la confabulation** : une affirmation à la fois fausse et
+**arbitraire** — sensible au seed. Explicitement distinguée des cas où le modèle
+est *systématiquement* faux pour cause de données d'entraînement erronées, ou par
+échec de raisonnement. C'est exactement notre partition BIFURQUANT / TOUJOURS-FAUX.
+
+**« Delusions of Large Language Models », arXiv 2503.06709.**
+Les *delusions* sont des hallucinations à **haute croyance** : contrairement aux
+hallucinations ordinaires qui s'accompagnent d'incertitude, elles présentent une
+**faible** incertitude, ce qui les rend difficiles à détecter et à corriger.
+→ Notre TOUJOURS-FAUX, et l'explication de notre AUC d'abstention plafonnée.
+
+**« HACK: Hallucinations Along Certainty and Knowledge Axes », arXiv 2510.24222**
+(Technion, Google Research, Oxford, Hebrew University, Harvard).
+Deux axes : la connaissance est-elle présente dans les paramètres, et le modèle
+est-il certain. Le sous-ensemble critique identifié : **halluciner avec certitude
+alors que la connaissance correcte est présente**. Les méthodes de mitigation
+« bonnes en moyenne » échouent de façon **disproportionnée** sur ce sous-ensemble.
+→ Confirme que la moyenne masque le cas dangereux, et justifie de rapporter la
+partition plutôt qu'un taux global.
+
+**« Representation-based Broad Hallucination Detectors Fail to Generalize Out of
+Distribution », arXiv 2509.19372.**
+→ Converge avec notre étape 7 : la direction de réparation ne se transfère pas
+d'un prompt à l'autre (0.8 % contre 8.3 %).
+
+### Le trou
+
+La recherche ne retourne **aucune quantification de la proportion**
+confabulation / erreur systématique. Le cadre conceptuel est posé et bien cité ;
+le ratio, non — et c'est lui qui borne le rendement de toute méthode fondée sur
+l'incertitude.
+
+C'est ce que mesure l'étape 10 : **56 % stochastique / 44 % systématique** sur
+GPT-2 small, et la mesure est en cours sur Qwen2.5-1.5B-Instruct. Si le chiffre
+se déplace fortement avec la taille et l'instruction-tuning, c'est une donnée
+utile au champ ; s'il est stable, c'est une borne.
