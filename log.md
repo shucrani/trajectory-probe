@@ -462,3 +462,106 @@ Cinq mesures, cinq résultats négatifs ou nuls — tous obtenus avec des contr�
 qui ont chacun attrapé une erreur réelle (substring `"0"` dans `"110"`,
 non-réponses comptées comme hallucinations, appariement rompu entre texte et
 activation). C'est la méthode qui tient, pas les hypothèses.
+
+---
+
+## 2026-08-20 — Étapes 5 et 6 : window patching, puis le contrôle qui tranche
+
+### Étape 5 — window patching (`src/window_patching.py`)
+
+Le self-patch **ne peut pas** servir de contrôle au-delà de w = 1 : dès le second
+step, le replay en greedy a produit un token différent de l'original
+(échantillonné), donc l'activation stockée provient d'un contexte qui n'existe
+plus. Ce n'est pas un bug, c'est la définition. Premier run abandonné pour cette
+raison (self-patch 38 %, 61 %, 77 % à w = 2, 3, 4).
+
+Contrôle remplacé par le **same-class patch** — un donneur de la même classe que
+le receveur, qui subit exactement le même décalage de contexte. Self-patch à
+w = 1 : **0/360, mécanisme validé.**
+
+| fenêtre | corruption | same-classe | aléatoire | z (cross/same) |
+|---|---|---|---|---|
+| 1 | 11.7 % | 8.3 % | 15.0 % | 1.05 |
+| 2 | 15.0 % | 6.7 % | 18.3 % | **2.54** |
+| 3 | 16.7 % | 6.7 % | 21.7 % | **2.96** |
+| 4 | 15.6 % | 8.3 % | 17.2 % | **2.11** |
+
+Correction : z = 0.00 / 1.45 / 1.22 / 2.28. Avec correction de Bonferroni pour
+8 comparaisons (seuil |z| > 2.73), seule la corruption à w = 3 survit.
+
+Effet apparent, donc — mais **le patch aléatoire fait toujours au moins aussi
+bien que le patch dirigé** (18.3 contre 15.0 ; 21.7 contre 16.7). Signal d'alarme.
+
+### L'ordre des distances explique l'ordre des taux
+
+Distance L2 moyenne à l'état du receveur (couche 8) :
+
+| | same-classe | cross-classe | aléatoire |
+|---|---|---|---|
+| distance | 54.6 | 83.0 | 149.6 |
+| taux de bascule (w = 3) | 6.7 % | 16.7 % | 21.7 % |
+
+Monotone dans les deux cas. Hypothèse à écarter : ce n'est pas le *contenu* de
+l'état injecté qui fait basculer l'issue, c'est la *distance* dont on déplace
+l'état.
+
+### Étape 6 — patch apparié en norme (`src/normmatched_patching.py`)
+
+Le test qui tranche : injecter un vecteur placé à la **même distance L2** de
+l'état du receveur que le donneur cross-classe, mais dans une **direction
+aléatoire**. Même amplitude, aucune information de l'autre classe. Fenêtre 3,
+couches 4/8/11, n = 180 par cellule.
+
+| direction | cross-classe | apparié en norme | z |
+|---|---|---|---|
+| corruption | 16.7 % | 11.1 % | **1.52** — non significatif |
+| correction | 8.9 % | **0.0 %** (0/180) | **4.09** — significatif |
+
+### Ce que ça établit, et c'est le premier résultat positif du projet
+
+**Corrompre ne demande aucune information.** L'écart entre patch cross-classe et
+bruit de même amplitude n'est pas significatif (z = 1.52) — et un bruit non
+apparié, donc plus violent, fait *mieux* (21.7 %). Déplacer l'état assez loin
+suffit à faire dérailler la génération, peu importe la direction. Ce que l'étape 5
+mesurait sous le nom de « corruption » était pour l'essentiel de la dégradation.
+**Il n'y a pas de transport d'information vers un bassin hallucinatoire.**
+
+**Réparer en demande.** Un bruit de même amplitude ne répare **jamais** (0/180),
+là où l'état d'une trajectoire correcte répare dans 8.9 % des cas (z = 4.09,
+survit à Bonferroni). Ici, le contenu de l'état compte.
+
+L'asymétrie existe donc bien, mais elle ne dit pas ce que D2 supposait. Elle ne
+dit pas « le bassin hallucinatoire est absorbant ». Elle dit :
+
+> il y a beaucoup de façons d'être faux et peu d'être juste. Sortir de la justesse
+> se fait par n'importe quelle perturbation suffisante ; y revenir exige une
+> direction précise, qu'un tirage aléatoire ne trouve pas.
+
+### Réserve à ne pas enterrer
+
+Cette asymétrie peut tenir en partie à la **largeur des classes de mesure** :
+« Correct » exige qu'une chaîne précise apparaisse (« Tokyo »), « Hallucination »
+accepte n'importe quelle entité assertée. Une classe étroite est plus difficile à
+atteindre par hasard qu'une classe large — indépendamment de toute géométrie.
+
+Ce n'est pas une objection fatale : le patch aléatoire non apparié atteignait
+1.1-1.7 % de « correction » à l'étape 5, donc la probabilité de base n'est pas
+nulle. Mais départager « asymétrie du phénomène » et « asymétrie de la mesure »
+demanderait des classes de largeur comparable — par exemple en imposant à
+« Hallucination » de nommer une entité d'un type déterminé. **Non fait.**
+
+### Où en est ProbatioH1
+
+| Élément | Statut |
+|---|---|
+| Dwell time au col | réfuté |
+| Signal géométrique (dataset artisanal) | invalidé par C1 |
+| Certifier avant production (§ V) | réfuté par construction |
+| Séparation inter-couches | quasi entièrement lexicale |
+| D2, bassin absorbant côté hallucination | **non soutenu** — la corruption est de la dégradation |
+| Asymétrie corruption/correction | **soutenue, mais réinterprétée** : la correction exige une direction spécifique |
+| G1/G2 (steering pour corriger) | plausible pour la première fois — un état correct répare, un bruit non |
+
+Le seul élément du programme que la mesure ait renforcé est **l'intervention
+corrective dirigée** (G1-G2) : il existe une direction qui répare et que le
+hasard ne trouve pas. C'est étroit, c'est à 8.9 %, mais c'est réel et contrôlé.

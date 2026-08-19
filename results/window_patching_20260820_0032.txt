@@ -1,0 +1,25 @@
+ÉTAPE 5 — WINDOW PATCHING
+date     : 2026-08-20T00:32:32
+modèle   : gpt2 · start=step 1 · fenêtres [1, 2, 3, 4] · couches [4, 8, 11]
+source   : trajectories_gpt2_20260820_0001.npz
+
+CONTRÔLE self-patch (fenêtre 1 uniquement) : 0/360 = 0.0% OK — mécanisme validé
+  au-delà de w=1 le no-op n'est pas défini (contexte divergent) : voir docstring
+
+Comparaison décisive : patch CROSS-classe vs patch SAME-classe, à fenêtre égale.
+
+fen.  corruption  same-cl.   aléat.  z(x/same)    correction  same-cl.   aléat.  z(x/same)
+--------------------------------------------------------------------------------------------------
+1         11.7%      8.3%    15.0%       1.05         6.7%      6.7%     1.7%       0.00
+2         15.0%      6.7%    18.3%       2.54         6.7%      3.3%     1.7%       1.45
+3         16.7%      6.7%    21.7%       2.96         8.9%      5.6%     1.1%       1.22
+4         15.6%      8.3%    17.2%       2.11        10.0%      3.9%     1.7%       2.28
+
+LECTURE. Le taux brut monte mécaniquement avec la fenêtre : on impose de plus
+en plus la trajectoire du donneur. Seul compte l'écart CROSS vs SAME à fenêtre
+égale — les deux subissent le même décalage de contexte, seul le contenu de
+l'état diffère. |z| > 1.96 = écart significatif à 5 %.
+
+Référence Akarlar (Qwen2.5-1.5B) : corruption en un seul coup ; correction
+nécessitant une intervention soutenue. Si l'asymétrie existe ici, la
+correction doit progresser avec la fenêtre plus vite que la corruption.
