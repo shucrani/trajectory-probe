@@ -109,8 +109,13 @@ def main():
     ap.add_argument("--temperature", type=float, default=0.7)
     ap.add_argument("--max-new-tokens", type=int, default=8)
     ap.add_argument("--min-per-class", type=int, default=2)
+    ap.add_argument("--typed", action="store_true",
+                    help="Hallucination exige une entité du même type que la réponse")
     args = ap.parse_args()
 
+    global classify
+    if args.typed:
+        from typed_entities import classify_typed as classify
     torch.manual_seed(SEED)
     device = "mps" if torch.backends.mps.is_available() else "cpu"
 
@@ -123,6 +128,7 @@ def main():
     w("ÉTAPE 1 — TAUX DE BIFURCATION")
     w(f"date          : {datetime.now().isoformat(timespec='seconds')}")
     w(f"modèle        : {args.model} ({sum(p.numel() for p in model.parameters())/1e6:.0f}M) sur {device}")
+    w(f"classes       : {'APPARIÉES EN TYPE' if args.typed else 'larges (v1)'}")
     w(f"protocole     : N={args.n} complétions, T={args.temperature}, "
       f"max_new_tokens={args.max_new_tokens}, seuil={args.min_per_class}/classe")
     w(f"prompts       : {len(PROMPTS)}")
@@ -184,7 +190,7 @@ def main():
     out_txt = "\n".join(lines)
     print(out_txt)
     stamp = datetime.now().strftime("%Y%m%d_%H%M")
-    tag = args.model.replace("/", "-")
+    tag = args.model.replace("/", "-") + ("_typed" if args.typed else "")
     (ROOT / "results" / f"bifurcation_{tag}_{stamp}.txt").write_text(out_txt + "\n")
     (ROOT / "results" / f"bifurcation_{tag}_{stamp}.json").write_text(
         json.dumps(records, indent=1, ensure_ascii=False)

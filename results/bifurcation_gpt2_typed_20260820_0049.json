@@ -1,0 +1,5262 @@
+[
+ {
+  "prompt": "The capital of France is",
+  "answers": [
+   "paris"
+  ],
+  "counts": {
+   "Correct": 2,
+   "Hallucination": 4,
+   "NoAnswer": 34,
+   "Other": 0
+  },
+  "bifurcates": true,
+  "completions": [
+   {
+    "text": " now the second biggest city in the world",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the largest city in the world. ​",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Paris.\n\nIt is very important",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " France and the capital of the United States",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Marseille, a key headquarters of the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " hosting a big debate about the need to",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " at the centre of the European project,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " nowhere near ready to respond to the reports",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Marseille, and it is a city",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a national symbol of the struggle for an",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a city of 600,000 people that",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " one of the world's top three \"",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " France. It is a country where people",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " France, or France, and this is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the capital of the French Republic, so",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heartland of the French empire,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " France. All the capital of the world",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the capital of the French Republic (a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Lille, which is home to the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Saint-Denis, a port city",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " now a city of vast urban centers and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " still a capitalist country and it is no",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not to be exposed to the most brutal",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a city of 5 million people. The",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " named after the famous knight who led the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the city of Lyon, where the two",
+    "label": "Hallucination"
+   },
+   {
+    "text": " called Vichy, which means \"",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " in the process of being transformed into a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " still Paris, as the French capital is",
+    "label": "Correct"
+   },
+   {
+    "text": " now one of the most Muslim countries in",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " home to the Ulossi, a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " on one of the most deadly oilfields",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a major producer of art, and it",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the capital of the Republic of France,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " France. The nation's capital is Paris",
+    "label": "Correct"
+   },
+   {
+    "text": " home to some of the world's most",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " where the discovery of the first iron ore",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a place where the French people have been",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a part of France, a country built",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " already holding a referendum on the constitution that",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The capital of Japan is",
+  "answers": [
+   "tokyo"
+  ],
+  "counts": {
+   "Correct": 9,
+   "Hallucination": 0,
+   "NoAnswer": 31,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " the largest island in the world and is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " still in the process of passing a law",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " making a comeback.\n\nBut at",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " home to the world's biggest shipbuilding",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a large port town. The capital is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " home to more than 1.4 million",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a state that has a strong military,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Tokyo. It is a city of over",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the largest state with a population of about",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Tokyo, Tokyo, and Tokyo-K",
+    "label": "Correct"
+   },
+   {
+    "text": " Tokyo, home to more than 100,",
+    "label": "Correct"
+   },
+   {
+    "text": " Eiyotake, which stands for",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " located on the coast of Japan. This",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Tokyo, a place where the Japanese people",
+    "label": "Correct"
+   },
+   {
+    "text": " a turnkey, deeply guarded and controlled",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " home to more than 600,000 people",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " known as the \"kusaku\".",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Bible Belt, which is home to",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " held by the ruling Liberal Democratic Party (",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Tokyo. In the mid-1970s",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a key economic hub with a population of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a popular destination for tourists. And it",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Japan and according to many Asians, the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the capital of the O'BRI",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " of course Japan, but this can also",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Tokyo. The University of Tokyo is an",
+    "label": "Correct"
+   },
+   {
+    "text": " known as Honshu-ku,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " home to the first European-style Jewish",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Tokyo and the capital of the United States",
+    "label": "Correct"
+   },
+   {
+    "text": " the world's second-largest economy,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Tokyo, home to the largest number of",
+    "label": "Correct"
+   },
+   {
+    "text": " called Tokyo.\n\nBut the capital",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " no longer as hard of a place to",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " now home to the largest concentration of economically",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Tokyo, where one of the world's",
+    "label": "Correct"
+   },
+   {
+    "text": " Tokyo, home to the largest force of",
+    "label": "Correct"
+   },
+   {
+    "text": " home to a sizeable workforce of talented and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Japan. So the Japanese reach the Americas",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the hometown of the infamous game.\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Tokyo,\" he said. \"It's",
+    "label": "Correct"
+   }
+  ]
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "answers": [
+   "rome"
+  ],
+  "counts": {
+   "Correct": 18,
+   "Hallucination": 5,
+   "NoAnswer": 17,
+   "Other": 0
+  },
+  "bifurcates": true,
+  "completions": [
+   {
+    "text": " now Rome. It is the oldest city",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Rome and the largest of the independent states",
+    "label": "Correct"
+   },
+   {
+    "text": " Rome, and even its northernmost inhabitants",
+    "label": "Correct"
+   },
+   {
+    "text": " Constantine II, also known as Constantine the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Milan and the capital of the West is",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Rome, and the local government in the",
+    "label": "Correct"
+   },
+   {
+    "text": " Rome, the site of the Roman city",
+    "label": "Correct"
+   },
+   {
+    "text": " Rome, which is not a city of",
+    "label": "Correct"
+   },
+   {
+    "text": " Rome, and the city is also the",
+    "label": "Correct"
+   },
+   {
+    "text": " Rome and the capital of the Vatican has",
+    "label": "Correct"
+   },
+   {
+    "text": " located on the outskirts of Rome, and",
+    "label": "Correct"
+   },
+   {
+    "text": " Rome, and even up to now,",
+    "label": "Correct"
+   },
+   {
+    "text": " also home to a number of large Italian",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Milan. It is home to one of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Milan, which costs over €300 million",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the capital of the country. The capital",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " also home to more than 6 million migrants",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Rome, and the city has been closely",
+    "label": "Correct"
+   },
+   {
+    "text": " an island in the Pacific Ocean and,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " now Hoernblatt's home.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Italy.\n\nItaly is not the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a city of more than 150,000",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Rome, but most of the land is",
+    "label": "Correct"
+   },
+   {
+    "text": " Milan, also known as the birthplace of",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Rome and the country is now the capital",
+    "label": "Correct"
+   },
+   {
+    "text": " Rome, the home base of the Italian",
+    "label": "Correct"
+   },
+   {
+    "text": " Rome, a city of about 1 million",
+    "label": "Correct"
+   },
+   {
+    "text": " Rome. In the middle of the afternoon",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " still home to the Milan-based couple",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Rome.\n\nThe region is the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Rome. The city of Rome is popular",
+    "label": "Correct"
+   },
+   {
+    "text": " Barcelona. The city of Barcelona is home",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " built on the Magna Carta,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the country's third largest city, home",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Rome, which is a market capital of",
+    "label": "Correct"
+   },
+   {
+    "text": " Rome, a city of a thousand cities",
+    "label": "Correct"
+   },
+   {
+    "text": " the highest on the global stage, and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " known as the City of Naples, and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Rome, with its hundreds of thousands of",
+    "label": "Correct"
+   },
+   {
+    "text": " Milan. The capital of the Republic of",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The capital of Germany is",
+  "answers": [
+   "berlin"
+  ],
+  "counts": {
+   "Correct": 6,
+   "Hallucination": 0,
+   "NoAnswer": 34,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " home to 25,000 immigrant people and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the fourth largest city in the world.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the German town of Itchen, and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the capital of the world.\n\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not the capital of the West, but",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a city of 20 million people, but",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Berlin, where the city's finances are",
+    "label": "Correct"
+   },
+   {
+    "text": " known as Berlin and the city has a",
+    "label": "Correct"
+   },
+   {
+    "text": " the Red Cross. The agency is responsible",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a city of the highest order. It",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not Germany, but an interesting place.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the seat of the Bundeswehr.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " now home to over a million Muslims,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " smaller than Paris, with a population of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the only EU country to have been removed",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Berlin and the capital is Frankfurt. The",
+    "label": "Correct"
+   },
+   {
+    "text": " Berlin, the capital of the Berlin Wall",
+    "label": "Correct"
+   },
+   {
+    "text": " the largest city by population and has the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the second largest, but is also home",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Berlin, its most productive city and home",
+    "label": "Correct"
+   },
+   {
+    "text": " the German state, and its status as",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " also home to the Czech Republic, Poland",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " being asked to maintain a level of security",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the capital of the Reich. This is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the only one in the world to have",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " located in the north and its capital is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the oldest city in Europe and has been",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " situated on the border with France where the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " now under national jurisdiction for the first time",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the capital of the country and of the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the largest democracy in the world, and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " an important base for German unification and it",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " now a haven for neocon apologists",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " in Germany, and the capital city of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Berlin and the capital of Germany is Cologne",
+    "label": "Correct"
+   },
+   {
+    "text": " being swamped with migrants.\n\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a special place. The Royal Chapel of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not inclined to change its policy of neutrality",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the city of Saxony, and the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " now the scene of a series of high",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "answers": [
+   "madrid"
+  ],
+  "counts": {
+   "Correct": 11,
+   "Hallucination": 6,
+   "NoAnswer": 23,
+   "Other": 0
+  },
+  "bifurcates": true,
+  "completions": [
+   {
+    "text": " Madrid, a city where every day more",
+    "label": "Correct"
+   },
+   {
+    "text": " Barcelona, but the country is also home",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Spain, the capital of the world.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " also the capital of Spain. It is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Barcelona, and there are a lot of",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Spain.\"\n\n\"Wouldn't",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Barcelona. There's an old village called",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the only country to remain in the European",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not the world's capital, and it",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a country whose population has only about 6",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a city, which has survived a thousand",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Barcelona.\n\n\"No one will",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " perhaps the most important city in the world",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Madrid, a city of 5.8",
+    "label": "Correct"
+   },
+   {
+    "text": " Catalonia.\n\nBefore I wrote about",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " under siege, and the buccane",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Madrid, but it is also home to",
+    "label": "Correct"
+   },
+   {
+    "text": " the capital of Spain. It is the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Madrid, and has huge cultural and financial",
+    "label": "Correct"
+   },
+   {
+    "text": " Madrid. It has been a hub for",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Barcelona and it has been for more than",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Madrid, the city of Catalonia, which",
+    "label": "Correct"
+   },
+   {
+    "text": " also a state with a large financial sector",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Casablanca. The city is where",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Barcelona, the \"city\" of Barcelona",
+    "label": "Hallucination"
+   },
+   {
+    "text": " already home to Spanish football, and there",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Barcelona. A city whose destiny, geography",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Madrid and the capital of Spain is Valencia",
+    "label": "Correct"
+   },
+   {
+    "text": " Madrid, and it has long been the",
+    "label": "Correct"
+   },
+   {
+    "text": " Barcelona, home of the famous Mont Blanc",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Barcelona, a city which has already invested",
+    "label": "Hallucination"
+   },
+   {
+    "text": " now in the hands of this new hostile",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a city and a nation. The Spanish",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Madrid and it is the capital of Spain",
+    "label": "Correct"
+   },
+   {
+    "text": " Madrid, and the city is home to",
+    "label": "Correct"
+   },
+   {
+    "text": " being attacked by an Islamic State jihadist group",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Madrid, the capital of the Spanish Republic",
+    "label": "Correct"
+   },
+   {
+    "text": " Madrid, with Barcelona as its capital.",
+    "label": "Correct"
+   },
+   {
+    "text": " Madrid. It was previously Spain's capital",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the capital of Spain, but sometimes in",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The capital of Russia is",
+  "answers": [
+   "moscow"
+  ],
+  "counts": {
+   "Correct": 3,
+   "Hallucination": 0,
+   "NoAnswer": 37,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " Moscow, so one of the largest and",
+    "label": "Correct"
+   },
+   {
+    "text": " the capital of the Russian Federation, and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " in the midst of an economic war with",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Moscow, and as such it has a",
+    "label": "Correct"
+   },
+   {
+    "text": " now Russian, and its involvement in the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not the most densely populated country in Europe",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " still a war zone, and its President",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a teacher's suburb, and the place",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a tiny, tiny country, with a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the largest city in the world, is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " home to a multipolar society between Russia",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " situated in the east of the country which",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " generally regarded as an important financial center,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a country with cultural diversity and a history",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a city of 5.3 million people",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " known for its lavish lifestyles, but the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " London. The capital is filled with museums",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Caucasus, which means that the Russian",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " also home to the likes of the Russian",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " called Krasnodar.\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " home to a number of great Russian species",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " now Russia. The capital of the United",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the capital of the Soviet Union. This",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " still the Russian territory. It is the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " in a state of war with the United",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " known as \"Black Sea\", and it",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " also home to a large number of Russian",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not even a city. It's far",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a country which has been involved in various",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a bit of Siberia, but you can",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " located at the edge of the Arctic Circle",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the most populous country in the world,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the only major metropolitan area in the world",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " home to the largest concentration of the population",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the closest neighbour to the United States.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not so far from Moscow as some of",
+    "label": "Correct"
+   },
+   {
+    "text": " the old Soviet Union.\n\nThe",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " still in turmoil this year after a series",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " where Putin's government has long been r",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " known for its massive coal mining and other",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The capital of Egypt is",
+  "answers": [
+   "cairo"
+  ],
+  "counts": {
+   "Correct": 5,
+   "Hallucination": 0,
+   "NoAnswer": 35,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " not Egypt, but the land of the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " home to the legendary Red Sea Scrolls,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " home to the largest number of Egyptian Christians",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " still not well-known, but the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the capital of Egypt. It is not",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the capital of the Kingdom of Israel and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " under siege for three months by Islamist militants",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not hit by the devastating floods of 2013",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Cairo, home to around 50,000",
+    "label": "Correct"
+   },
+   {
+    "text": " now part of Cairo.\n\nThe",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " in the heart of the Arab world and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a corrupt and dangerous place, where the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " under siege by Islamist fundamentalists, al",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not a city. It is an empire",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Moab, a city in the eastern",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " on the horizon. And the West is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Suez. It was a place where",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the capital of the Muslim Brotherhood and the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " notorious for being a hotbed of Islamist",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " under martial law, which restricts the movement",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " predominantly Muslim, and the country's economy",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Dera Sacha Sauda, a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " on the Nile Delta. The capital's",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " far from what we see from the Arab",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a little more than 15 days from Cairo",
+    "label": "Correct"
+   },
+   {
+    "text": " the capital of the Kingdom of Saudi Arabia",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a Muslim country, and Muslims live on",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " also the capital of the Islamic State,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " located at the western end of the Nile",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Cairo, home to the largest number of",
+    "label": "Correct"
+   },
+   {
+    "text": " the ninth largest city in the world,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " now in a state of the relics of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Cairo, which has its capital Cairo.",
+    "label": "Correct"
+   },
+   {
+    "text": " known as the birthplace of the revolution.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the capital of the Muslim Brotherhood.\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the capital of the Islamic Republic of Egypt",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " extremely rich and fairly exclusive in the whole",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " still called Zarahemla,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " known for its rich history and rich culture",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Cairo, the capital of the Arab world",
+    "label": "Correct"
+   }
+  ]
+ },
+ {
+  "prompt": "The capital of Canada is",
+  "answers": [
+   "ottawa"
+  ],
+  "counts": {
+   "Correct": 1,
+   "Hallucination": 4,
+   "NoAnswer": 35,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " known to have been known as the Holy",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not much of a destination city.\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " now home to nearly two million people,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Ottawa, and its capital is in northeastern",
+    "label": "Correct"
+   },
+   {
+    "text": " located in the northern part of the United",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the one to be completely shut down by",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a place where the big companies are from",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " in the midst of a major overhaul to",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " \"the most important country in the world",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not much of one.\"\n\nIn",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " where most of the population lives.\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Canada. The motto \"Canada is the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " as much a place where the political and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " home to many of the world's premiere",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " currently struggling to find sufficient funding to provide",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the United States, a geographical order,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " in the northern territories of Nunavut",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the most populous city in the world (",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " at the heart of the region's economy",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " now home to many of the world's",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " now facing an unending flood of refugees",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " located on Lake Ontario, and the Calgary",
+    "label": "Hallucination"
+   },
+   {
+    "text": " celebrating its 50th anniversary this month,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a small mining city with a population of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " near the Quebec border, which borders Montreal",
+    "label": "Hallucination"
+   },
+   {
+    "text": " in the middle of a $100 billion",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the largest city in Canada.\n\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Toronto, and the city is home to",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the Canadian capital of Canada. In all",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the largest market for some of the world",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " home to at least 100,000 people",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " still without electricity.\n\nThe city",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the largest city in the world, and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the most populous province with a population of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " home to about 5,000 families,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the most nationalized of all the provinces",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Toronto, and its suburbs are all concentrated",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a very large country and it is quite",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " most often characterized by the traditional highlands",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not a country. It is a place",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "answers": [
+   "jupiter"
+  ],
+  "counts": {
+   "Correct": 2,
+   "Hallucination": 10,
+   "NoAnswer": 28,
+   "Other": 0
+  },
+  "bifurcates": true,
+  "completions": [
+   {
+    "text": " Jupiter. It is the most massive planet",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a planet in orbit around an exoplan",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Saturn, with a mass of just over",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a cloudy, dark, and isolated planet",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Jupiter.\"\n\n\"But we know",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " close by.\n\nIn the year",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Neptune and has the highest density of gas",
+    "label": "Hallucination"
+   },
+   {
+    "text": " at least twice the size of Jupiter.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 10 light years away. As a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " perhaps 12,000 light years away in",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 7,500 light years away.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about one-third the mass of Earth",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the dwarf planet M31, and its",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 3.6 billion light years away,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Ceres, and the largest planet in the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " in the constellation of Aquarius, which",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Earth, with a mass of 818",
+    "label": "Hallucination"
+   },
+   {
+    "text": " probably Jupiter, perhaps due to the fact",
+    "label": "Correct"
+   },
+   {
+    "text": " the Cygnus system. Originally,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a faint, jagged crater with a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Jupiter. The largest planet in the solar",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the moon, and the largest planet in",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " one of the nearest planets to the sun",
+    "label": "Hallucination"
+   },
+   {
+    "text": " an enormous chunk of rock called the outer",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Kuiper belt, the third",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the giant ring of rings, called the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not Earth, but the solar system.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 200 million light-years away.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " called the \"habitable zone\" or",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 5.7 million kilometers (4.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Mercury, which is in the southern hemisphere",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the sun, but it's also the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 13,000 times smaller than Earth",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Earth, so it's a lot like",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Jupiter, with a total mass of approximately",
+    "label": "Correct"
+   },
+   {
+    "text": " about 6,300 light years away,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 1.6 billion kilometers (1.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a great day for solar observation by astronomers",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " located in the constellation of Sagittarius",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 8km in diameter, which is 1",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The closest planet to the Sun is",
+  "answers": [
+   "mercury"
+  ],
+  "counts": {
+   "Correct": 1,
+   "Hallucination": 12,
+   "NoAnswer": 27,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " Jupiter, and the closest planet to the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 6,000 light-years away",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Earth, whose population is about 9",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the closest up to the sun. Although",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Mars, its orbit is approximately 26,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a star from the Binomial system (",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " seen to be 4.3 billion light",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Mars. The planet has a surface of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Tau, at 5,500 light years",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Earth, but in the past the planets",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the closest to the center of the Milky",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Mars, with a polar orbit around the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Earth's Moon, but it's actually",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the solar system's furthest point.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the star Sirius, about 500 light years",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 7,500 light-years away",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " only a few hundred kilometers away.\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Jupiter, which is farthest away from",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the sun, where it orbits the Sun",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 4.5 km (2.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 4.8 billion years away.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 14.5 AU (10,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Earth. The Sun rises about 1.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 1,000 light-years away",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 14.3 billion light years away",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 145,000 light years away, and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Jupiter's equator, which you can",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the Sun's Kelvin-280 and its",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Mercury, with an effective radius of 3",
+    "label": "Correct"
+   },
+   {
+    "text": " 5.7 billion light years away,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not Earth, but Pluto. At the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 2.6 million kilometers from the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Jupiter.\n\nOdin is a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Jupiter's 72,000-mile asteroid",
+    "label": "Hallucination"
+   },
+   {
+    "text": " only a few million miles away, but",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about a thousand light-years away,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 35,000 light-years away",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Jupiter, so we can now start exploring",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 100 light-years away, and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 6,000 light years from Earth",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The chemical symbol for gold is",
+  "answers": [
+   "au"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 0,
+   "NoAnswer": 40,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " the \"1\".\n\nTHE BLACK",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the gold stops from getting stuck and can",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the red rectum of the male brain",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " almost always a rhinoceros –",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Roman numero uno, which",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the '1', the '5',",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the gold medal, and for other official",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the head symbol for gold.\n\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the karbitra.\n\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the gold bar. The gold bar represents",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a diamond, though its use in the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the three-pointed star (T",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a red dot. This symbol signifies the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the \"lie\". This symbol was used",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the \"A\" shape, a clear",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a green duster with a curly fringe",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 666.\n\nThe French have also",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " called a stereotaxic coin.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " \"hir.\" From the perspective of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the gilding. The gild",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the gold y and the shape of the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the A's, the symbol of strength",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a diamond. The American Standard Catalog does",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a circle with an X and a B",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the chevron, which means \"",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the s-mark, meaning \"to",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " X, and one note on the note",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Australia's Queen of Scots, as is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the letter P.\n\nGold is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " found on seven of the three Casp",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " \"G.\" The G is the gold",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the \"S\" or \"S-",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the goldy-white star, which",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the red one.\n\nThe star",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a cylinder of a moving iron. The",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the \"it's \" (name after",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a blue.\n\nThe 1972 Nobel",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a diamond.\n\nThe unit is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " an æ. This round metal,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Gemini.\n\nOriginally, the symbol",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The chemical symbol for water is",
+  "answers": [
+   "h2o",
+   "h20"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 0,
+   "NoAnswer": 40,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " water. Water is a chemical messenger of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a \"B\" on the left side",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Citrine, which is made from a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the hydrogen atom.\n\nIt's",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a group of words that represent the water",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the liquid, which is then rins",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the symbol of the animal \"chick",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the yellow \"NO\".\n\nDuring",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 'HOP' which means 'h",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " OIL, or olfactory nerve",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " shaped like a leaf in the shape of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the red bar that bears its name,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " \"c\" (cant use it",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a water mark of water purity. Water",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Heil, and the word for water",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the term, \"water.\" The scientific",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a small oval with a white line as",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a growth ring. It is the symbol",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " \"H-28\".\n\nThe",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " SETH, the last name for the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the C as the symbol.\n\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the geotechnological symbol. The",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " \"t7m\".\n\nIt",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the YH-1, which is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the A, which stands for alkaline",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the active liquid, water. The water",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " an arrow, while the word for mercury",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the black line and the word \"N",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a C, despite the fact that it",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the red circle. In my case I",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the red line, and the its found",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the water bottle,\" said Dr. von",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " \"j\", meaning \"terminator\".",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a red triangle.\n\nThis symbol",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a cross.\n\nIt will be",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the snake, and the symbol for water",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the water effect — a water vapor effect",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the \"n\" in the lower left",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a liquid.\n\nIn the week",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the chemical symbol for water.\n\n",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The author of Hamlet was",
+  "answers": [
+   "shakespeare"
+  ],
+  "counts": {
+   "Correct": 1,
+   "Hallucination": 0,
+   "NoAnswer": 39,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " a man of great practical experience, intelligence",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " one of the first members of the Society",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " also a gifted novelist. His novels were",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the first to express his desire to see",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a young man who was graced by",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a member of the Board of the Thames",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a 20th-century English novelist and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a slave, not a man; he",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " an English writer and an American author until",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not a political writer or a politician.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a member of the Dutch colonial force,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a poet, and he wrote a number",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a man who had no part in the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a prominent long-time political activist in",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " tremendously successful at a lot of things.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " born in the United States, but his",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a professor of English literature at the University",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " born in 1818 and lived in the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the niece of Lord Blanchard,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the hero of Shakespeare's play, Ham",
+    "label": "Correct"
+   },
+   {
+    "text": " also a member of the British Royal Family",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " an English poet and philosopher. He died",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a member of the Narnia Board",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a novelist. He was a poet,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a University of Toronto professor in the history",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " shown the door, and the book opened",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " an early adopter of the term \"",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not a poet, and yet there was",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not known for his critical wit but for",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a dear friend of Elrond,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a man who had a sort of an",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a member of the Black Rose Society of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " an accomplished novelist, poet, and critic",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a student at the University of Colorado who",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " pitched as a middle-class romantic comedy",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not the first to react to the book",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a list of Arab princes, so later",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " made a hero and a witch by his",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " one of the first to denounce the idea",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a member of the English aristocracy, and",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The author of the Odyssey was",
+  "answers": [
+   "homer"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 0,
+   "NoAnswer": 40,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " also split on the topic of the marriage",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " an engineer and writer who wrote and directed",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a Greek priest and friend of the author",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " forced to defend his assertion in a letter",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " also interviewed by RT.\n\nRT",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a man of great speed and power,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a successful businessman. He is now the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " pleased to discover that most of the people",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a member of the pro-American League",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " an ancient Greek philosopher who was a member",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a student of Poetry at Boston College",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a great writer: his love of writing",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " reluctant to point out that the written language",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a member of the Greek clergy, and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a member of the New York Philharm",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a black American, a lifelong Democrat,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " an atheist and his faith was not in",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " neither a philosopher nor an athlete. He",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not The Odyssey, but you can read",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a young man, a man of incredible",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " told, \"If they say the gods",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not the only one to exploit this opportunity",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " an enemy of the Roman Empire, the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " inspired by the Biblical tale of Zerubb",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Albert Camus.\n\nIn 2014",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " an author of the Greek mythological mysteries",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " one of the first and a pioneer in",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " also a veteran of the Slave Trade,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a former naval officer. He moved to",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a survivor of the war-torn world",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a captain of the fleet, and was",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the third to consider the question.\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a senior researcher at LSE University's",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a brilliant and talented writer and the curator",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a member of the Egyptian army and the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " an American historian from the early nineteenth century",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " one of the most well-known and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the first to address the topic of the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " asked to do a response. He replied",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the first to make use of the system",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The inventor of the telephone was",
+  "answers": [
+   "bell"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 0,
+   "NoAnswer": 40,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " being embarrassed by the fact that the telephone",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " E. W. Bundy, a resident",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a young man who had a very curious",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a member of the Society of Electrical Engineers",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a woman, and in her exuber",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a man named Thomas J. Zae",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a man named J. D. L",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " an Englishman named Thomas Taylor, and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Simon Burgess, a religious scholar. When",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " an American who owned at least 5,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " so impressed by the invention that he built",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " James C. Johnson. Continuing to pursue",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a man named Richard P. Hirsch",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a woman named Isabella Verma,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a passenger who had just bought a house",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a successful inventor.\n\nThe inventor",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a young man named Joseph Thompson and his",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a novice in his field, however.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the inventor of the telephone, and the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a 'pathological liar' who saw",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a French mathematician named Georges Clemens",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a coal miner named John Turner. He",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a French man who was interested in learning",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a German industrialist named Karl-He",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " John Ford.\"\n\nThe first two",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " once a diplomat. The messenger is always",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " James Nash, who invented the telephone.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " only the second person in the world to",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " an Englishman, and the inventor of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the first to use it in the early",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the inventor of the telephone. He was",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " an Englishman named Sir William Lockyer",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a social engineer who was a close friend",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a brilliant man, with a wide and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the inventor of the telephone. The inventor",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a veteran of the war and has been",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " working with the manufacturer of the telephone.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Harry De Long, who was a member",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " John A. Folley, who became",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a man who had never heard of any",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The first president of the United States was",
+  "answers": [
+   "washington"
+  ],
+  "counts": {
+   "Correct": 1,
+   "Hallucination": 2,
+   "NoAnswer": 37,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " born in 1775. He was educated",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " born in 1846 and died in 18",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not a woman, but a man.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " forced to take action following the financial crisis",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not the first woman to wear a tie",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " assassinated in a small town, as the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Mary J. Blige, daughter of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " assassinated by a black man in the South",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " born in Salt Lake City in 1884",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " born in the republic of Mexico in 17",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " given the power of executive order and the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a woman, but she is a woman",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Jimmy Carter in 1874 and was inaug",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " called in to work on a plan to",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " President Andrew Jackson, who met with the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " known as \"Alius\" and \"",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " so called for this office, he was",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " born in 1801. When his father",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " also a Greek in Greek, and had",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " certainly not opposed to slavery, but he",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " assassinated on July 29, 1963. It",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " born in 1843. Rehearing",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not born in America. He was born",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " assassinated on February 17, 1829.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not called George Washington.\n\nBut",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " born in 1847, which no doubt",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " fined £11,000 and jailed for",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " very young, and at that time he",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " granted the right to the power to terminate",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Franklin Roosevelt, who became president in 1933",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a woman who was extremely devoted to her",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a man who was perfectly willing to accept",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a strong supporter of gay rights. Hillary",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " born in 1776 in Washington, DC",
+    "label": "Correct"
+   },
+   {
+    "text": " a staunch pacifist during the war against",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " nominated by President George H.W.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " assassinated in 1858 by a French revolutionary",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " elected without the support of the Republican Party",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " born in 1829. His father was",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " born in 1852 and was in his",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The currency of Japan is the",
+  "answers": [
+   "yen"
+  ],
+  "counts": {
+   "Correct": 26,
+   "Hallucination": 0,
+   "NoAnswer": 14,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " yen, while the euro is the euro",
+    "label": "Correct"
+   },
+   {
+    "text": " yen, which is the currency of the",
+    "label": "Correct"
+   },
+   {
+    "text": " currency of Japan.\n\nEconomics",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " yen, but it is also the currency",
+    "label": "Correct"
+   },
+   {
+    "text": " yen. The Japanese have a broad measure",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " yen, and the currency of Spain is",
+    "label": "Correct"
+   },
+   {
+    "text": " yen, a foreign currency which has over",
+    "label": "Correct"
+   },
+   {
+    "text": " currency of Japan. It is a currency",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " yen. Japanese currency is called 'y",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " yen. The Japanese government puts the yen",
+    "label": "Correct"
+   },
+   {
+    "text": " standard bearer of Japanese national currency, which",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " yen, which, when it comes as",
+    "label": "Correct"
+   },
+   {
+    "text": " yen, and the yen is the money",
+    "label": "Correct"
+   },
+   {
+    "text": " yen, which is the Japanese yen.",
+    "label": "Correct"
+   },
+   {
+    "text": " yen, which is a reserve currency in",
+    "label": "Correct"
+   },
+   {
+    "text": " yen, and Europe is the euro.",
+    "label": "Correct"
+   },
+   {
+    "text": " yen—the currency of the United States",
+    "label": "Correct"
+   },
+   {
+    "text": " yen and this is a combination of historical",
+    "label": "Correct"
+   },
+   {
+    "text": " Yen. When the Yen is worth more",
+    "label": "Correct"
+   },
+   {
+    "text": " yen. The Japanese currency is the Japanese",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Japanese yen, which is used by many",
+    "label": "Correct"
+   },
+   {
+    "text": " yen, or two yen, which means",
+    "label": "Correct"
+   },
+   {
+    "text": " yen. Any developed country would require that",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " yen. It's the Japanese yen.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " yen. Although many people believe the value",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " yen. By this measure, Japan is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " yen. So why does Japan need to",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Yen. The Yen is real, or",
+    "label": "Correct"
+   },
+   {
+    "text": " yen, which is known for its hard",
+    "label": "Correct"
+   },
+   {
+    "text": " yen.\n\nThe currency of Japan",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " yen, which is used as a rub",
+    "label": "Correct"
+   },
+   {
+    "text": " yen.\n\nThe Japanese yen is",
+    "label": "Correct"
+   },
+   {
+    "text": " Japanese yen, but the currency of the",
+    "label": "Correct"
+   },
+   {
+    "text": " yen. This is a currency used to",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " yen, which is not affected by foreign",
+    "label": "Correct"
+   },
+   {
+    "text": " yen, and so is the yen's",
+    "label": "Correct"
+   },
+   {
+    "text": " Japanese yen. The goods and services that",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " yen, which is a simple floating exchange",
+    "label": "Correct"
+   },
+   {
+    "text": " Japanese yen—not the Japanese yen.",
+    "label": "Correct"
+   },
+   {
+    "text": " yen, which has become more in demand",
+    "label": "Correct"
+   }
+  ]
+ },
+ {
+  "prompt": "The currency of the United Kingdom is the",
+  "answers": [
+   "pound",
+   "sterling"
+  ],
+  "counts": {
+   "Correct": 37,
+   "Hallucination": 0,
+   "NoAnswer": 3,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " pound. It is the currency of the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " pound sterling, which is the reserve currency",
+    "label": "Correct"
+   },
+   {
+    "text": " pound. The pound is a derivative of",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling. The pound sterling is the",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling. The British pound is the",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling. However, it is not",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling, the currency of the United",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling. The pound sterling is the",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling, which is a currency of",
+    "label": "Correct"
+   },
+   {
+    "text": " pound. It is a currency of exchange",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " pound sterling. This is the currency of",
+    "label": "Correct"
+   },
+   {
+    "text": " pound, which they call sterling. So",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling. Those who can afford to",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling.\n\nSo what makes",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling, or a \"virtual currency",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling. Your best bet is to",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling.\"\n\nAn official European",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling (U.S.) and",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling. The UK Parliament has voted",
+    "label": "Correct"
+   },
+   {
+    "text": " pound, which means they don't have",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling, and although we are quite",
+    "label": "Correct"
+   },
+   {
+    "text": " pound, which is used in many different",
+    "label": "Correct"
+   },
+   {
+    "text": " pound. The pound is used to buy",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling.\n\nThe pound sterling",
+    "label": "Correct"
+   },
+   {
+    "text": " pound. People in the UK pay for",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " pound, which means it is worth roughly",
+    "label": "Correct"
+   },
+   {
+    "text": " pound. The British pound is the largest",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling. It is the only currency",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling. There are not any real",
+    "label": "Correct"
+   },
+   {
+    "text": " pound, and it is a currency of",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling, which is used to pay",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling. It has been for many",
+    "label": "Correct"
+   },
+   {
+    "text": " pound, which is one of the most",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling. The pound was released from",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling. This is not a money",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling.\n\nWe have a",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling, and its British pound is",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling. If the pound falls as",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling. In a currency elite that",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling, which is used mainly for",
+    "label": "Correct"
+   }
+  ]
+ },
+ {
+  "prompt": "The tallest mountain in the world is",
+  "answers": [
+   "everest"
+  ],
+  "counts": {
+   "Correct": 7,
+   "Hallucination": 0,
+   "NoAnswer": 33,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " now 1,125 meters. And it",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " now floating from the ocean. In the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 3,000 to 4,000",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Rocky Mountain in California, and the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " named after the biblical prophet Ezekiel, who",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " in Romania. There's no shortage of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " also the tallest in the world. And",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Mt. Everest, which rises higher than",
+    "label": "Correct"
+   },
+   {
+    "text": " Mount Everest. The world's tallest mountain",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 4,500 meters (6,000",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " in the bottom of the mountains. The",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " now up to 130 metres high, and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Everest base camp on the summit of",
+    "label": "Correct"
+   },
+   {
+    "text": " in Iran, but the tallest peaks in",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " only a few kilometres from the peak of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the snow-covered peaks of Mount Everest",
+    "label": "Correct"
+   },
+   {
+    "text": " visible from the summit and it is the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " already a monument to the glory of mankind",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " one of the most beautiful, with a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " somewhere in the middle of the Himalay",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 6.2 meters tall. The world",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Mount Everest, and the world's tallest",
+    "label": "Correct"
+   },
+   {
+    "text": " about 1,000 meters (1,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " only 30 meters (194 ft) high",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Mount Everest. It is one of the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a mountain called Mount Everest, which is",
+    "label": "Correct"
+   },
+   {
+    "text": " Naxal and it is the only",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Mt. Everest.\n\nThe ascent",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " located in the sea. It is not",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not a mountain. It is a mountain",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " also the tallest mountain on Mars. The",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Mount Everest, which is currently the",
+    "label": "Correct"
+   },
+   {
+    "text": " the Volga Mountains, in central Russia",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 78,000m (1,400",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Himalayas, followed by the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 6,708 metres (16,600",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the St. Paul Mountaineering Center",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " one of the Himalayas, the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Everest plateau, which is 547",
+    "label": "Correct"
+   },
+   {
+    "text": " quite tall. And the tallest mountain in",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The longest river in the world is",
+  "answers": [
+   "nile",
+   "amazon"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 2,
+   "NoAnswer": 38,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " the Red Sea. The Red Sea is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Guiana River. The Guiana",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a river that runs through the Dead Sea",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Tigris River.\n\nAnd",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the one that runs through Los Angeles.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Grand Canyon, that is the world",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Kinnārār.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Great North Stream, a:\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Mississippi. It stretches out of Baton",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Nile.\" For the Suez Canal",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the one that runs from coast to coast",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 26 feet long. It flows with a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the San Pedro River, and can stretch",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Zambian river, lasting almost 2",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 8km wide, but that's only",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " seven miles long. It's the length",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Great Lakes. It is the only",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Ateneo, and beyond",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Red Sea. It flows through the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the El Niño, which is creating a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Chariot -- a 20-",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 18 kilometres (6 miles) long and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Rio Grande, and it's not",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " at its mouth, and during the year",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Yucatan, and it is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " now submerged, and the last remnants of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Golden Gate Bridge, which cuts through",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " that of the Congo, and it is",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the Chukchi River, which flows",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Euphrates River. It flows from",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the dirt river of the Himalayas",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 11km long. It covers 8",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " just 17 miles wide, but it is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Blue Sea. Its peak spans the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Saadi River, and the river",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " sitting on the shore of Chernobyl.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " now 5,000 miles long and stretches",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Tigris (Manchu River",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " known as the Long River, about the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " now located in India: the Musa",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The largest ocean on Earth is the",
+  "answers": [
+   "pacific"
+  ],
+  "counts": {
+   "Correct": 4,
+   "Hallucination": 1,
+   "NoAnswer": 35,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " ocean of the Pacific Ocean, and its",
+    "label": "Correct"
+   },
+   {
+    "text": " California Bay Area, about 20 miles deep",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " largest in the world, but it's",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " deepest in the ocean's history. The",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " largest unicellular ocean, consisting mostly",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Cascades,\" says the study.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Gulf of Mexico. Here, on average",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Pacific Ocean, and it's the most",
+    "label": "Correct"
+   },
+   {
+    "text": " \"Blue Ocean,\" which lies at the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Great Barrier Reef. It covers about a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " fifth deepest, and the largest \"dead",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " largest on land. Scientists say the ocean",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " deepest, gold-rich one, and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Gulf of Mexico, and it has a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Hohokum, which is known",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " tiny, zig-zagging,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " deepest, with a diameter of about 270",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " coldest at 28 degrees Celcius (",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Palaeo-Tectonic,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " vast Saltbark Reef, which is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Pacific Ocean, which is about 4,",
+    "label": "Correct"
+   },
+   {
+    "text": " Seawolf, which is about 9",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Callot Nebula, a vast, vast",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " one that contains most of all life,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Gulf of Mexico, which holds about 4",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Gulf of Mexico, which has a thickness",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " largest in the world, measuring about 1",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 8-inch-wide Pacific Ocean.",
+    "label": "Correct"
+   },
+   {
+    "text": " one that contains the roughly two billion tons",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " largest, and most active ocean at 0",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Grand Canyon, which is formed in the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Puget Sound, with 6.7",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " \"supreme ice sheet,\" the symbol",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Great Barrier Reef and its reefs are home",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Yellow Moon, which lies at 30,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " largest ocean on the planet. It is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Great Barrier Reef, covered by a 2",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " very shallow end of the North Atlantic,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " largest ever recorded.\n\nU.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " largest ocean on any planet, and it",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The largest desert in Africa is the",
+  "answers": [
+   "sahara"
+  ],
+  "counts": {
+   "Correct": 14,
+   "Hallucination": 0,
+   "NoAnswer": 26,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " Sahara, which covers about 11 square miles",
+    "label": "Correct"
+   },
+   {
+    "text": " Sahara Desert, which covers about 50 percent",
+    "label": "Correct"
+   },
+   {
+    "text": " Paracel Desert, at an estimated",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Maasai, which is considered to",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Danyat Desert - the largest in",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Burundi Desert, which is home",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Sahara Desert, a vast, rich,",
+    "label": "Correct"
+   },
+   {
+    "text": " Sahara Desert and it's a star attraction",
+    "label": "Correct"
+   },
+   {
+    "text": " Sahara Desert, with nearly 44,000",
+    "label": "Correct"
+   },
+   {
+    "text": " one where the largest emigration of migrants",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " only one with a thick layer of rock",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Almeria Desert, which lies about",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " population of 1.3 million, and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Sahara desert. In 2011, the Sahara",
+    "label": "Correct"
+   },
+   {
+    "text": " Mawoa Formation, which is a region",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Sahara Desert, where the Sahara Desert is",
+    "label": "Correct"
+   },
+   {
+    "text": " Black Desert, where humans have been exploiting",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " São Tomé and Ivory Coast,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Sahara Desert, which is the largest in",
+    "label": "Correct"
+   },
+   {
+    "text": " Ross Sea, which lies about 1,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Sandhills desert, which is home",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " third largest in the world, standing at",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Congo Basin, which contains the largest number",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Sahara. It is home to many wildlife",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Niger Delta, which has an elevation of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Sahara Desert, from which an estimated 400",
+    "label": "Correct"
+   },
+   {
+    "text": " Giza Plateau.\n\nThe",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Saharan desert, the largest in southern",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " outlying region of the Sahara Desert in",
+    "label": "Correct"
+   },
+   {
+    "text": " Caspian Sea, also known as",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Sahara Desert, with some 5.3",
+    "label": "Correct"
+   },
+   {
+    "text": " Sahara desert and it is home to more",
+    "label": "Correct"
+   },
+   {
+    "text": " Sahara Desert, which covers most of the",
+    "label": "Correct"
+   },
+   {
+    "text": " Red Sea, and the Red Sea is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Azarani Desert, a 20-",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " one that covers about 80% of the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Sahara Desert, which lies near the American",
+    "label": "Correct"
+   },
+   {
+    "text": " 'Tongue Mountain' which is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Anza crossing, a bridge stretching from",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " southern tip of South America, where around",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "Water freezes at a temperature of",
+  "answers": [
+   "0",
+   "zero",
+   "32"
+  ],
+  "counts": {
+   "Correct": 1,
+   "Hallucination": 12,
+   "NoAnswer": 27,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " about 70 degrees F (25 degrees C",
+    "label": "Hallucination"
+   },
+   {
+    "text": " -2°C.\n\nThe",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 5 degrees Fahrenheit. This is a therm",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 130 degrees F. During summer months,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about -5C, which is the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about -20C, and the carbon",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 0°C. Photo: Submitted",
+    "label": "Correct"
+   },
+   {
+    "text": " 60 degrees F and freezes rapidly at a",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 80 degrees Fahrenheit.\n\nThe",
+    "label": "Hallucination"
+   },
+   {
+    "text": " at least 450 degrees Fahrenheit. It is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " x35 degrees Fahrenheit or greater.\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " approximately 71 °C (18 °F",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " approximately 29 °F (4 °C",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 55 °C for up to 60 minutes",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 15 degrees Celsius, giving it a very",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 85 degrees F for 30 minutes. The",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 800 degrees Fahrenheit (207 degrees Celsius),",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 7 to 8 degrees Celsius, so ice",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 24 degrees Fahrenheit (10 degrees Celsius)",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 200 degrees Celsius (337 degrees Fahrenheit),",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 5ºC (140ºF)",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " up to 25 degrees Celsius (50 degrees",
+    "label": "Hallucination"
+   },
+   {
+    "text": " -50 F. in 18 hours and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " -10°C. This is the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 1,500 degrees Fahrenheit.\n\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 1,200F (790C).",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " around 90 degrees Fahrenheit (19 degrees C",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 7 to 11 degrees Fahrenheit, with the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 30 degrees Celsius or higher. The water",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " up to 60 degrees Fahrenheit. It uses",
+    "label": "Hallucination"
+   },
+   {
+    "text": " approximately 1,500 degrees F. During",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 90 degrees Fahrenheit.\n\n\"",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 7,000 degrees Fahrenheit (12,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " -45°C.\n\nThe",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " -1°C. This temperature is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 18°C (18°F).",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 100°F (45°C)",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " -35°C (139°F",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 150°C (186°F)",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " -30C for 1-3 hours",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "answers": [
+   "100",
+   "212"
+  ],
+  "counts": {
+   "Correct": 4,
+   "Hallucination": 8,
+   "NoAnswer": 28,
+   "Other": 0
+  },
+  "bifurcates": true,
+  "completions": [
+   {
+    "text": " around 50°C for about an hour",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 72°C (about 22°",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 350 degrees F. The ocean is the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 56 degrees Celsius (56 Fahrenheit)",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 2,560 degrees Fahrenheit (2,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " around 0C (20F) and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 4 C (4.5 F",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " around 45°C, with the boiling",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 239 degrees Fahrenheit (41 degrees Celsius)",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 350 F (208 C) and has",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " around 100 °C. The liquid is",
+    "label": "Correct"
+   },
+   {
+    "text": " about 40 degrees C.\n\nThe",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about -25°C. The J",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 1,000 degrees Fahrenheit (0,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 1,000 degrees F (2,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 1,690 °C (1",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " around 4200 degrees Fahrenheit (1,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 250 degrees Fahrenheit. So what does",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 5°C above the ambient temperature",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " slightly above fifty degrees Fahrenheit (28 Celsius",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 850 F. in the casing. As",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " -100°F. The air temperature",
+    "label": "Correct"
+   },
+   {
+    "text": " about 1,500 degrees Fahrenheit (1",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 2,000 degrees Fahrenheit (1,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 900° C. The driving force of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 400 degrees F.\n\nThe",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " nearly 100 degrees Fahrenheit, and the air",
+    "label": "Correct"
+   },
+   {
+    "text": " about 40 degrees Fahrenheit (18 degrees C",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 5°C and the coolant",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 280℃ (264�",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " -40°C (160°F",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 2200 degrees Fahrenheit (700 degrees Celsius",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 2,200 degrees F, which means",
+    "label": "Hallucination"
+   },
+   {
+    "text": " ~62° C (39° F",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " around -240 C. As the water",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " around 50 degrees Celsius (112 degrees Fahrenheit",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 54 degrees C and is carried by the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 140 degrees Fahrenheit (108 degrees Celsius).",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 100 degrees F (20 degrees C",
+    "label": "Correct"
+   },
+   {
+    "text": " about 120 ° C (1350 °",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The number of continents on Earth is",
+  "answers": [
+   "seven",
+   "7"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 4,
+   "NoAnswer": 36,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " about one in four, and there are",
+    "label": "Hallucination"
+   },
+   {
+    "text": " increasing at an accelerating rate. One of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " increasing, and is expected to increase somewhat",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " increasing in the last few million years.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " accelerating. The number of galaxies is increasing",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " smaller than any one in the solar system",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " over 700 times larger than the Earth's",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 1.6 billion years old,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " mind-boggling. And if",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " larger than the number of stars on the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " still growing. From the late 19th",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " increasing because of global warming. This is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a function of the heat each planet receives",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " very small but there are other continents on",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " now more than twice as large as the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " slowly increasing, but not quite as quickly",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " roughly 1 billion, and there's no",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " now much smaller. The total number of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " considerably greater than the number of inhabitants.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " one of the most important contributors to the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " estimated at about 1,300 billion.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " changing rapidly. NASA's ExoMars",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 4,000 times larger than the Earth",
+    "label": "Hallucination"
+   },
+   {
+    "text": " expected to increase as the amount of water",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " roughly equal to the number of planets on",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " estimated to be less than one hundred million",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " hovering around 2,300 while India and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " on a par with the size of the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " increasing, with Earth's population increasing by",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " more than doubled by the expansion of the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " small, and there is no separate population",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " under one degree Celsius.\n\nThe",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " increasing. And by the end of the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about all equal. As long as an",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " growing rapidly, and each one will have",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " different than that of the Sun, and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a little less than half the size of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " rising, apparently due to the expansion of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the largest in the solar system, with",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " approximately five times larger than the distance to",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The number of days in a leap year is",
+  "answers": [
+   "366"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 0,
+   "NoAnswer": 40,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " approximately 1.8 million people.\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a bit of a joke, because it",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " up by 27%, and the number of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " much greater, because we're using different",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a measure of the number of years it",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not an exact one. I'm not",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a good indicator of how long the region",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " an illusion of the sort of things that",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " known as the effective date. This is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " understood to be five, but the year",
+    "label": "NoAnswer"
+   },
+   {
+    "text": ", from the first quarter of 2012,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a good indicator of the expected quality of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not the only reason to consider the projections",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " only one way to measure the impact of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " going to be a huge variable, the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " increasing.\n\nBy April, Metro",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " less than three years, and the fiscal",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " more than double the number of years in",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " therefore not the same as that of a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " typically below 1.3 billion, and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " constant, and is due to the fact",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " vastly different. We would expect more than",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " in stark contrast to the average of the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 10,244 during which the average is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the average of two months and the average",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " up to an average 30 per cent.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " significantly smaller than the number of days lost",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a matter of debate, but the real",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " based on the length of the preceding year",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not really that important. If you are",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " correlated to the number of days in a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a matter of choice for many people,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " less than 7.5 percent of total",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " always key.\n\nIt's also",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " not a good indicator. The rise in",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " now 52,000. It's 31",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the same as the number of hours in",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " based on legal boundaries and not on the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " dependent on the period in which your next",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 56, making it the fastest growing industry",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The speed of light is approximately",
+  "answers": [
+   "300",
+   "299",
+   "186"
+  ],
+  "counts": {
+   "Correct": 1,
+   "Hallucination": 4,
+   "NoAnswer": 35,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " 1,400 kilotons per second",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 0.25 AU. Light energy travels",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 0.1 hours per second.\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 14.3 times slower than the speed",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 200 times faster than the speed of light",
+    "label": "Hallucination"
+   },
+   {
+    "text": " constant at that speed.\n\n(",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " twice that of light in a highway,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 100,000 light-years per second",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 100 miles per hour, and the speed",
+    "label": "Hallucination"
+   },
+   {
+    "text": " three. (Compare that to the speed",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 1.5 m/s. The",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 1,000 times faster than light as",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 4.13 miles per hour. The",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 2.8 billion times that of light",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 20 km per second. The wave is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 60 times faster than the speed of light",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 300 km/h (260 mph).",
+    "label": "Correct"
+   },
+   {
+    "text": " the same in every direction, but its",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 1.2 Mhz (20,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " equal to that of a magnitude of 1",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 1 metre per second. The distance between",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 10,000 times faster than the speed",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " one second slower than the speed of sound",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 100km/h. The speed of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 1 million times greater than average, which",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 80 meters per second and the pattern of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 3.5 times faster than the speed",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 20 times this speed, which tells me",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 25 times that of the sun, and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 1,000 times higher than the speed",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 5 times faster than the speed of light",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 45 million miles per hour, which is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 1,000 times faster than the speed",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 0.1 m/s for a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " as fast as light taking up the full",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a million times faster than the speed of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 1/8th of a second,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 1.49 m/s. The",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " three times faster than an arrow, and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 2.5 times as fast as our",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The human body has a total of",
+  "answers": [
+   "206"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 6,
+   "NoAnswer": 34,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " 15 hormones, including testosterone, estrogen,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 7.8 billion cells per day,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 3,000 neurons, which are",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 98 cells and a complex of 98 different",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 14 large organs. The sum total of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 7,500 different types of cells,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 18 different organs. There are control organs",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 14 different organs, including the reproductive system",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 42 chromosomes. Each chromosome is made up",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 130,000 nerves and nerve cells.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 8,500 cells, and this number",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about one billion cells per year, making",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 100 billion cells and takes in almost half",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 10,147 metabolic units and can have",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 8 different functions that it can do.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 4,000 chromosomes, with the human",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 590 neurons—one of which is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 128 different types of cells, including the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 815,000 vertebrate species and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 100 billion neurons, which are located in",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 240 million nerve endings. These nerve",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " seven organs, including the heart, lungs",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 3 main modes of functioning: Muscular",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " about 1.5 billion neurons, or",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 360 organs. The small number of organs",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 400 million cells, and in the test",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 13 different components, all of which are",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " four organs, including the heart, lungs",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 400 amino acids, including 7 amino acids",
+    "label": "Hallucination"
+   },
+   {
+    "text": " six organs: the brain, the nervous",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " six senses, and these are the senses",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " approximately 50,000 proteins, including the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 22 subtypes, each of which has",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 9,889 species of cells. Each",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 32 specialized organs, which are the organs",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " four metabolic pathways. The first is the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 25 different organs, which all separate and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 39 cells, each of which are the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 98 million cells and each cell has 93",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " 2800 possible markers that can be used",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The Great Wall is located in",
+  "answers": [
+   "china"
+  ],
+  "counts": {
+   "Correct": 1,
+   "Hallucination": 0,
+   "NoAnswer": 39,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " the middle of the forest. In the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of the city, and is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the middle of the country.\n\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a remote corner of the West, far",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the center of the Isles of Scilly",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the middle of the city.\n\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " downtown Minneapolis. It opened in 1927,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the midst of the human city of Berlin",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a location roughly halfway between China and Spain",
+    "label": "Correct"
+   },
+   {
+    "text": " the center of the city and an impressive",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " downtown Los Angeles, where there is a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the southeast corner of the AWS in the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the central plaza of Versailles.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the middle of the city, in the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " one of the most coveted buildings in the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the center of the building. It was",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Rhine. The Belgians call",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of the river, and it",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the south-east corner of the city",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of the city of New York",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the city of Los Angeles. The wall",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of the desert and appears to",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of the city, and if",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " front of the Wilderness of the Shadow,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Southwestern corner of the city of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the midst of a city that is so",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the center of the city. It was",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the middle of the middle of the city",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the city of Mughal Empire and",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of the Old City and with",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of the city. It is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the middle of the forest, in Northern",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of the mountains of the Himal",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " New York City. It is located a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of the North-West Region",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the city of Troy, and is in",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the middle of a rugged quartz mountain range",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of the region of the southwestern",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of the place, where the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of the city of Minsk",
+    "label": "NoAnswer"
+   }
+  ]
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "answers": [
+   "paris",
+   "france"
+  ],
+  "counts": {
+   "Correct": 2,
+   "Hallucination": 2,
+   "NoAnswer": 36,
+   "Other": 0
+  },
+  "bifurcates": true,
+  "completions": [
+   {
+    "text": " a central hillside of central Paris,",
+    "label": "Correct"
+   },
+   {
+    "text": " an underground tunnel. In the centre of",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Switzerland and the Eiffel Tower in",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " an industrial area, the building is surrounded",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of Manhattan, the tallest building",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the northeastern part of the city. It",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the middle of Manhattan. It was built",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the sky above the city of London.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of the city, and is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the middle of a small park, each",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the village of Sokol-Amatz",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of London. The Eiff",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the south of the building and is one",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Tower of London. Over the years",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the middle of the city and is one",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of downtown Berlin. The tower",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the center of this city, just a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the Pacific Ocean South of Washington State on",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the center of the town.\n\n",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " a small southern tower surrounded by a series",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of the city, where it",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of the city. This is",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the \"Eiffel Tower\", a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the middle of the city, an area",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of the city. Both sides",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of Europe's biggest commercial district",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " central London. It dates back to the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the center of the city, its skyline",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the center of the city. The tower",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the south of London, just a short",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the heart of the city of Paris.",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of the city of London as",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the heart of the city. The E",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of Manhattan. It is the",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the middle of the World Trade Center,",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the middle of the intersection of Canars",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the center of the city's historic district",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of the estate, and a",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " Switzerland, which is over 250 kilometers (",
+    "label": "NoAnswer"
+   },
+   {
+    "text": " the heart of the city of Paris,",
+    "label": "Correct"
+   }
+  ]
+ }
+]

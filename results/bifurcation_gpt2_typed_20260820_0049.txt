@@ -1,0 +1,49 @@
+ÉTAPE 1 — TAUX DE BIFURCATION
+date          : 2026-08-20T00:49:47
+modèle        : gpt2 (124M) sur mps
+classes       : APPARIÉES EN TYPE
+protocole     : N=40 complétions, T=0.7, max_new_tokens=8, seuil=2/classe
+prompts       : 30
+
+prompt                                        Corr  Hallu  NoAns  Other  bifurque
+----------------------------------------------------------------------------------
+The capital of France is                         2      4     34      0  OUI
+The capital of Japan is                          9      0     31      0  -
+The capital of Italy is                         18      5     17      0  OUI
+The capital of Germany is                        6      0     34      0  -
+The capital of Spain is                         11      6     23      0  OUI
+The capital of Russia is                         3      0     37      0  -
+The capital of Egypt is                          5      0     35      0  -
+The capital of Canada is                         1      4     35      0  -
+The largest planet in the solar system is        2     10     28      0  OUI
+The closest planet to the Sun is                 1     12     27      0  -
+The chemical symbol for gold is                  0      0     40      0  -
+The chemical symbol for water is                 0      0     40      0  -
+The author of Hamlet was                         1      0     39      0  -
+The author of the Odyssey was                    0      0     40      0  -
+The inventor of the telephone was                0      0     40      0  -
+The first president of the United State...       1      2     37      0  -
+The currency of Japan is the                    26      0     14      0  -
+The currency of the United Kingdom is the       37      0      3      0  -
+The tallest mountain in the world is             7      0     33      0  -
+The longest river in the world is                0      2     38      0  -
+The largest ocean on Earth is the                4      1     35      0  -
+The largest desert in Africa is the             14      0     26      0  -
+Water freezes at a temperature of                1     12     27      0  -
+Water boils at a temperature of                  4      8     28      0  OUI
+The number of continents on Earth is             0      4     36      0  -
+The number of days in a leap year is             0      0     40      0  -
+The speed of light is approximately              1      4     35      0  -
+The human body has a total of                    0      6     34      0  -
+The Great Wall is located in                     1      0     39      0  -
+The Eiffel Tower is located in                   2      2     36      0  OUI
+
+BIFURCATIONS : 6/30 = 20.0%
+(référence Akarlar sur Qwen2.5-1.5B : 27/61 = 44.3%)
+
+VERDICT : rendement suffisant. Passer à l'extraction des trajectoires
+(K runs par classe, residual stream complet).
+
+RÉSERVE : la classification par substring est une heuristique. Les
+complétions brutes sont dans le .json joint — les auditer avant de bâtir
+quoi que ce soit dessus.

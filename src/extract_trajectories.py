@@ -48,9 +48,13 @@ def main():
     ap.add_argument("--batch", type=int, default=40)
     ap.add_argument("--temperature", type=float, default=0.7)
     ap.add_argument("--max-new-tokens", type=int, default=8)
+    ap.add_argument("--typed", action="store_true")
     args = ap.parse_args()
 
-    tag = args.model.replace("/", "-")
+    global classify
+    if args.typed:
+        from typed_entities import classify_typed as classify
+    tag = args.model.replace("/", "-") + ("_typed" if args.typed else "")
     bif = json.loads(latest_bifurcation_json(tag).read_text())
     targets = [r["prompt"] for r in bif if r["bifurcates"]]
     answers_of = {p: a for p, a in PROMPTS}

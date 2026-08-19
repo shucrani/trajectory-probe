@@ -644,3 +644,115 @@ information supplémentaire. Corriger, si.
   montre que l'estimation est bruitée ; avec plus de runs, la similarité
   cross-prompt monterait mécaniquement — sans que cela change le résultat
   fonctionnel, qui est mesuré, pas estimé.
+
+---
+
+## 2026-08-20 — DÉCLARATION DE PROTOCOLE (avant exécution)
+
+Conformément à `docs/DEGRES-DE-LIBERTE.md` § 7, item 1 : le changement est
+déclaré, avec sa prédiction, **avant** de lancer le run.
+
+### Ce qui change
+
+`Hallucination` cesse d'accepter n'importe quelle entité assertée. Elle exige
+désormais une entité **du même type que la réponse attendue** — une ville pour
+une capitale, une planète pour une planète, un océan pour un océan. Les listes de
+distracteurs sont écrites maintenant, avant tout résultat, et figées dans
+`src/typed_entities.py`.
+
+Motif : `Correct` exigeait une chaîne précise tandis que `Hallucination` acceptait
+une classe large. Une classe étroite est plus difficile à atteindre par hasard,
+indépendamment de toute géométrie. Cette asymétrie de mesure est la première
+explication concurrente du seul résultat positif du projet.
+
+### Ce qui est attaqué
+
+Étape 6, patch apparié en norme, direction correction : **cross-classe 8.9 %
+contre bruit de même amplitude 0/180, z = 4.09.**
+
+### Prédictions, posées avant de voir quoi que ce soit
+
+- **Si le résultat était un artefact de largeur** : avec des classes appariées en
+  type, l'écart entre patch cross-classe et bruit apparié se réduit fortement,
+  voire disparaît (z < 1.96). Le seul résultat positif du projet tombe.
+- **S'il tient** : l'écart reste significatif malgré l'appariement. Le contenu de
+  l'état compte bien, et la réserve principale est levée.
+- **Cas intermédiaire attendu comme le plus probable** : l'écart diminue mais
+  reste significatif. Il faudra alors rapporter les deux mesures côte à côte,
+  sans choisir celle qui arrange.
+
+### Effet de bord accepté
+
+La classe `Hallucination` devient rare. Il faudra un budget de tirage nettement
+plus élevé pour atteindre K = 6, et certains prompts deviendront inexploitables.
+Une baisse du nombre de prompts n'est **pas** un motif de revenir à l'ancienne
+définition.
+
+### Nouveau degré de liberté introduit, et assumé
+
+Les listes de distracteurs sont écrites par moi. Elles sont figées avant le run
+et versionnées ; elles ne seront pas retouchées après avoir vu les résultats.
+
+---
+
+## 2026-08-20 — Étape 8 : résultat du test. L'effet survit, affaibli, et ne passe plus Bonferroni
+
+`src/typed_entities.py` (30 listes de distracteurs, écrites avant le run),
+options `--typed` sur les trois scripts concernés.
+
+**Effet de bord mesuré** : bifurcations 10/30 → **6/30**. Trajectoires 120 → **72**
+(36 Correct / 36 Hallucination sur 6 prompts). Budget porté à 800 tirages par
+prompt. Comme annoncé, la baisse d'effectif n'a pas servi de prétexte à revenir
+en arrière.
+
+### Comparaison directe, classes larges contre classes appariées
+
+| | classes larges (v1) | **classes appariées en type** |
+|---|---|---|
+| corruption : cross | 16.7 % | **2.8 %** |
+| corruption : apparié en norme | 11.1 % | 0.9 % |
+| corruption : z | 1.52 | 1.01 |
+| **correction : cross** | 8.9 % | **6.5 %** |
+| **correction : apparié en norme** | 0.0 % | 0.9 % |
+| **correction : z** | **4.09** | **2.16** |
+
+Effectifs bruts, n = 108 par cellule. Test exact de Fisher, unilatéral :
+- corruption : 3/108 contre 1/108 — **p = 0.31**
+- correction : 7/108 contre 1/108 — **p = 0.033**
+
+### Verdict, selon les prédictions déposées avant le run
+
+C'est le **cas intermédiaire**, celui que j'avais annoncé comme le plus probable :
+l'effet diminue mais ne disparaît pas. Les deux mesures sont rapportées côte à
+côte, sans choisir celle qui arrange.
+
+- **z passe de 4.09 à 2.16.** Encore au-dessus de 1.96, donc significatif à 5 %
+  brut. **En dessous du seuil de Bonferroni pour 2 comparaisons (2.24).**
+- Fisher : p = 0.033, au-dessus du seuil corrigé de 0.025.
+
+**Le résultat positif du projet ne survit donc plus à une correction pour
+comparaisons multiples.** Il n'est pas éliminé — il est ramené au statut de
+tendance, sur 7 succès contre 1.
+
+### Ce que le test a aussi révélé, et qui n'était pas la question posée
+
+La corruption s'effondre de 16.7 % à 2.8 %. C'est une confirmation frontale du
+diagnostic de l'étape 6 : ce qui était compté comme « corruption » était pour
+l'essentiel de la **dégradation** captée par une classe large. Dès qu'on exige de
+l'hallucination qu'elle nomme une entité du bon type, casser l'état ne suffit
+plus à produire une hallucination — il faut produire une *autre ville plausible*,
+ce qu'une perturbation ne fait pas.
+
+L'asymétrie corruption/correction d'Akarlar n'est donc **pas** reproduite ici,
+sous aucune des deux définitions. Ce n'était pas le sujet du test, mais c'est
+maintenant établi sur les deux mesures.
+
+### Ce qu'il faudrait pour trancher
+
+Plus de prompts typés. Avec 6 prompts et 7 succès contre 1, l'estimation est
+fragile ; le protocole est correct mais sous-alimenté. Étendre la liste de
+prompts (et donc de distracteurs) à 60-80 candidats devrait donner assez de
+prompts bifurquants pour un test qui passe ou casse franchement. **Non fait.**
+
+Tant que ce n'est pas fait, le statut honnête de la seule direction positive du
+projet est : **tendance non confirmée**.

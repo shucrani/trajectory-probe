@@ -56,9 +56,14 @@ def main():
     ap.add_argument("--layers", type=int, nargs="+", default=[4, 8, 11])
     ap.add_argument("--pairs", type=int, default=6)
     ap.add_argument("--max-new-tokens", type=int, default=8)
+    ap.add_argument("--typed", action="store_true",
+                    help="classes appariées en type (voir typed_entities.py)")
     args = ap.parse_args()
 
-    tag = args.model.replace("/", "-")
+    global classify
+    if args.typed:
+        from typed_entities import classify_typed as classify
+    tag = args.model.replace("/", "-") + ("_typed" if args.typed else "")
     npz = sorted((ROOT / "results").glob(f"trajectories_{tag}_*.npz"))[-1]
     d = np.load(npz, allow_pickle=True)
     X, y, groups, gen_tokens = d["X"], d["y"], d["groups"], d["tokens"]

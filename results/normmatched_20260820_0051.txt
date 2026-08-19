@@ -1,0 +1,18 @@
+ÉTAPE 6 — PATCH APPARIÉ EN NORME (information vs amplitude)
+date    : 2026-08-20T00:51:52
+modèle  : gpt2 · fenêtre 3 depuis le step 1 · couches [4, 8, 11]
+
+Le patch apparié est placé à la MÊME distance L2 de l'état du receveur que
+l'état donneur, mais dans une direction aléatoire : même amplitude, zéro
+information de l'autre classe.
+
+direction       cross-classe   apparié en norme       z
+--------------------------------------------------------
+corruption             2.8%              0.9%    1.01   (n=108)
+correction             6.5%              0.9%    2.16   (n=108)
+
+LECTURE. |z| > 1.96 : le contenu de l'état compte au-delà de son amplitude.
+|z| proche de 0 : l'effet observé à l'étape 5 est un artefact d'amplitude —
+déplacer l'état assez loin suffit à faire basculer l'issue, peu importe vers
+où. Dans ce cas il n'y a pas de transport d'information entre bassins, et
+l'asymétrie corruption/correction d'Akarlar n'est pas reproduite ici.
