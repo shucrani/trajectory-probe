@@ -78,3 +78,73 @@ récapitulatif est lucide là-dessus (∂V, G0-G6, théorème : « non testé »
 « 87 % couche 9, HaluEval × Llama-3-8B » est **fictif**. Cette honnêteté est
 acquise ; la question reste de savoir si les axiomes se révisent d'après la
 mesure ou deviennent un objet théorique assumé.
+
+---
+
+## 2026-08-19 (nuit) — Programme ProbatioH1 v3 : audit de statut des énoncés
+
+Document archivé verbatim : `docs/ProbatioH1_Programme_v3.md`.
+
+### Régression d'honnêteté entre deux documents du même jour
+
+| Énoncé | Récapitulatif (§4.2) | Programme v3 (§IV) |
+|---|---|---|
+| Certification paramétrée | « **non prouvé** — taxonomie, pas une preuve dérivée d'axiomes » | **D3 (Théorème)** |
+| Complémentarité position/dynamique | non listé | **Det1 (Théorème empirique)** |
+| Pont α : H → Q | « **non vérifié ici** » | présenté comme architecture acquise |
+
+Le récapitulatif était plus juste. Un énoncé dont les termes primitifs ne sont pas
+définis opérationnellement (V_robuste, I minimale, α) n'est pas un théorème : il
+n'est même pas encore falsifiable. **Ce reclassement est le mécanisme exact qui a
+coûté CARRT** (formalisme reprenant le dessus sur le substrat non testé). À
+surveiller à chaque version.
+
+Statut à conserver : D3 = **conjecture de programme**. Det1 = **observation**
+sur n = 50, affaiblie par r = 0.81 entre `mean_curvature` et `max_velocity` et
+par le +0.0008 de la combinaison avec CoE.
+
+### Le confond de dataset n'est pas intégré
+
+La § II du programme réutilise AUC = 0.939 comme fondation, et la § IX construit
+le test irréductible dessus, sans le contrôle de longueur (C1). Tant que C1 n'est
+pas exécuté, ces chiffres n'ont pas de statut. Priorité inchangée.
+
+### Le trou central : α n'existe pas
+
+Tout le vocabulaire de certification (G0-G6, « certificat », « preuve »,
+« solidité ») présuppose α : H → Q avec le théorème de solidité. Personne ne sait
+construire α depuis des hidden states. Sans lui, G0-G6 sont des **seuils sur un
+classifieur**, pas des certificats. Un seuil renommé « certificat » reste un seuil.
+
+Écart de vocabulaire à corriger : un AUC de 0.75 à la couche 6 = 25 % d'erreur.
+On ne certifie pas avec ça. « Certifier » exige une garantie (borne, couverture),
+pas un score.
+
+### Voisinage à vérifier avant tout claim de nouveauté
+
+- **Selective prediction / reject option** — Chow (1970), littérature continue
+  depuis. C'est G5 sous un autre nom.
+- **Conformal prediction** (Vovk et al.) — donne des garanties de couverture
+  distribution-free et prouvées, sous échangeabilité. C'est le cadre qui délivre
+  réellement ce que ProbatioH1 promet.
+- **Hallucination Basins (2026)**, **Chain-of-Embedding (ICLR 2025)** — déjà
+  identifiés comme redécouverts.
+
+### D2 est testé par le mauvais test
+
+§ IX (AUC sur couches 0..k) est **corrélationnel**. D2 (point de commitment
+irréversible) est une affirmation **causale**. Le test correspondant est une
+intervention : perturber à la couche k, mesurer si la classe finale change, et
+comparer les taux de corruption et de correction (le design d'Akarlar, déjà cité
+dans le rapport v2). Une AUC croissante n'établit aucune irréversibilité.
+
+### Décisions
+
+1. Ordre inchangé : **C1 (longueur) avant tout**, puis § IX sur dataset corrigé,
+   puis test causal pour D2.
+2. **Gel** de ProbatioLang, de la spécification formelle v3 et du papier DSPS
+   jusqu'à ce qu'un résultat empirique survive à C1/C2.
+3. Reclasser D3 en conjecture et Det1 en observation dans toute version future.
+4. Le garde-fou synthétique triple est identifié comme **l'actif le plus solide**
+   du programme (voir README § 7) — à vérifier contre la littérature avant de
+   revendiquer « sans équivalent ».
