@@ -1,0 +1,29 @@
+ÉTAPE 7 — STABILITÉ DE LA DIRECTION QUI RÉPARE
+date   : 2026-08-20T00:45:11
+modèle : gpt2 · fenêtre 3 depuis le step 1 · couches [4, 8, 11]
+
+A. GÉOMÉTRIE — similarité cosinus entre directions de prompts différents
+
+couche      cross-prompt        [min, max]   plafond split-half   plancher |cos| 95%
+------------------------------------------------------------------------------------
+4            0.230 ±0.17      [-0.05, 0.61]                0.489                0.073
+8            0.323 ±0.18       [0.06, 0.68]                0.487                0.067
+11           0.360 ±0.17       [0.06, 0.73]                0.467                0.073
+
+B. FONCTION — taux de réparation, toutes conditions à NORME ÉGALE
+
+  oracle-paire (étape 6)        16/132   =  12.1%
+  oracle-prompt (plafond)       11/132   =   8.3%
+  TRANSFERT (autres prompts)     1/132   =   0.8%
+  aléatoire (plancher)           3/132   =   2.3%
+
+  transfert vs aléatoire      z =  -1.01
+  transfert vs oracle-prompt  z =  -2.95
+
+LECTURE. Si le transfert répare significativement plus que l'aléatoire, la
+direction est partagée : un vecteur de steering calculé sur d'autres prompts
+fonctionne sur un prompt jamais vu — G1-G2 devient opérationnalisable.
+Si le transfert est au niveau de l'aléatoire alors que l'oracle-prompt
+répare, la direction existe mais est PROPRE à chaque cas : observable,
+inutilisable — il faudrait connaître la réponse pour construire le vecteur
+qui y mène.

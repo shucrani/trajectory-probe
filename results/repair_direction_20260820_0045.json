@@ -1,0 +1,3219 @@
+{
+ "geometry": {
+  "4": {
+   "cross_mean": 0.22973664899667104,
+   "cross_std": 0.17346418098722174,
+   "cross_min": -0.05483020842075348,
+   "cross_max": 0.6079044342041016,
+   "splithalf": 0.48939488530159,
+   "random_abs95": 0.07292659958851265,
+   "n_pairs": 45
+  },
+  "8": {
+   "cross_mean": 0.3226139318611887,
+   "cross_std": 0.17517836411590776,
+   "cross_min": 0.057945892214775085,
+   "cross_max": 0.6849872469902039,
+   "splithalf": 0.4873083051294088,
+   "random_abs95": 0.06723472691385109,
+   "n_pairs": 45
+  },
+  "11": {
+   "cross_mean": 0.3601816271742185,
+   "cross_std": 0.17284341812905155,
+   "cross_min": 0.06082761287689209,
+   "cross_max": 0.727055549621582,
+   "splithalf": 0.46664909794926646,
+   "random_abs95": 0.07311148634414037,
+   "n_pairs": 45
+  }
+ },
+ "tally": {
+  "oracle_paire": [
+   16,
+   132
+  ],
+  "oracle_prompt": [
+   11,
+   132
+  ],
+  "transfert": [
+   1,
+   132
+  ],
+  "aleatoire": [
+   3,
+   132
+  ]
+ },
+ "detail": [
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The currency of Japan is the",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The currency of Japan is the",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The currency of Japan is the",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The currency of Japan is the",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The currency of Japan is the",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The currency of Japan is the",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The currency of Japan is the",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The currency of Japan is the",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The currency of Japan is the",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The currency of Japan is the",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The currency of Japan is the",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The currency of Japan is the",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "Correct"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 4,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 4,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 4,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 4,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 8,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 8,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 8,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 8,
+   "condition": "aleatoire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 11,
+   "condition": "oracle_paire",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 11,
+   "condition": "oracle_prompt",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 11,
+   "condition": "transfert",
+   "result": "NoAnswer"
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "layer": 11,
+   "condition": "aleatoire",
+   "result": "Hallucination"
+  }
+ ]
+}

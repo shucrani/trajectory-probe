@@ -565,3 +565,82 @@ demanderait des classes de largeur comparable — par exemple en imposant à
 Le seul élément du programme que la mesure ait renforcé est **l'intervention
 corrective dirigée** (G1-G2) : il existe une direction qui répare et que le
 hasard ne trouve pas. C'est étroit, c'est à 8.9 %, mais c'est réel et contrôlé.
+
+---
+
+## 2026-08-20 — Étape 7 : la direction qui répare n'est pas transférable
+
+`src/repair_direction.py`. Direction de réparation d'un prompt :
+`d_p = centroïde(Correct_p) − centroïde(Hallucination_p)`, moyennée sur la
+fenêtre (steps 1-3).
+
+### A. Géométrie — une composante partagée existe
+
+| couche | cos cross-prompt | [min, max] | plafond split-half | plancher \|cos\| 95 % |
+|---|---|---|---|---|
+| 4 | 0.230 ± 0.17 | [-0.05, 0.61] | 0.489 | 0.073 |
+| 8 | 0.323 ± 0.18 | [0.06, 0.68] | 0.487 | 0.067 |
+| 11 | 0.360 ± 0.17 | [0.06, 0.73] | 0.467 | 0.073 |
+
+Nettement au-dessus du plancher aléatoire (0.07), nettement sous le plafond de
+fiabilité split-half (0.47-0.49). Corrigé de l'atténuation, cela suggérerait une
+direction largement partagée (0.36/0.47 ≈ 0.77). **La géométrie dit oui.**
+
+### B. Fonction — mais elle ne répare pas
+
+Toutes conditions à norme égale, n = 132 (les cas déjà corrects à la baseline
+sont exclus : il n'y a rien à y réparer).
+
+| condition | réparation |
+|---|---|
+| oracle-paire (l'état correct apparié) | **12.1 %** |
+| oracle-prompt (direction du prompt lui-même) | **8.3 %** |
+| **transfert (direction des autres prompts)** | **0.8 %** (1/132) |
+| aléatoire (plancher) | 2.3 % |
+
+`transfert vs aléatoire : z = −1.01` — le transfert ne fait pas mieux que le
+hasard. Il fait même numériquement moins bien.
+`transfert vs oracle-prompt : z = −2.95` — il fait significativement moins bien
+que la direction propre au prompt.
+
+**La fonction dit non.**
+
+### Ce que la dissociation signifie
+
+Une similarité cosinus de 0.36 sans aucun effet fonctionnel veut dire que la
+composante *partagée* de la direction n'est pas celle qui répare. Le partagé est
+probablement générique — un déplacement vers un registre plus assertif ou plus
+factuel. Ce qui répare est la composante *spécifique au prompt* : l'information
+« Tokyo ».
+
+Autrement dit : **réparer une trajectoire, c'est y injecter la réponse.**
+
+### Conséquence pour ProbatioH1 — un no-go interne
+
+G1-G2 (« dérive détectée, un steering minimal suffit », « steering maximal +
+monitoring ») supposent qu'on puisse corriger une trajectoire sans disposer de
+la réponse. La mesure dit le contraire : la seule direction qui corrige est celle
+qui porte déjà la réponse. Un système qui saurait construire ce vecteur n'aurait
+plus besoin de corriger — il connaîtrait la réponse.
+
+C'est exactement le **no-go informationnel** que le programme pose en § I comme
+axiome fondateur : quand l'information n'est pas disponible, aucune manipulation
+géométrique ne la crée. Le programme démontre son propre axiome — appliqué à sa
+propre couche d'intervention.
+
+Ce qui reste debout de G0-G6, sous cette contrainte : **G5, l'abstention
+certifiée**, et lui seul. Détecter qu'on dérive et s'arrêter ne demande aucune
+information supplémentaire. Corriger, si.
+
+### Réserves
+
+- GPT-2 small, 124M, non instruction-tuned. Les vecteurs de steering transférables
+  documentés dans la littérature le sont sur des modèles bien plus grands ; ce
+  résultat ne se généralise pas au-delà de cette échelle.
+- 10 prompts, tous de forme « The X of Y is », tous en anglais. La composante
+  partagée mesurée est donc celle d'une famille syntaxique très étroite — ce qui
+  rend l'absence de transfert d'autant plus notable, mais limite la portée.
+- La direction est estimée sur 6 runs par classe. Le plafond split-half à 0.47
+  montre que l'estimation est bruitée ; avec plus de runs, la similarité
+  cross-prompt monterait mécaniquement — sans que cela change le résultat
+  fonctionnel, qui est mesuré, pas estimé.
