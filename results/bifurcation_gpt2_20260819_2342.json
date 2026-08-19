@@ -1,0 +1,2832 @@
+[
+ {
+  "prompt": "The capital of France is",
+  "answers": [
+   "paris"
+  ],
+  "counts": {
+   "Correct": 1,
+   "Hallucination": 19,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " now home to more than 10,000",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the capital of the Holy Roman Empire.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Paris, and the capital is the city",
+    "label": "Correct"
+   },
+   {
+    "text": " France and much of the French countryside lies",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Marseille, and the city is known",
+    "label": "Hallucination"
+   },
+   {
+    "text": " hosting the second World Cup in 4 years",
+    "label": "Hallucination"
+   },
+   {
+    "text": " at the heart of the fight against terrorism",
+    "label": "Hallucination"
+   },
+   {
+    "text": " nowhere near the level of the FN as",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Marseille, and is one of the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a giant gold mine, with a huge",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a city in the centre of the continent",
+    "label": "Hallucination"
+   },
+   {
+    "text": " one of the most important economic centres in",
+    "label": "Hallucination"
+   },
+   {
+    "text": " France. It has been beset by",
+    "label": "Hallucination"
+   },
+   {
+    "text": " France, which is home to the world",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the capital of the French Republic. It",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the capital of 1715, during the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " France. In the last three decades,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the capital of the French Republic and the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Lille. You can buy a French",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Saint-Etienne at a time",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The capital of Japan is",
+  "answers": [
+   "tokyo"
+  ],
+  "counts": {
+   "Correct": 2,
+   "Hallucination": 18,
+   "Other": 0
+  },
+  "bifurcates": true,
+  "completions": [
+   {
+    "text": " the vast region of the East Pacific that",
+    "label": "Hallucination"
+   },
+   {
+    "text": " located in the south of the country,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the birthplace of the modern Japanese e-",
+    "label": "Hallucination"
+   },
+   {
+    "text": " in Japan, home to the country's",
+    "label": "Hallucination"
+   },
+   {
+    "text": " home to a thriving Japanese industry, as",
+    "label": "Hallucination"
+   },
+   {
+    "text": " home to 1.1 million people.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the Los Angeles metropolitan area, with the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Japan, and the capital of the world",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Japan, and is home to roughly 3",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Tokyo, which is home to an incredible",
+    "label": "Correct"
+   },
+   {
+    "text": " home to e-commerce giant Alibaba Group",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a city without a train, not a",
+    "label": "Hallucination"
+   },
+   {
+    "text": " often described as a city of people living",
+    "label": "Hallucination"
+   },
+   {
+    "text": " home to the oil companies, and has",
+    "label": "Hallucination"
+   },
+   {
+    "text": " now with the United States, so it",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Tokyo, home to more than 1,",
+    "label": "Correct"
+   },
+   {
+    "text": " the capital of Kyushu, which",
+    "label": "Hallucination"
+   },
+   {
+    "text": " going through a major economic boom. The",
+    "label": "Hallucination"
+   },
+   {
+    "text": " scattered along the coast and the Pacific Ocean",
+    "label": "Hallucination"
+   },
+   {
+    "text": " much more than just a haven for women",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "answers": [
+   "rome"
+  ],
+  "counts": {
+   "Correct": 6,
+   "Hallucination": 14,
+   "Other": 0
+  },
+  "bifurcates": true,
+  "completions": [
+   {
+    "text": " the capital of the whole world. In",
+    "label": "Hallucination"
+   },
+   {
+    "text": " still a very popular place to be.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " making a name for itself in the world",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Rome, this is the capital of the",
+    "label": "Correct"
+   },
+   {
+    "text": " a great place to live and work because",
+    "label": "Hallucination"
+   },
+   {
+    "text": " home to a huge number of refugees,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a small town known for its port city",
+    "label": "Hallucination"
+   },
+   {
+    "text": " San Siro, the capital of the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the Carthusi Valley, where we",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a sleepy city, and the country is",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Rome. The capital of Italy is Rome",
+    "label": "Correct"
+   },
+   {
+    "text": " Este-Cristina, and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Rome, on the coast of the Car",
+    "label": "Correct"
+   },
+   {
+    "text": " Florence. The city is the place where",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Milan, the capital of Italy, and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Rome.\n\nThe only other place",
+    "label": "Correct"
+   },
+   {
+    "text": " Rome, but before we get to the",
+    "label": "Correct"
+   },
+   {
+    "text": " the city of Parma, and the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Milan, and there is no sign of",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Rome and the historical capital is the Forum",
+    "label": "Correct"
+   }
+  ]
+ },
+ {
+  "prompt": "The capital of Germany is",
+  "answers": [
+   "berlin"
+  ],
+  "counts": {
+   "Correct": 3,
+   "Hallucination": 17,
+   "Other": 0
+  },
+  "bifurcates": true,
+  "completions": [
+   {
+    "text": " now home to the former, but the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " still part of Germany. And all along",
+    "label": "Hallucination"
+   },
+   {
+    "text": " still occupied by Germany. It is no",
+    "label": "Hallucination"
+   },
+   {
+    "text": " still very much a part of Germany,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the 14th largest economy, with an",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the former Soviet Union and the Netherlands is",
+    "label": "Hallucination"
+   },
+   {
+    "text": " vulnerable to earthquakes and natural disasters, and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " now home to over 1.2 billion",
+    "label": "Hallucination"
+   },
+   {
+    "text": " no longer a railway station or an airport",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 'Germany', just as the country of",
+    "label": "Hallucination"
+   },
+   {
+    "text": " now house to house and it is a",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a capitalist country, but its socialist leaders",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Berlin. The city itself is close to",
+    "label": "Correct"
+   },
+   {
+    "text": " the Bundesbank, which operates the country",
+    "label": "Hallucination"
+   },
+   {
+    "text": " on the brink of bankruptcy. In 2014",
+    "label": "Hallucination"
+   },
+   {
+    "text": " much like Berlin, with the bookshel",
+    "label": "Correct"
+   },
+   {
+    "text": " Berlin, where tens of thousands of locals",
+    "label": "Correct"
+   },
+   {
+    "text": " well known for its history of offensive wars",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the infamous Bugle factory. The Bug",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a long way from the main city of",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "answers": [
+   "madrid"
+  ],
+  "counts": {
+   "Correct": 3,
+   "Hallucination": 17,
+   "Other": 0
+  },
+  "bifurcates": true,
+  "completions": [
+   {
+    "text": " now a city of bricks and mortar.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " one of the largest Spanish cities, with",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Barcelona, and has been one of the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the biggest city in the country. It",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Barcelona. It's a tiny city that",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Madrid, the place where the world's",
+    "label": "Correct"
+   },
+   {
+    "text": " Barcelona and the city was built in 17",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Barcelona and last year, in a joint",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Casablanca, one of the two",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Valencia, and though it has a reputation",
+    "label": "Hallucination"
+   },
+   {
+    "text": " located in the beautiful Valencias",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Barcelona.\n\nThe city's location",
+    "label": "Hallucination"
+   },
+   {
+    "text": " also home to a large number of public",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Barcelona but it's also home to some",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Madrid, the capital of Spain. It",
+    "label": "Correct"
+   },
+   {
+    "text": " the European Union, which has spent roughly",
+    "label": "Hallucination"
+   },
+   {
+    "text": " also the birthplace of the modern Spanish monarch",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the biggest city in Europe, and Madrid",
+    "label": "Correct"
+   },
+   {
+    "text": " an island of 69,000 people.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Spain and Hoagland is located in",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The capital of Russia is",
+  "answers": [
+   "moscow"
+  ],
+  "counts": {
+   "Correct": 1,
+   "Hallucination": 19,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " also a world leader in nanotechnology.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about to launch its largest ever military exercises",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a city of great riches, and its",
+    "label": "Hallucination"
+   },
+   {
+    "text": " already a presidential palace. It was a",
+    "label": "Hallucination"
+   },
+   {
+    "text": " already a shining example of the law of",
+    "label": "Hallucination"
+   },
+   {
+    "text": " now a floundering political entity,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " also a very important city, because it",
+    "label": "Hallucination"
+   },
+   {
+    "text": " not their country, but their country,\"",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the Golan Heights and its residents have",
+    "label": "Hallucination"
+   },
+   {
+    "text": " at the heart of the fight against the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " not an island: it is a peninsula",
+    "label": "Hallucination"
+   },
+   {
+    "text": " hosting the World Cup in Brazil, but",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a city of nearly 200,000 people",
+    "label": "Hallucination"
+   },
+   {
+    "text": " still largely a city of the past,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the \"Tavedomanska\",",
+    "label": "Hallucination"
+   },
+   {
+    "text": " in Russia. But what we're seeing",
+    "label": "Hallucination"
+   },
+   {
+    "text": " home to more than a million people,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " hit with relentless attacks by the West,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " now occupied by the U.S.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a little more than three hours from Moscow",
+    "label": "Correct"
+   }
+  ]
+ },
+ {
+  "prompt": "The capital of Egypt is",
+  "answers": [
+   "cairo"
+  ],
+  "counts": {
+   "Correct": 2,
+   "Hallucination": 18,
+   "Other": 0
+  },
+  "bifurcates": true,
+  "completions": [
+   {
+    "text": " home to several of the world's most",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the largest city in the Arab world.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the capital of the Islamic Republic of Islam",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Cairo (now Cairo), and is the",
+    "label": "Correct"
+   },
+   {
+    "text": " not the capital of Jerusalem, but the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a sprawling city that stretches from Khart",
+    "label": "Hallucination"
+   },
+   {
+    "text": " later named as the capital of the Islamic",
+    "label": "Hallucination"
+   },
+   {
+    "text": " known as the Islamic Republic of Egypt.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the capital of the Muslim Brotherhood, and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a remote and unstable country where the people",
+    "label": "Hallucination"
+   },
+   {
+    "text": " not only the largest city in the world",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the capital of the Egyptian state of S",
+    "label": "Hallucination"
+   },
+   {
+    "text": " now Syria, and Saudi Arabia has a",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the capital of the Muslim Brotherhood, and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " known for its variety of Islamic schools,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the capital of the Islamic Republic, part",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Cairo, which is the capital of Islam",
+    "label": "Correct"
+   },
+   {
+    "text": " an ancient city that dates back to the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the capital of the Arab Republic, which",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a state of the nation of Egypt;",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The capital of Canada is",
+  "answers": [
+   "ottawa"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 20,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " in Winnipeg.\n\nThe city's",
+    "label": "Hallucination"
+   },
+   {
+    "text": " London, a city very well known for",
+    "label": "Hallucination"
+   },
+   {
+    "text": " in the process of constructing a new railway",
+    "label": "Hallucination"
+   },
+   {
+    "text": " home to tens of thousands of people,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " struggling to cope with the current economic crisis",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the only city in the world that regularly",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the only country on Earth that does not",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the capital of the United States. Therefore",
+    "label": "Hallucination"
+   },
+   {
+    "text": " struggling to deal with a financial crisis.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Berkeley, the home city of a thriving",
+    "label": "Hallucination"
+   },
+   {
+    "text": " an island in the Atlantic Ocean.\n",
+    "label": "Hallucination"
+   },
+   {
+    "text": " now home to 2.4 million people",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a small country with a population of only",
+    "label": "Hallucination"
+   },
+   {
+    "text": " located in Quebec City, Canada. It",
+    "label": "Hallucination"
+   },
+   {
+    "text": " located in central Alberta and those who live",
+    "label": "Hallucination"
+   },
+   {
+    "text": " in the grip of a devastating wildfire that",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the United States.\n\nThe United",
+    "label": "Hallucination"
+   },
+   {
+    "text": " one of the most ethnically diverse regions",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the second largest city in the world,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " now a part of the United States,",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "answers": [
+   "jupiter"
+  ],
+  "counts": {
+   "Correct": 2,
+   "Hallucination": 18,
+   "Other": 0
+  },
+  "bifurcates": true,
+  "completions": [
+   {
+    "text": " the Sun, and its mass is 2",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Jupiter, home to its orbit around the",
+    "label": "Correct"
+   },
+   {
+    "text": " about 80 times larger than Jupiter, and",
+    "label": "Correct"
+   },
+   {
+    "text": " about 13,700 light-years from",
+    "label": "Hallucination"
+   },
+   {
+    "text": " just 1.5 times the mass of",
+    "label": "Hallucination"
+   },
+   {
+    "text": " located in the rocky inner rim of the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 104 million kilometers from Earth, and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the Large Hadron Collider, and it",
+    "label": "Hallucination"
+   },
+   {
+    "text": " not an object in the way one would",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a dwarf planet about 1.4 light",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a dwarf planet, a planet which has",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Earth, which is about 7,500",
+    "label": "Hallucination"
+   },
+   {
+    "text": " perhaps a little less than 70 light years",
+    "label": "Hallucination"
+   },
+   {
+    "text": " located in the southern hemisphere. It is",
+    "label": "Hallucination"
+   },
+   {
+    "text": " also the only one with a sun that",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Mars, and the largest planet in the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 4.5 billion miles from Earth",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 37,000 light-years away",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Neptune, a highly elliptical planet with",
+    "label": "Hallucination"
+   },
+   {
+    "text": " called the Solar System and is not located",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The closest planet to the Sun is",
+  "answers": [
+   "mercury"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 20,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " Earth, not billions of light years away",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Pluto, and another is the closest planet",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Jupiter, located approximately 7,700 light",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 30 million kilometers from the Sun where",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Earth. And that's just the beginning",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Jupiter, which orbits the Sun 24 times",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Saturn, the closest planet to the Sun",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a very cold planet called the poles.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 11,000 light-years away",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the Milky Way, the star cluster this",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Saturn, which is about 35% larger",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the Milky Way. We know with certainty",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Earth. Look for 37,000 light",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Pluto, a planet with a mass of",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 500 light-years away, which",
+    "label": "Hallucination"
+   },
+   {
+    "text": " less than 3 billion miles away.\n",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Jupiter. That is, the orbit of",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 110 AU from Earth. The Sun",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Saturn, with a radius of about 5",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a planet with a population of around 7",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The chemical symbol for gold is",
+  "answers": [
+   "au"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 20,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " a tiny oval on the inside of the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the right hand side of the square.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " GED.\n\nCadbury",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a series of red and black stripes on",
+    "label": "Hallucination"
+   },
+   {
+    "text": " \"CT\", a type of gold found",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the X. This symbol represents something that",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the three-pronged \"b",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a sign that the London Metropolitan Police are",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the green diamond, which has a long",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the \"I.\"\n\nThe researchers",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the letter d. Our gold is the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " as follows:\n\nBarrels",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the fact that, according to an American",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a red-orange triangle with a star",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a 'b', a symbol of blessing",
+    "label": "Hallucination"
+   },
+   {
+    "text": " labelled with its weight. Aluminum, gold",
+    "label": "Hallucination"
+   },
+   {
+    "text": " \"g\" and is also found in",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the three-headed serpent, which is",
+    "label": "Hallucination"
+   },
+   {
+    "text": " also found on a silver coin.\n",
+    "label": "Hallucination"
+   },
+   {
+    "text": " called the \"algal\" and the",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The chemical symbol for water is",
+  "answers": [
+   "h2o",
+   "h20"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 20,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " the pentobarbital, and the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the \"P\" or \"P\"",
+    "label": "Hallucination"
+   },
+   {
+    "text": " an aloha. And how do we",
+    "label": "Hallucination"
+   },
+   {
+    "text": " D. (Very excited)\n\n",
+    "label": "Hallucination"
+   },
+   {
+    "text": " found on the bottom of the \"baby",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a yellow dot on the top right of",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the swastika. The swastika is",
+    "label": "Hallucination"
+   },
+   {
+    "text": " \"B\" or \"B\".\n",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Z, a key ingredient of water.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the red water symbol, which is often",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the number. We'll be talking about",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the \"O\", and its use is",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the \"water nipple\". It's a",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the olive tree. All the other ones",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a shaggy, white \"SA",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the δ-vitamin C symbol",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the yellow-and-green chemical symbol",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the hexagonal triangle, shaped like a",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the blue \"W\", a symbol of",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the kiwi. Chemical symbols symbol",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The author of Hamlet was",
+  "answers": [
+   "shakespeare"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 20,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " not the only person to question the morality",
+    "label": "Hallucination"
+   },
+   {
+    "text": " an American journalist, and being a journalist",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Stephen King. He has written several books",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a lifelong fan of the novels, including",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a scholar of history, and a major",
+    "label": "Hallucination"
+   },
+   {
+    "text": " born on September 12, 1819,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " never a fan of the show.\n",
+    "label": "Hallucination"
+   },
+   {
+    "text": " not only hit by the Holocaust, he",
+    "label": "Hallucination"
+   },
+   {
+    "text": " not only a genius. He was also",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a poet and journalist in the British Empire",
+    "label": "Hallucination"
+   },
+   {
+    "text": " in the audience during this meeting. They",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a student of poetry and a scholar of",
+    "label": "Hallucination"
+   },
+   {
+    "text": " given his B.A. in English",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a North American author who had attended the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a young man with a unique imagination.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a Scottish, and a well-known",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a New York City priest until he met",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a gentleman of the highest order. The",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a leading religious figure in the 1920s",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a German Jew living in the Holy Land",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The author of the Odyssey was",
+  "answers": [
+   "homer"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 20,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " also an atheist. He called himself a",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a pioneer in the study of the relationships",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a voracious reader. He's",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a fine writer, and his works are",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a member of Parliament from 1972 to 1977",
+    "label": "Hallucination"
+   },
+   {
+    "text": " an assistant professor of Spanish at the University",
+    "label": "Hallucination"
+   },
+   {
+    "text": " asked about his belief in the theory on",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a professor of English at the University of",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a member of the Broadcasting Board of Governors",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a disciple of Aristotle, and had not",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a British sailor who had sailed to the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " an Englishman, who studied at Oxford",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a member of the first generation of the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Talbot.\n\nThe Aes",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a sultan of Abydos,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the first to write about the world of",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a historian and linguist who was the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a British-born and American-educated",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a priest, and the setting is a",
+    "label": "Hallucination"
+   },
+   {
+    "text": " commissioned by the Royal Navy to write Odyssey",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The inventor of the telephone was",
+  "answers": [
+   "bell"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 20,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " Howard Archer, a French mathematician and computer",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a student of the English language, and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a man who invented the telephone so that",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the inventor of the airport. He is",
+    "label": "Hallucination"
+   },
+   {
+    "text": " an American engineer named Harold Baker. He",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a scholar and a mathematician, but had",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a well-known scholar and mathematician known",
+    "label": "Hallucination"
+   },
+   {
+    "text": " an ardent critic of the government's legislation",
+    "label": "Hallucination"
+   },
+   {
+    "text": " William Hunt, who was able to put",
+    "label": "Hallucination"
+   },
+   {
+    "text": " an Englishman who invented the telephone.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " George H. Lyman, who was",
+    "label": "Hallucination"
+   },
+   {
+    "text": " not identified.\n\nThe patent is",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a man named William H. Adams.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a man named Samuel Guzmán",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a dark old man and a brilliant inventor",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a man of great sense of humour and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a man who had no idea what was",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a young man who was not a member",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a most promising researcher of the subject,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a Frenchman, and it was his enthusiasm",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The first president of the United States was",
+  "answers": [
+   "washington"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 20,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " born in Missouri and is the son of",
+    "label": "Hallucination"
+   },
+   {
+    "text": " born in the United States, and he",
+    "label": "Hallucination"
+   },
+   {
+    "text": " born in the United States of America,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " assassinated in 1953.\n\n\"Our",
+    "label": "Hallucination"
+   },
+   {
+    "text": " born in 1855. He was raised",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a black man. We're proud of",
+    "label": "Hallucination"
+   },
+   {
+    "text": " born at Philadelphia's Haverhill College",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a father of three children. Today,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " born in New York City on July 6",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a man who with his own eyes and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " caught on camera in some way using the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " an early supporter of the Civil Rights Act",
+    "label": "Hallucination"
+   },
+   {
+    "text": " known to have had a copy of the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " born in 1844, and has been",
+    "label": "Hallucination"
+   },
+   {
+    "text": " charged with genocide in the Philippines in 1988",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a joke, that was really his idea",
+    "label": "Hallucination"
+   },
+   {
+    "text": " assassinated in Dallas in 1954. Today,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " born in 1848; he died in",
+    "label": "Hallucination"
+   },
+   {
+    "text": " assassinated in 1867.\n\nIn",
+    "label": "Hallucination"
+   },
+   {
+    "text": " shot at by a sniper in the city",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The currency of Japan is the",
+  "answers": [
+   "yen"
+  ],
+  "counts": {
+   "Correct": 19,
+   "Hallucination": 1,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " yen. As a result, there is",
+    "label": "Correct"
+   },
+   {
+    "text": " yen, which has been pegged at $",
+    "label": "Correct"
+   },
+   {
+    "text": " yen.\n\nJapan and China have",
+    "label": "Correct"
+   },
+   {
+    "text": " yen, which is roughly equivalent to about",
+    "label": "Correct"
+   },
+   {
+    "text": " Yen, meaning it is not only the",
+    "label": "Correct"
+   },
+   {
+    "text": " yen, which is a fraction of the",
+    "label": "Correct"
+   },
+   {
+    "text": " yen, and the West has the yen",
+    "label": "Correct"
+   },
+   {
+    "text": " yen. But of the people who earn",
+    "label": "Correct"
+   },
+   {
+    "text": " Japanese yen. It is a unit of",
+    "label": "Correct"
+   },
+   {
+    "text": " yen; for the rest of the world",
+    "label": "Correct"
+   },
+   {
+    "text": " yen, which has been declining. Now",
+    "label": "Correct"
+   },
+   {
+    "text": " yen, which is about $1.",
+    "label": "Correct"
+   },
+   {
+    "text": " yen, which is the equivalent of a",
+    "label": "Correct"
+   },
+   {
+    "text": " yen, which is a Japanese yen.",
+    "label": "Correct"
+   },
+   {
+    "text": " twenty-second largest in the world.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " yen. It is the currency of Japan",
+    "label": "Correct"
+   },
+   {
+    "text": " yen.\n\nThe yen was last",
+    "label": "Correct"
+   },
+   {
+    "text": " yen, like the rest of the world",
+    "label": "Correct"
+   },
+   {
+    "text": " yen, or yen-denominated,",
+    "label": "Correct"
+   },
+   {
+    "text": " yen.\n\n\"There are many",
+    "label": "Correct"
+   }
+  ]
+ },
+ {
+  "prompt": "The currency of the United Kingdom is the",
+  "answers": [
+   "pound",
+   "sterling"
+  ],
+  "counts": {
+   "Correct": 20,
+   "Hallucination": 0,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " pound, which is pegged to the dollar",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling, which is regarded as the",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling, which is the reserve currency",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling.\n\nThe British pound",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling which is pegged to the dollar",
+    "label": "Correct"
+   },
+   {
+    "text": " sterling. The sterling of the United Kingdom",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling, which is about one dollar",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling, which is the currency of",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling. It has a value of",
+    "label": "Correct"
+   },
+   {
+    "text": " pound. It is not the currency of",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling, which the Treasury pays to",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling, and the pound sterling is",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling, which is used to buy",
+    "label": "Correct"
+   },
+   {
+    "text": " pound. It is a unit of exchange",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling. The UK currency now covers",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling, one of the world's",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling. The pound sterling value of",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling. The pound sterling is the",
+    "label": "Correct"
+   },
+   {
+    "text": " pound, but the currency of the United",
+    "label": "Correct"
+   },
+   {
+    "text": " pound sterling and one can see how central",
+    "label": "Correct"
+   }
+  ]
+ },
+ {
+  "prompt": "The tallest mountain in the world is",
+  "answers": [
+   "everest"
+  ],
+  "counts": {
+   "Correct": 4,
+   "Hallucination": 16,
+   "Other": 0
+  },
+  "bifurcates": true,
+  "completions": [
+   {
+    "text": " also the tallest mountain in the world.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " reported to be Mount Everest in Afghanistan,",
+    "label": "Correct"
+   },
+   {
+    "text": " the Himalayas, named after the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " known as the \"Great Wall of China",
+    "label": "Hallucination"
+   },
+   {
+    "text": " only 6,000 feet above the sea",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a 145-foot tall tree called a",
+    "label": "Hallucination"
+   },
+   {
+    "text": " seen in the Himalayas, as",
+    "label": "Hallucination"
+   },
+   {
+    "text": " located in the mountains of the Galilee",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 80 meters high and is located on the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the 588-meter Mt. Everest",
+    "label": "Correct"
+   },
+   {
+    "text": " 25,000 meters (45,000",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Mount Everest, and in that area there",
+    "label": "Correct"
+   },
+   {
+    "text": " the Kitt Peak at about 10,000",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the tallest road in the world. It",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the Alaskan Red Mountain, which",
+    "label": "Hallucination"
+   },
+   {
+    "text": " located in the eastern part of the country",
+    "label": "Hallucination"
+   },
+   {
+    "text": " only seven feet above the sky.\n",
+    "label": "Hallucination"
+   },
+   {
+    "text": " actually actually just a giant mountain, and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " now 4,700m over.\n",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Mt. Everest with an elevation of 3",
+    "label": "Correct"
+   }
+  ]
+ },
+ {
+  "prompt": "The longest river in the world is",
+  "answers": [
+   "nile",
+   "amazon"
+  ],
+  "counts": {
+   "Correct": 1,
+   "Hallucination": 19,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " over 6,000 kilometers (5,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " just 40km (36 miles) away",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the Chirumanga River. It",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the River Nile. In the Nile it",
+    "label": "Correct"
+   },
+   {
+    "text": " the Mokal River, located in",
+    "label": "Hallucination"
+   },
+   {
+    "text": " now longer than the length of the Delta",
+    "label": "Hallucination"
+   },
+   {
+    "text": " now reaching the end of its life.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the Grand Canyon. The canyon lies on",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the 22-mile-long Bahar",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the Mio River in Tanzania. The",
+    "label": "Hallucination"
+   },
+   {
+    "text": " coming to an end. At present it",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the Lake of the Woods.\n\n",
+    "label": "Hallucination"
+   },
+   {
+    "text": " between 50 and 100 feet wide and is",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the Ashanti. The river flows through",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about ten kilometers long and is estimated to",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Blue River, which runs from the Bronx",
+    "label": "Hallucination"
+   },
+   {
+    "text": " considered by some to be the longest river",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the Leeward Islands, home of",
+    "label": "Hallucination"
+   },
+   {
+    "text": " present in the representative regions of the world",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Mono Lake, a 24-mile stretch",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The largest ocean on Earth is the",
+  "answers": [
+   "pacific"
+  ],
+  "counts": {
+   "Correct": 3,
+   "Hallucination": 17,
+   "Other": 0
+  },
+  "bifurcates": true,
+  "completions": [
+   {
+    "text": " Lake Champlain. It lies about 3",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Pacific, which is the largest landmass",
+    "label": "Correct"
+   },
+   {
+    "text": " largest in the Pacific Ocean. The terrestrial",
+    "label": "Correct"
+   },
+   {
+    "text": " almost 3,000 mile long Cet",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Pacific Ocean. It's full of sn",
+    "label": "Correct"
+   },
+   {
+    "text": " Aragorn, the most massive ocean",
+    "label": "Hallucination"
+   },
+   {
+    "text": " West Virginia Sea, which is a one",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Arctosian, which is found",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Nautilus. It happens to be",
+    "label": "Hallucination"
+   },
+   {
+    "text": " ocean of shallow water, which is about",
+    "label": "Hallucination"
+   },
+   {
+    "text": " ocean of nitrogen. This is the pure",
+    "label": "Hallucination"
+   },
+   {
+    "text": " nucleus of the largest metamorphic planet",
+    "label": "Hallucination"
+   },
+   {
+    "text": " tiny island of Glendy. Its",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Gulf of Mexico, which covers about 50",
+    "label": "Hallucination"
+   },
+   {
+    "text": " troposphere, which is the middle layer",
+    "label": "Hallucination"
+   },
+   {
+    "text": " deepest, second only to the North Atlantic",
+    "label": "Hallucination"
+   },
+   {
+    "text": " largest in the world. There are more",
+    "label": "Hallucination"
+   },
+   {
+    "text": " largest in the galaxy. It is estimated",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 47,000-mile-long Gulf",
+    "label": "Hallucination"
+   },
+   {
+    "text": " mouth of the Atlantic Ocean. It's",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The largest desert in Africa is the",
+  "answers": [
+   "sahara"
+  ],
+  "counts": {
+   "Correct": 3,
+   "Hallucination": 17,
+   "Other": 0
+  },
+  "bifurcates": true,
+  "completions": [
+   {
+    "text": " next largest in the world, with a",
+    "label": "Hallucination"
+   },
+   {
+    "text": " one with the most hot springs on Earth",
+    "label": "Hallucination"
+   },
+   {
+    "text": " largest desert in the world. The greatest",
+    "label": "Hallucination"
+   },
+   {
+    "text": " one in the south of the country and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Karambaki Desert, more commonly known",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Sahara desert, encompassing about 60 percent",
+    "label": "Correct"
+   },
+   {
+    "text": " Sahara, which was once a paradise for",
+    "label": "Correct"
+   },
+   {
+    "text": " Ardothar Desert. It is home",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Kolobani Desert, which covers over",
+    "label": "Hallucination"
+   },
+   {
+    "text": " U.S. Desert Southwest, and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Nile river, which flows through the central",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Red Sea, with an area of 1",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Bataglia Desert, and the Sahara",
+    "label": "Correct"
+   },
+   {
+    "text": " Panjwah Mountains, but it",
+    "label": "Hallucination"
+   },
+   {
+    "text": " peninsular region of Gambia and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " largest in the world, and I'm",
+    "label": "Hallucination"
+   },
+   {
+    "text": " northernmost in the world. This is",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Aswan Desert, in which the areas",
+    "label": "Hallucination"
+   },
+   {
+    "text": " largest in the region, and its population",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Niger Delta, which is home to 2",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "Water freezes at a temperature of",
+  "answers": [
+   "0",
+   "zero",
+   "32"
+  ],
+  "counts": {
+   "Correct": 15,
+   "Hallucination": 5,
+   "Other": 0
+  },
+  "bifurcates": true,
+  "completions": [
+   {
+    "text": " about 16 degrees C (about 110 degrees",
+    "label": "Correct"
+   },
+   {
+    "text": " just below -20C, with a",
+    "label": "Correct"
+   },
+   {
+    "text": " -40 degrees Fahrenheit (115 Celsius),",
+    "label": "Correct"
+   },
+   {
+    "text": " 160 degrees Fahrenheit.\n\n\"If",
+    "label": "Correct"
+   },
+   {
+    "text": " 7,900 degrees Fahrenheit (1,",
+    "label": "Correct"
+   },
+   {
+    "text": " 25 degrees Celsius (90 degrees Fahrenheit).",
+    "label": "Correct"
+   },
+   {
+    "text": " about 200 degrees Fahrenheit (100 degrees Celsius",
+    "label": "Correct"
+   },
+   {
+    "text": " 110 degrees Fahrenheit (60 degrees Celsius)",
+    "label": "Correct"
+   },
+   {
+    "text": " just 58 degrees Fahrenheit (24 degrees Celsius",
+    "label": "Hallucination"
+   },
+   {
+    "text": " around 70 degrees Fahrenheit (20 degrees Celsius",
+    "label": "Correct"
+   },
+   {
+    "text": " 145 degrees F.\n\nThe problem",
+    "label": "Hallucination"
+   },
+   {
+    "text": " -60 C. The sound of water",
+    "label": "Correct"
+   },
+   {
+    "text": " about 4 degrees Celsius.\n\nThis",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 100°C (1°F)",
+    "label": "Correct"
+   },
+   {
+    "text": " about 90 degrees F (28 degrees C",
+    "label": "Correct"
+   },
+   {
+    "text": " 3°C (4°F).",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 18 degrees Celsius (36 degrees Fahrenheit).",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 1,500 degrees Fahrenheit for 12 hours",
+    "label": "Correct"
+   },
+   {
+    "text": " -40C, which is a dangerous",
+    "label": "Correct"
+   },
+   {
+    "text": " -40 degrees Celsius (90 degrees Fahrenheit",
+    "label": "Correct"
+   }
+  ]
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "answers": [
+   "100",
+   "212"
+  ],
+  "counts": {
+   "Correct": 1,
+   "Hallucination": 19,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " 165 °C.\n\nTo determine",
+    "label": "Hallucination"
+   },
+   {
+    "text": " -95 degrees Fahrenheit (minus -15",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 1,200ºC. The crystals",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 180 degrees Fahrenheit. Thus, the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 500 degrees Fahrenheit (156 degrees Celsius)",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 35-35 degrees Fahrenheit (46-",
+    "label": "Hallucination"
+   },
+   {
+    "text": " approximately 130 F (22 C). The",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 330 degrees Fahrenheit (91 degrees Celsius)",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 145 degrees F. The boiling point",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 200 degrees C. The result is",
+    "label": "Hallucination"
+   },
+   {
+    "text": " between 100 and 150 degrees Fahrenheit.\n",
+    "label": "Correct"
+   },
+   {
+    "text": " 200 degrees Fahrenheit (35 degrees Celsius).",
+    "label": "Hallucination"
+   },
+   {
+    "text": " well over 30 degrees Fahrenheit (21 degrees",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 68°F (22°C)",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 110°F (33°C)",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 200 to 300 degrees Fahrenheit and is used",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 25°C (about 80°",
+    "label": "Hallucination"
+   },
+   {
+    "text": " +125°C. While you can",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 350 degrees Celsius. It is a natural",
+    "label": "Hallucination"
+   },
+   {
+    "text": " approximately 104 °F (21 °C",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The number of continents on Earth is",
+  "answers": [
+   "seven",
+   "7"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 20,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " roughly equal to the number of stars in",
+    "label": "Hallucination"
+   },
+   {
+    "text": " growing by about one-third.\n",
+    "label": "Hallucination"
+   },
+   {
+    "text": " also changing, but it hasn't always",
+    "label": "Hallucination"
+   },
+   {
+    "text": " increasing because of mass extinctions. The",
+    "label": "Hallucination"
+   },
+   {
+    "text": " estimated to be about 10,000 times",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a matter of many factors. The planet",
+    "label": "Hallucination"
+   },
+   {
+    "text": " estimated to be approximately 100,000 to",
+    "label": "Hallucination"
+   },
+   {
+    "text": " vanishingly small. In fact, the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " changing, too.\n\n\nTabs",
+    "label": "Hallucination"
+   },
+   {
+    "text": " only one area of the world. This",
+    "label": "Hallucination"
+   },
+   {
+    "text": " shrinking every year. What are you doing",
+    "label": "Hallucination"
+   },
+   {
+    "text": " around 2.5 billion.\n\n",
+    "label": "Hallucination"
+   },
+   {
+    "text": " increasing and so is the number of worlds",
+    "label": "Hallucination"
+   },
+   {
+    "text": " changing, and many countries are moving towards",
+    "label": "Hallucination"
+   },
+   {
+    "text": " roughly equal to the number of stars where",
+    "label": "Hallucination"
+   },
+   {
+    "text": " about 10 times greater than the number of",
+    "label": "Hallucination"
+   },
+   {
+    "text": " expanding at an accelerating pace, but it",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 4.5 billion.\n\nThe",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the equivalent of a human population, and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the largest in the solar system, making",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The number of days in a leap year is",
+  "answers": [
+   "366"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 20,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " about the same, so you'd find",
+    "label": "Hallucination"
+   },
+   {
+    "text": " as much as 30 years, but the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " very important. For instance, a leap",
+    "label": "Hallucination"
+   },
+   {
+    "text": " not too difficult to measure. Hence,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a good indicator of the abundance of fresh",
+    "label": "Hallucination"
+   },
+   {
+    "text": " almost double that of the average career.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " now almost as high as in the nineteenth",
+    "label": "Hallucination"
+   },
+   {
+    "text": " often called a total leap year, and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " an indication that the average person's ability",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a lot bigger and a lot more difficult",
+    "label": "Hallucination"
+   },
+   {
+    "text": " still around 80 per cent, but in",
+    "label": "Hallucination"
+   },
+   {
+    "text": " not very important,\" he says. \"",
+    "label": "Hallucination"
+   },
+   {
+    "text": " proportional to the time it takes for a",
+    "label": "Hallucination"
+   },
+   {
+    "text": " one of the key factors in predicting future",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a critical measure of the economy's increasing",
+    "label": "Hallucination"
+   },
+   {
+    "text": " going to be a big star for the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " not the same as the number of days",
+    "label": "Hallucination"
+   },
+   {
+    "text": " expected to reach 100,000 by 2020",
+    "label": "Hallucination"
+   },
+   {
+    "text": " often correlated to a number of factors,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " based on the second-longest period",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The speed of light is approximately",
+  "answers": [
+   "300",
+   "299",
+   "186"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 20,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " 1.1 times that of the sun",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 1 km/s.\n\nThe",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 2.2 times the speed of sound",
+    "label": "Hallucination"
+   },
+   {
+    "text": " proportional to the speed of light. The",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 1,000 times faster than light speed",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 7,500 kilometers per hour.\n\n",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 10 times that of light travelling at a",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 16 µm/s, which is",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 1.5 seconds, so it's",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 500,000 in the Milky Way,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 6.8 billion miles per second,",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 1/2 the speed of sound\n",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 10-20 times faster than the speed",
+    "label": "Hallucination"
+   },
+   {
+    "text": " constant in this system. If the light",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 50,000 times faster than light speed",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 800 kph, but the speed of",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 50 meters per second.\n\nThe",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 1,000 times faster than light.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 20,000 km/h, and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " three hundred times the speed of sound.",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The human body has a total of",
+  "answers": [
+   "206"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 20,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " about 170 unique genetic markers, each of",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 17 billion neurons. It is only a",
+    "label": "Hallucination"
+   },
+   {
+    "text": " more than 900 billion neurons, which means",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 24 metabolic pathways, including glucose metabolism (",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 585,000 neurons in its blood",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 9,000 enzymes and 10,000",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 9 billion cells, and it does not",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 12 receptors called acetylcholine receptors",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 6.5 million cells (Vag",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 33,000 genes (15) and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " six important functions, but they are most",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 10 million neurons, which are responsible for",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 33 cells, so this is a fairly",
+    "label": "Hallucination"
+   },
+   {
+    "text": " nine main organs: two for the heart",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 637 million cells, which, in",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 10 layers of muscles and nerves, and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 5,500 cells and is capable of",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 7 organs that are responsible for joint activity",
+    "label": "Hallucination"
+   },
+   {
+    "text": " 150 trillion cells. We've seen that",
+    "label": "Hallucination"
+   },
+   {
+    "text": " six senses, and each sense is unique",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The Great Wall is located in",
+  "answers": [
+   "china"
+  ],
+  "counts": {
+   "Correct": 1,
+   "Hallucination": 19,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " the heart of the city of New York",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the northern part of the city. This",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the West, and makes up one-",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the heart of the Great Lakes region.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a number of prominent locations in the world",
+    "label": "Hallucination"
+   },
+   {
+    "text": " Covington, Arkansas. It is",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a small region of the United States that",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the heart of the Texas plains, and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the midst of the Great Wall of China",
+    "label": "Correct"
+   },
+   {
+    "text": " an expansive vista of the New World",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the city center of Los Angeles, a",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the heart of the United States of America",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the middle of the inner circle of history",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the center of the city, and it",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a small valley in the north of the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the middle of it. The way to",
+    "label": "Hallucination"
+   },
+   {
+    "text": " a post-apocalyptic world. The",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the heart of New York City. It",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the southwestern corner of the world, making",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the heart of the Regional Department, a",
+    "label": "Hallucination"
+   }
+  ]
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "answers": [
+   "paris",
+   "france"
+  ],
+  "counts": {
+   "Correct": 0,
+   "Hallucination": 20,
+   "Other": 0
+  },
+  "bifurcates": false,
+  "completions": [
+   {
+    "text": " the central part of the tower, and",
+    "label": "Hallucination"
+   },
+   {
+    "text": " London's historic Shetland park.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the heart of the Y. Why?",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the heart of the city, and is",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the heart of the city, and the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the heart of the city. The Empire",
+    "label": "Hallucination"
+   },
+   {
+    "text": " New York City.\n\nFirst published",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the lobby of the Vanitas hotel in",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the middle of the Harpy Tower.",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the shadow of the Eiffel Tower",
+    "label": "Hallucination"
+   },
+   {
+    "text": " New York City.\n\nThe city",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the background of the building. If the",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the center of this magnificent building, a",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the heart of the city. The entrance",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the 1960s. It was the tallest",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the heart of Istanbul. The Eiff",
+    "label": "Hallucination"
+   },
+   {
+    "text": " New York City's Chinatown. The building",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the city of Nuremberg. It",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the heart of the city, and is",
+    "label": "Hallucination"
+   },
+   {
+    "text": " the middle of the park, close to",
+    "label": "Hallucination"
+   }
+  ]
+ }
+]
