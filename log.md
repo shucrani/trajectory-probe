@@ -756,3 +756,120 @@ prompts bifurquants pour un test qui passe ou casse franchement. **Non fait.**
 
 Tant que ce n'est pas fait, le statut honnête de la seule direction positive du
 projet est : **tendance non confirmée**.
+
+---
+
+## 2026-08-20 — DÉCLARATION DE PROTOCOLE (avant exécution) : extension du corpus
+
+### Ce qui change
+
+Le corpus passe de 30 à ~82 prompts. Les nouveaux sont écrits maintenant, avec
+leurs réponses acceptées et leurs distracteurs typés, **avant tout run**, dans
+`src/corpus.py`.
+
+Deux objectifs, dont un qui n'était pas demandé :
+
+1. **Puissance.** 6 prompts et 8 cas positifs ne permettent pas de trancher. Il
+   faut assez de prompts bifurquants pour que le test passe ou casse franchement.
+2. **Diversité syntaxique.** `docs/DEGRES-DE-LIBERTE.md` § 1 signalait que les 30
+   prompts partageaient tous la forme « The X of Y is ». Le corpus étendu ajoute
+   « X is located in », « The official language of X is », « X was painted by »,
+   « The largest/fastest X is the ». Cela attaque simultanément le degré de
+   liberté n° 4 de la liste.
+
+### Ce qui ne change pas
+
+Tout le reste : température 0.7, `max_new_tokens` 8, K = 6, fenêtre 3 depuis le
+step 1, couches 4/8/11, seed 42, comparaison à norme égale, Fisher exact avec
+Bonferroni pour 2 comparaisons. Aucun de ces réglages n'est retouché.
+
+### Prédiction déposée
+
+Si l'effet de l'étape 8 (correction : 7/108 contre 1/108, p = 0.033) est réel,
+un corpus 2 à 3 fois plus grand doit le faire passer **sous** le seuil corrigé de
+0.025 tout en gardant un taux comparable. S'il s'agissait d'un accident
+d'échantillonnage, le taux cross-classe doit se rapprocher du bruit apparié et
+p remonter.
+
+**Critère d'arrêt fixé maintenant** : quel que soit le résultat, ce run est le
+dernier sur GPT-2 small pour cette question. Si l'effet ne passe pas Bonferroni
+avec ~3× plus de données, il est déclaré non établi à cette échelle de modèle, et
+la suite se joue sur un modèle plus grand ou pas du tout.
+
+---
+
+## 2026-08-20 — Étape 9 : corpus étendu. L'effet passe, et il inverse le cadre
+
+87 prompts (30 + 52 nouveaux, formes syntaxiques diversifiées), **20/87
+bifurquent** en mode typé (23 %). **238 trajectoires**, 119 Correct / 119
+Hallucination, 20 prompts exploitables — 3,3× le run précédent.
+
+### Résultat, n = 357 par cellule
+
+| direction | cross-classe | apparié en norme | z | Fisher exact | Bonferroni (0.025) |
+|---|---|---|---|---|---|
+| corruption | **9.2 %** (33/357) | 0.8 % (3/357) | 5.13 | **6.0 × 10⁻⁸** | **PASSE** |
+| correction | **14.6 %** (52/357) | 6.4 % (23/357) | 3.54 | **2.8 × 10⁻⁴** | **PASSE** |
+
+**Les deux directions passent, largement.** Le contenu de l'état injecté compte
+au-delà de son amplitude, dans les deux sens. La prédiction déposée avant le run
+est vérifiée : l'effet était réel et le test précédent était sous-alimenté.
+
+### Correction d'une conclusion antérieure
+
+À l'étape 6 j'écrivais : « corrompre ne demande aucune information » (cross 16.7 %
+contre apparié 11.1 %, z = 1.52). **C'était un artefact de la classe large.**
+Avec `Hallucination` non typée, un bruit suffisait à produire du texte compté
+comme hallucination — le bruit apparié montait à 11.1 % et plafonnait l'écart.
+Une fois le type imposé, le bruit apparié tombe à 0.8 % : casser un état ne
+produit pas une entité du bon type. L'écart devient alors massif (ratio 11,5×).
+
+Corrompre demande donc bien de l'information. La conclusion de l'étape 6 sur ce
+point est retirée.
+
+### Ce que le tableau dit, et qui inverse le cadre théorique
+
+Deux faits, tous deux contrôlés :
+
+1. **Réparer est plus facile que corrompre** : 14.6 % contre 9.2 %.
+2. **Le bruit répare (6.4 %) mais ne corrompt presque pas (0.8 %).**
+
+Le second est le plus parlant. Perturber une trajectoire hallucinée la ramène
+vers la bonne réponse dans 6.4 % des cas ; perturber une trajectoire correcte ne
+produit un distracteur plausible que dans 0.8 % des cas.
+
+Autrement dit, quand on secoue le système au hasard, **il retombe du côté
+correct**. C'est la signature d'un attracteur — mais du côté de la réponse juste,
+pas du côté de l'hallucination.
+
+Cela contredit frontalement le modèle qui sous-tend ProbatioH1 et l'asymétrie
+d'Akarlar (corruption 87.5 % ≫ correction 33.3 % sur Qwen2.5-1.5B). Ici,
+l'asymétrie existe mais **pointe dans l'autre sens**.
+
+### Réserves, à ne pas enterrer
+
+- **GPT-2 small, 124M, non instruction-tuned.** La réponse correcte y est
+  probablement le mode de la distribution, ce qui suffirait à expliquer qu'une
+  perturbation y ramène. Sur un modèle plus grand, entraîné à suivre des
+  instructions, rien ne dit que ce soit encore le cas.
+- **Pas de cache KV** (voir `docs/DEGRES-DE-LIBERTE.md` § 6). Un patch n'agit ici
+  que par le token qu'il fait produire. Akarlar mesure autre chose.
+- **Les distracteurs sont écrits par moi.** Une liste plus large rendrait la
+  classe Hallucination plus facile à atteindre et remonterait mécaniquement le
+  taux de corruption. La liste est figée et versionnée, mais c'est un paramètre.
+- Le critère d'arrêt déclaré est respecté : c'est le dernier run sur GPT-2 small
+  pour cette question.
+
+### Statut révisé
+
+| Élément | Statut |
+|---|---|
+| Dwell time au col | réfuté |
+| Signal du dataset artisanal | invalidé (C1) |
+| Certifier avant production (§ V) | réfuté par construction |
+| Séparation inter-couches | quasi entièrement lexicale |
+| Le contenu de l'état a un effet causal | **établi** (p = 6 × 10⁻⁸ et 2.8 × 10⁻⁴) |
+| Bassin absorbant côté hallucination | **contredit** — l'attracteur est du côté correct |
+| Direction de réparation transférable | **non** (étape 7 : 0.8 % contre 8.3 %) |
+| G1-G2 opérationnalisables | non — réparer exige l'information de la réponse |
+| G5, abstention certifiée | seul niveau qui survit |

@@ -129,3 +129,14 @@ def classify_typed(completion, answers, prompt):
         if _matches(low, dist):
             return "Hallucination"
     return "NoAnswer"
+
+
+# Corpus étendu (20/08/2026) : les distracteurs des nouveaux prompts.
+from corpus import EXTRA  # noqa: E402
+DISTRACTORS.update({t: d for t, _, d in EXTRA})
+
+# Tout prompt doit avoir des distracteurs, sinon sa classe Hallucination est
+# vide par construction et le prompt ne bifurquera jamais en mode typé.
+from bifurcation_probe import PROMPTS as _P  # noqa: E402
+_missing = [t for t, _ in _P if t not in DISTRACTORS]
+assert not _missing, f"prompts sans distracteurs : {_missing}"

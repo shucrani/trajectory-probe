@@ -1,0 +1,5714 @@
+[
+ {
+  "prompt": "The capital of France is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of France is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "Correct",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The currency of China is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Hallucination",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "corruption",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "corruption",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "corruption",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Correct",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Correct",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Hallucination",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "NoAnswer",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "NoAnswer",
+  "cross": "Correct",
+  "matched": "Hallucination"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "NoAnswer",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "NoAnswer",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "correction",
+  "layer": 4,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "correction",
+  "layer": 8,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "Correct"
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "direction": "correction",
+  "layer": 11,
+  "base": "Hallucination",
+  "cross": "Correct",
+  "matched": "NoAnswer"
+ }
+]

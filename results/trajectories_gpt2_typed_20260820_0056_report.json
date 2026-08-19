@@ -1,0 +1,342 @@
+[
+ {
+  "prompt": "The capital of France is",
+  "drawn": 250,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " Paris, which was able to defend itself",
+    " France's capital city, Paris, which"
+   ],
+   "Hallucination": [
+    " Marseille, and the capital of Greece",
+    " Lille, where the main streets are"
+   ]
+  }
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "drawn": 50,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " Rome, and you can still see the",
+    " Rome, a place where the old roads"
+   ],
+   "Hallucination": [
+    " Milan, and the city is home to",
+    " the Italian city of Milan, where the"
+   ]
+  }
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "drawn": 100,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " Madrid, with the city centre in Madrid",
+    " Madrid, which is home to the Spanish"
+   ],
+   "Hallucination": [
+    " Barcelona, with over 1.5 million",
+    " Barcelona, but this hasn't completely left"
+   ]
+  }
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "drawn": 100,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " about 4.5 times larger than Jupiter",
+    " about 10 times bigger than Jupiter, and"
+   ],
+   "Hallucination": [
+    " Earth, which it orbits with a speed",
+    " in the orbit of Saturn and is about"
+   ]
+  }
+ },
+ {
+  "prompt": "Water boils at a temperature of",
+  "drawn": 150,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " 100,000 degrees Celsius — which is",
+    " 100°C (238°F)."
+   ],
+   "Hallucination": [
+    " -60°C, the temperature at",
+    " -60 degrees Celsius (137 degrees Fahrenheit"
+   ]
+  }
+ },
+ {
+  "prompt": "The Eiffel Tower is located in",
+  "drawn": 200,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " the heart of the historic centre of Paris",
+    " the south of Paris, where it won"
+   ],
+   "Hallucination": [
+    " the heart of New York City, with",
+    " central London but has a high level of"
+   ]
+  }
+ },
+ {
+  "prompt": "The capital of Poland is",
+  "drawn": 800,
+  "kept_per_class": 5,
+  "correct_found": 6,
+  "hallucination_found": 5,
+  "examples": {
+   "Correct": [
+    " Warsaw and the capital of the Polish people",
+    " Warsaw and the main city of its capital"
+   ],
+   "Hallucination": [
+    " Krakow, a small city with",
+    " Warsaw. The town of Gdansk"
+   ]
+  }
+ },
+ {
+  "prompt": "The Kremlin is located in",
+  "drawn": 150,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " Moscow and has been a main supporter of",
+    " the far north of Russia, in a"
+   ],
+   "Hallucination": [
+    " Ukraine, where the Russian-backed separatists",
+    " the Eastern Ukraine region and the leading actor"
+   ]
+  }
+ },
+ {
+  "prompt": "The Statue of Liberty is located in",
+  "drawn": 100,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " New York City. It was the first",
+    " New York City. The Statue is a"
+   ],
+   "Hallucination": [
+    " his office in the Liberty Library in Washington",
+    " Washington, D.C. It is"
+   ]
+  }
+ },
+ {
+  "prompt": "Machu Picchu is located in",
+  "drawn": 150,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " Peru, and is a UNESCO World Heritage",
+    " the mountains of Peru, home of the"
+   ],
+   "Hallucination": [
+    " central Mexico, just outside of the red",
+    " the south of Mexico City, and is"
+   ]
+  }
+ },
+ {
+  "prompt": "The official language of Brazil is",
+  "drawn": 100,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " Portuguese while Brazilian Portuguese is a dialect (",
+    " Portuguese, and the language of China is"
+   ],
+   "Hallucination": [
+    " a mixture of English, elven,",
+    " \"Brazilian\", with English spoken by"
+   ]
+  }
+ },
+ {
+  "prompt": "The official language of Egypt is",
+  "drawn": 150,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " Arabic, and they call it Arabic but",
+    " the Arabic Bible.\n\nThe Egyptian"
+   ],
+   "Hallucination": [
+    " English, the official language of Central and",
+    " not English, but Arabic. It is"
+   ]
+  }
+ },
+ {
+  "prompt": "The official language of Austria is",
+  "drawn": 100,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " Czech, French, German, Japanese,",
+    " German, but this has been changed to"
+   ],
+   "Hallucination": [
+    " English, while the French language is English",
+    " \"Articil\" (English),"
+   ]
+  }
+ },
+ {
+  "prompt": "The official language of Argentina is",
+  "drawn": 200,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " Spanish with all its French, German,",
+    " \"Baja California\". The Spanish language"
+   ],
+   "Hallucination": [
+    " a variant of English, with a few",
+    " in English, and a number of Latin"
+   ]
+  }
+ },
+ {
+  "prompt": "The currency of China is the",
+  "drawn": 150,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " yuan, which can be bought and sold",
+    " yuan, it has been used to buy"
+   ],
+   "Hallucination": [
+    " dollar, but the dollar is the source",
+    " pound, which can be exchanged for dollars"
+   ]
+  }
+ },
+ {
+  "prompt": "The closest star to the Earth is the",
+  "drawn": 100,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " Moon, which orbits the Sun 2,",
+    " constellation of Mercury, which makes the Sun"
+   ],
+   "Hallucination": [
+    " Moon, which is about 1.5",
+    " gargantuan star Sirius A. The"
+   ]
+  }
+ },
+ {
+  "prompt": "The theory of relativity was developed by",
+  "drawn": 100,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " Albert Einstein and Ernst Heydrich in",
+    " Einstein himself and his theoretical approach was called"
+   ],
+   "Hallucination": [
+    " the German physicist Max Planck in 18",
+    " Carl Sagan and James Clerk Maxwell in the"
+   ]
+  }
+ },
+ {
+  "prompt": "The longest river in Africa is the",
+  "drawn": 50,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " Great Rivers of the Nile, which flows",
+    " Nile Delta. The river enters South Africa"
+   ],
+   "Hallucination": [
+    " Congo River, which flows under the western",
+    " Congo River, and when you reach it"
+   ]
+  }
+ },
+ {
+  "prompt": "The largest land animal is the",
+  "drawn": 150,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " elephant, which has a wingspan of",
+    " elephant, and the third largest is the"
+   ],
+   "Hallucination": [
+    " rhinoceros, which has been",
+    " whale and can reach up to 6 feet"
+   ]
+  }
+ },
+ {
+  "prompt": "The largest animal in the ocean is the",
+  "drawn": 100,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " Great Blue Whale, which is about 20",
+    " gigantic whale, which is the largest animal"
+   ],
+   "Hallucination": [
+    " bluefin tuna — a species that's",
+    " tuna, smaller than the red fish and"
+   ]
+  }
+ }
+]

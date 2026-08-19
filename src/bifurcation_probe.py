@@ -62,6 +62,10 @@ PROMPTS = [
     ("The Eiffel Tower is located in", ["paris", "france"]),
 ]
 
+# Corpus étendu (20/08/2026) : +52 prompts, formes syntaxiques diversifiées.
+from corpus import EXTRA  # noqa: E402
+PROMPTS += [(t, a) for t, a, _ in EXTRA]
+
 DEGENERATE = re.compile(r"^[\s\W_]*$")
 ENTITY = re.compile(r"\b[A-Z][a-zA-Z]{2,}\b|\b\d[\d.,]*\b")
 
