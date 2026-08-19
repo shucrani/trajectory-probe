@@ -873,3 +873,106 @@ l'asymétrie existe mais **pointe dans l'autre sens**.
 | Direction de réparation transférable | **non** (étape 7 : 0.8 % contre 8.3 %) |
 | G1-G2 opérationnalisables | non — réparer exige l'information de la réponse |
 | G5, abstention certifiée | seul niveau qui survit |
+
+---
+
+## 2026-08-20 — Étape 10 : recadrage sur l'objectif réel (réduire), et bornes
+
+Lamar recadre : l'objectif n'est pas de décrire l'hallucination mais de la
+réduire. Le programme repart de ce que les étapes 1-9 ont établi — l'attracteur
+est du côté correct — et en tire les conséquences opérationnelles.
+
+`src/reduction_bound.py`, 87 prompts, N = 20 à T = 0.7.
+
+### A. Partition — la borne de toute méthode sans connaissance
+
+| catégorie | prompts | part |
+|---|---|---|
+| TOUJOURS-CORRECT | 20/87 | 23.0 % |
+| **BIFURQUANT** (stochastique) | 22/87 | 25.3 % |
+| **TOUJOURS-FAUX** (systématique) | 17/87 | 19.5 % |
+| MUET (aucune assertion) | 28/87 | 32.2 % |
+
+Sur les 39 prompts où le modèle se trompe au moins une fois :
+**56 % sont stochastiques** (le vrai apparaît parfois → accessible par
+agrégation) et **44 % sont systématiques** (le modèle est faux à chaque tirage →
+aucune agrégation, aucun décodage, aucune perturbation ne le corrigera).
+
+**C'est le plafond dur.** Toute méthode qui n'apporte pas de connaissance
+extérieure plafonne à la moitié environ du problème.
+
+### B. Stratégies sans information externe
+
+Erreur de mesure au premier run, corrigée : j'agrégeais par tirage, ce qui
+pondérait les prompts par leur nombre d'assertions et faisait apparaître le vote
+à −10.4 %. Comparaison refaite **par prompt, sur l'ensemble commun** (25 prompts
+où les quatre stratégies assertent).
+
+| stratégie | correct | vs baseline | réduction relative d'erreur |
+|---|---|---|---|
+| tirage unique T = 0.7 | 73.2 % | — | — |
+| tirage unique T = 0.3 | 78.1 % | +4.9 | 18.3 % |
+| greedy (T → 0) | 80.0 % | +6.8 | **25.3 %** |
+| vote majoritaire sur 20 | 80.0 % | +6.8 | **25.3 %** |
+
+Vote et greedy convergent exactement — attendu si la bonne réponse est le mode.
+C'est la confirmation opérationnelle de l'inversion d'attracteur de l'étape 9 :
+**un quart des erreurs disparaît sans aucune connaissance, juste en prenant le
+mode.**
+
+### C. Le désaccord entre tirages prédit-il l'erreur ?
+
+Première mesure fausse, à signaler : j'ai approximé l'accord par
+`max(correct, faux) / total`, ce qui suppose que toutes les réponses fausses sont
+la même entité. AUC obtenue : 0.436, soit un anti-signal — et une conclusion
+« l'auto-cohérence ne détecte rien » que j'ai failli écrire.
+
+Recalcul sur les **vraies distributions d'entités** :
+
+| | accord (part de la modalité dominante) | entités distinctes |
+|---|---|---|
+| vote juste | 0.845 | 1.5 |
+| vote faux | 0.693 | 2.0 |
+
+**AUC = 0.666** pour prédire l'erreur du vote. Le signal existe.
+
+### D. Politique d'abstention — l'échange couverture/précision
+
+| seuil d'accord | couverture | précision | erreurs évitées |
+|---|---|---|---|
+| aucun | 100 % | 57.6 % | 0 % |
+| 0.60 | 69.5 % | 68.3 % | 48.0 % |
+| **0.70** | **57.6 %** | **70.6 %** | **60.0 %** |
+| 0.80 | 50.8 % | 70.0 % | 64.0 % |
+
+À seuil 0.70, on répond à 58 % des questions et **on évite 60 % des erreurs**,
+en faisant passer la précision de 57.6 % à 70.6 %. Sans aucune source externe,
+sans aucun entraînement.
+
+### Ce que ces trois mesures dessinent
+
+Une architecture de réduction en trois étages, dont chaque étage est mesuré :
+
+1. **Prendre le mode** (greedy ou vote) — −25 % d'erreur, coût nul.
+2. **S'abstenir sur désaccord** — −60 % d'erreurs restantes au prix de 42 % de
+   couverture. C'est **G5, l'abstention certifiée**, enfin opérationnalisée : le
+   critère d'abstention est la dispersion inter-tirages, qui ne demande aucune
+   connaissance.
+3. **Le résidu systématique (44 %)** est hors d'atteinte de toute méthode interne.
+   Il exige une source externe : récupération documentaire, vérification, ou
+   refus explicite du domaine.
+
+Le programme ProbatioH1 visait la certification par la géométrie. La mesure dit
+que le levier utile est ailleurs : **dans la dispersion de l'échantillonnage, pas
+dans la trajectoire latente**. Et que le plafond de toute approche sans
+connaissance est d'environ la moitié du problème.
+
+### Réserves
+
+- 59 prompts assertifs, dont 25 dans l'ensemble commun. Petits effectifs.
+- GPT-2 small : le taux de MUET (32 %) et de TOUJOURS-FAUX (19.5 %) est
+  spécifique à un modèle faible. La partition stochastique/systématique doit être
+  refaite sur un modèle instruction-tuned avant d'être généralisée.
+- L'auto-cohérence comme signal d'abstention est un procédé connu
+  (SelfCheckGPT et suivants). Ce qui est propre ici, c'est la **partition
+  quantifiée** qui en borne le rendement.

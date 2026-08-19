@@ -1,0 +1,38 @@
+ÉTAPE 10 — BORNE DE RÉDUCTIBILITÉ
+date    : 2026-08-20T01:13:27
+modèle  : gpt2 · 87 prompts · N=20 tirages à T=0.7
+
+A. PARTITION DES PROMPTS
+
+   TOUJOURS-CORRECT      20 / 87  =  23.0%
+   BIFURQUANT            22 / 87  =  25.3%
+   TOUJOURS-FAUX         17 / 87  =  19.5%
+   MUET                  28 / 87  =  32.2%
+
+   Sur les 59 prompts où le modèle asserte quelque chose :
+     réductible par agrégation (bifurquants) :  37.3%
+     irréductible sans connaissance (toujours-faux) :  28.8%
+
+B. STRATÉGIES SANS INFORMATION EXTERNE
+
+   Comparaison PAR PROMPT, sur l'ensemble commun où les quatre stratégies
+   assertent quelque chose. Agréger par tirage biaiserait vers les prompts
+   faciles, qui assertent plus souvent.
+
+   ensemble commun : 25 prompts
+
+   tirage unique T=0.7 (baseline)            73.2%
+   tirage unique T=0.3                       78.1%   (+4.9%)
+   greedy (T->0)                             80.0%   (+6.8%)
+   vote majoritaire sur 20 tirages           80.0%   (+6.8%)
+
+   Réduction relative du taux d'erreur :
+      T=0.3         18.3%
+      greedy        25.3%
+      vote          25.3%
+
+LECTURE. La catégorie TOUJOURS-FAUX borne toute méthode qui n'apporte pas
+de connaissance : aucune agrégation, aucun décodage, aucune perturbation ne
+la corrige — le modèle est confiant et faux. Seule la part BIFURQUANTE est
+accessible sans information externe. C'est le plafond réel de tout ce que
+ce projet peut viser côté intervention pure.
