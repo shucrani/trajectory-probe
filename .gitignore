@@ -7,3 +7,5 @@ venv/
 *.pt
 *.npz
 *.npy
+.venv/
+results/*.json

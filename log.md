@@ -239,3 +239,65 @@ l'implémentation et le choix des datasets.
 **Limite** : le comptage en mots approxime le comptage en tokens BPE. À refaire
 avec le tokenizer GPT-2 une fois `transformers` installé — mais avec un écart de
 cette taille (7.3 mots contre 11.8), la conclusion ne bougera pas.
+
+---
+
+## 2026-08-19 (nuit) — Étape 1 : GPT-2 small bifurque à 33.3 %
+
+Environnement monté : `.venv` (Python 3.12.13 via uv), torch 2.13, transformers
+5.15, scikit-learn. Script `src/bifurcation_probe.py` : N = 20 complétions par
+prompt, T = 0.7, 30 prompts factuels à réponse courte, exécution MPS.
+
+**Résultat : 10/30 prompts bifurquent (33.3 %)**, contre 27/61 (44.3 %) chez
+Akarlar sur Qwen2.5-1.5B — un modèle douze fois plus gros. Le protocole est
+praticable à cette taille.
+
+### La première version de la classification était fausse
+
+L'audit des complétions brutes a révélé deux défauts, corrigés :
+
+1. **Substring naïf.** « Water freezes at a temperature of » → *"about 16 degrees
+   C (about 110 degrees"* était compté **Correct**, parce que `"0"` est un
+   substring de `"110"`. Les 15 « Correct » de ce prompt étaient faux. Corrigé
+   par correspondance à frontière de mot.
+2. **Non-réponses comptées comme hallucinations.** GPT-2 small n'est pas
+   instruction-tuned : il *continue le texte* au lieu de répondre. « The capital
+   of Italy is **still a very popular place to be.** » n'est pas une
+   hallucination, c'est une absence de réponse. Classe `NoAnswer` ajoutée —
+   Hallucination exige désormais qu'une **entité** (nom propre ou nombre) absente
+   du prompt soit assertée.
+
+Sans ces corrections, le taux de bifurcation était juste par accident. C'est la
+justification concrète d'avoir archivé les complétions brutes.
+
+### Conséquence structurelle : la promesse forte de ProbatioH1 devient intestable
+
+Dans le protocole same-prompt bifurcation, les deux classes viennent du **même
+prompt**. Les hidden states du prompt sont donc **identiques** dans les deux
+classes. Aucune feature calculée sur la trajectoire du prompt ne peut les
+séparer : AUC = 0.5 par construction.
+
+Ce n'est pas une limite du protocole, c'est un fait sur le phénomène. Si un même
+prompt produit les deux issues, alors **l'information qui décide de l'issue n'est
+pas dans le prompt** — elle est dans l'échantillonnage. La version forte de
+ProbatioH1 (« certifier avant que la réponse ne soit produite », § V du
+programme) est donc réfutée par construction sur les cas bifurquants.
+
+Ce qui reste, et qui est testable : la divergence apparaît **dès le premier token
+généré** (Akarlar). La question devient « à quel step la trajectoire s'engage-t-elle
+irréversiblement ? » — c'est exactement D2, le point de commitment. La fenêtre
+d'intervention existe, mais elle est *pendant* la génération, pas avant.
+
+**Reformulation de la question du projet, à valider par Lamar :**
+> ~~la trajectoire du prompt prédit-elle l'hallucination ?~~
+> à quel moment de la génération l'engagement devient-il irréversible, et
+> l'intervention y est-elle encore possible ?
+
+### Suite
+
+1. Extraire K = 6 trajectoires par classe sur les 10 prompts bifurquants
+   (residual stream complet à chaque couche et chaque step) → 120 trajectoires.
+2. Mesurer la divergence step par step et couche par couche.
+3. Comparer à la sonde linéaire avant toute autre feature.
+4. Option si le rendement devient limitant : Qwen2.5-0.5B-Instruct, qui répond
+   réellement aux questions et tourne sur MPS.
