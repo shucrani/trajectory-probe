@@ -148,3 +148,46 @@ dans le rapport v2). Une AUC croissante n'établit aucune irréversibilité.
 4. Le garde-fou synthétique triple est identifié comme **l'actif le plus solide**
    du programme (voir README § 7) — à vérifier contre la littérature avant de
    revendiquer « sans équivalent ».
+
+---
+
+## 2026-08-19 (nuit, suite) — Vérification des références + figure `stability`
+
+`probatioh1_v2_report (1).txt` et `probatioh1_v2_analysis (1).png` sont
+**identiques** (même MD5) aux fichiers déjà archivés. Seule nouveauté :
+`probatioh1_v2_stability.png`.
+
+### La figure `stability` ne contient pas de données
+
+Titrée « Données DeepSearch », elle ne reproduit rien de mesuré : droites
+parfaitement linéaires, courbes lisses sans n ni barre d'erreur, triangle
+AUROC symétrique dessiné sur 9 couches alors que le rapport v2 situe le pic
+ICR aux couches 10-15 sur 28. L'encadré coche ✓ des axiomes classés
+« hypothèse » et « conjecture » dans le programme v3. Archivée sous
+`figures/synthetic/ILLUSTRATION_probatioh1_stability_NON-MESURE.png`.
+
+### Vérification web des références (détail dans `docs/REFERENCES.md`)
+
+- **Akarlar 2026 EXISTE** — arXiv 2604.15400, code sur GitHub. 87.5 % (couche 20)
+  / 33.3 % (couche 24) sur 28 couches : confirmés.
+- **Hallucination Basins EXISTE** — arXiv 2604.04743.
+- **ICR Probe : non retrouvé sous ce nom.** Voisins réels : PRISM (ACL 2025),
+  ReDeEP (ICLR 2025). À re-sourcer avant citation.
+- **ARS, H-Neurons, Global Evolutionary Steering : non vérifiés.**
+- **Découvert : arXiv 2606.12476**, « Quickest Detection of Hallucination Onset:
+  Delay Bounds and Learned CUSUM Statistics ». Traite le test irréductible (§ IX)
+  avec des bornes de délai prouvées, par détection séquentielle classique.
+  Antériorité directe sur la certification précoce.
+
+### Deux conséquences
+
+1. **« L'interstice est vierge » est faux.** Avril-juin 2026 : bassins, asymétrie
+   causale, interventions sur attracteurs, détection séquentielle bornée. Le champ
+   est chaud. Ce qui reste éventuellement libre est plus étroit — le garde-fou
+   triple et la gradation — et seulement s'ils sont testés.
+
+2. **Akarlar résout notre confond.** Son protocole *same-prompt bifurcation*
+   (même prompt, échantillonnages répétés, classes définies par ce que le modèle
+   produit réellement) existe explicitement pour isoler la dynamique des confonds
+   de prompt. L'adopter règle C1-C4 d'un coup et rend les résultats comparables.
+   **Décision : abandonner le dataset de 50 prompts écrits à la main.**

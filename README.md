@@ -87,6 +87,24 @@ Aucune mesure de U, E, B ou K n'existe. Le « théorème de certification
 paramétrée » est une taxonomie, pas une preuve. L'exemple « 87 % à la couche 9,
 HaluEval × Llama-3-8B » est **fictif** — à ne jamais citer comme résultat.
 
+## 4bis. Avertissement sur `probatioh1_v2_stability.png`
+
+Cette figure est titrée « Données DeepSearch — Akarlar 2026 | ICR Probe | ARS ».
+**Elle ne contient aucune donnée de ces papiers.** Ce sont des courbes
+reconstruites à la main à partir de deux ou trois chiffres lus dans des résumés :
+droites parfaitement linéaires (panneau ARS), courbes lisses sans barre d'erreur
+ni n (panneau Akarlar), triangle symétrique parfait (panneau ICR Probe, dessiné
+sur 9 couches alors que le rapport v2 situe ce pic aux couches 10-15 sur 28).
+
+L'encadré coche ✓ les 12 axiomes, y compris ceux que le programme v3 classe
+lui-même en *hypothèse* (G3, D1) et en *conjecture* (D2).
+
+C'est le même mécanisme que l'exemple « 87 % à la couche 9, HaluEval ×
+Llama-3-8B » — que le récapitulatif avait, lui, correctement marqué **fictif**.
+Fichier renommé `ILLUSTRATION_..._NON-MESURE.png`. Ne jamais la diffuser telle
+quelle : une figure étiquetée « données » qui n'en contient pas est de la
+fabrication, quelle que soit l'intention.
+
 ## 5. Ordre des tests
 
 **D'abord les contrôles de confond** (§ 3). Sans eux, tout le reste mesure
@@ -102,6 +120,14 @@ déjà extraites.
 - **C4** — le vrai design : laisser GPT-2 **générer**, annoter la sortie comme
   hallucinée ou non, et classifier depuis la trajectoire du prompt. C'est la seule
   version qui mesure ce que le projet prétend mesurer.
+
+**Ce design existe déjà, publié, avec son code.** Akarlar (arXiv 2604.15400) le
+nomme *same-prompt bifurcation* : un même prompt est échantillonné de façon
+répétée, on observe la divergence spontanée, et les classes sont définies par ce
+que le modèle a réellement produit — explicitement pour *isoler la dynamique de
+trajectoire des confonds de niveau prompt*. L'adopter règle C1, C2, C3 et C4 d'un
+seul coup, et rend les résultats comparables à une référence du champ.
+Voir `docs/REFERENCES.md`.
 
 **Ensuite seulement**, le test de progressivité (couches 0..k, k = 2..12) qui
 décide si la gradation G0-G6 a un fondement. Il est bon, mais une progressivité
