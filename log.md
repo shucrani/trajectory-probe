@@ -301,3 +301,83 @@ d'intervention existe, mais elle est *pendant* la génération, pas avant.
 3. Comparer à la sonde linéaire avant toute autre feature.
 4. Option si le rendement devient limitant : Qwen2.5-0.5B-Instruct, qui répond
    réellement aux questions et tourne sur MPS.
+
+---
+
+## 2026-08-19 (nuit) — Étapes 2 et 3 : trajectoires extraites, carte de divergence
+
+Reformulation validée par Lamar. Question du projet désormais : *à quel moment de
+la génération l'engagement devient-il irréversible, et l'intervention y est-elle
+encore possible ?*
+
+**Extraction** (`src/extract_trajectories.py`) : 10/10 prompts bifurquants
+exploités, K = 6 par classe, **120 trajectoires** `[120, 8 steps, 13 couches, 768]`,
+60 Correct / 60 Hallucination. Entre 40 et 160 tirages par prompt pour atteindre
+le quota. Sortie `results/trajectories_gpt2_20260819_2350.npz`.
+
+**Carte** (`src/divergence_analysis.py`) : sonde linéaire (régression logistique
+C = 0.01, standardisation fold-safe), CV **leave-one-prompt-out** — le prompt de
+test n'est jamais vu à l'entraînement. Figure : `figures/gpt2/divergence_map.png`.
+
+### 1. Contrôle de sanité : réussi exactement
+
+Step 0, toutes couches : **AUC = 0.500** au flottant près. L'état du dernier
+token du prompt est identique dans les deux classes, la sonde ne peut rien en
+tirer. Le pipeline ne fuit pas, et le point structurel du tour précédent est
+confirmé empiriquement : **rien dans le prompt ne prédit l'issue**.
+
+### 2. Profil temporel : montée, pic, décroissance
+
+| step | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+|---|---|---|---|---|---|---|---|---|
+| AUC moyenne | 0.50 | 0.62 | **0.87** | 0.84 | 0.81 | 0.72 | 0.68 | 0.70 |
+
+La séparabilité culmine au **step 2** puis **décroît**. Ce profil est en tension
+avec D1 (convergence vers un bassin attracteur stable) : deux bassins absorbants
+distincts devraient maintenir ou accroître la séparation, pas la voir s'éroder de
+0.87 à 0.70.
+
+**Réserve, à lever avant toute conclusion** : la variance intra-classe croît
+mécaniquement avec la longueur de génération, ce qui suffit à faire baisser une
+AUC sans qu'aucun rapprochement des classes n'ait lieu. Distinguer les deux
+demande de normaliser la distance inter-classes par la dispersion intra-classe
+(effect size), pas de lire l'AUC brute. **Non fait à ce stade.**
+
+### 3. Le résultat dur : la séparation est lexicale, pas géométrique
+
+Au step 2 (le pic), le profil **par couche est plat** :
+
+| couche | 0 (embedding) | 2 | 8-9 (max) | 12 |
+|---|---|---|---|---|
+| AUC | **0.84** | 0.89 | 0.89 | 0.86 |
+
+La couche 0 des `hidden_states` de GPT-2 est la sortie de la couche
+d'embedding — `wte + wpe`, avant tout bloc transformer. Elle encode donc
+**uniquement l'identité et la position du token courant**, sans aucun traitement.
+
+Elle atteint déjà 0.84. Les douze blocs transformer complets n'ajoutent que
+**+0.05**.
+
+Autrement dit : ce que la sonde sépare, c'est *quel token vient d'être émis*, pas
+une dynamique inter-couches. Sur ce protocole, la géométrie des trajectoires
+n'apporte quasiment rien au-dessus de la lecture du token. C'est le pendant, dans
+le protocole propre, de ce que C1 avait montré dans le protocole confondu.
+
+### 4. Test pré-spécifié
+
+Step 7, couche 12 (cellule choisie **avant** de regarder la carte) :
+AUC = **0.733**, H0 par permutation intra-prompt (200 tirages) centrée à 0.498
+(σ = 0.073), **p = 0.005**. La séparation résiduelle en fin de génération est
+réelle et significative — mais elle reste de nature lexicale au vu du point 3.
+
+### Ce qui est établi, ce qui ne l'est pas
+
+- **Établi** : le protocole est propre (contrôle 0.500) ; une séparation existe
+  et culmine tôt (step 2) ; elle est portée dès l'embedding.
+- **Non établi** : l'irréversibilité (D2). Une carte de séparabilité ne peut pas
+  la trancher — elle mesure que les états diffèrent, pas qu'on ne peut plus
+  revenir. Seule une **intervention causale** (patcher l'activation à un step,
+  observer si l'issue bascule) y répond. C'est le protocole d'Akarlar
+  (corruption 87.5 % / correction 33.3 %), et c'est la prochaine étape.
+- **Non établi** : que la décroissance après le step 2 soit un rapprochement des
+  classes plutôt qu'une dispersion intra-classe.

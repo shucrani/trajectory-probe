@@ -1,0 +1,40 @@
+ÉTAPE 3 — CARTE DE DIVERGENCE
+date     : 2026-08-19T23:52:16
+source   : trajectories_gpt2_20260819_2350.npz
+données  : 120 trajectoires, 8 steps, 13 couches, dim 768
+classes  : 60 Correct / 60 Hallucination
+prompts  : 10 · CV leave-one-prompt-out
+
+AUC par (step de génération, couche) — sonde linéaire, out-of-fold
+
+step |     0     1     2     3     4     5     6     7     8     9    10    11    12
+------------------------------------------------------------------------------------
+   0 |  0.50  0.50  0.50  0.50  0.50  0.50  0.50  0.50  0.50  0.50  0.50  0.50  0.50
+   1 |  0.64  0.63  0.61  0.61  0.59  0.61  0.60  0.59  0.59  0.61  0.60  0.65  0.70
+   2 |  0.84  0.87  0.89  0.88  0.87  0.87  0.86  0.88  0.89  0.89  0.87  0.83  0.86
+   3 |  0.79  0.82  0.82  0.84  0.85  0.85  0.88  0.86  0.85  0.86  0.87  0.84  0.83
+   4 |  0.76  0.72  0.77  0.81  0.83  0.81  0.84  0.85  0.85  0.84  0.84  0.84  0.82
+   5 |  0.62  0.66  0.68  0.73  0.75  0.75  0.75  0.76  0.77  0.74  0.74  0.66  0.71
+   6 |  0.54  0.60  0.59  0.66  0.72  0.71  0.72  0.74  0.74  0.72  0.71  0.73  0.71
+   7 |  0.59  0.64  0.65  0.68  0.71  0.73  0.76  0.75  0.74  0.73  0.70  0.74  0.73
+
+1. CONTRÔLE DE SANITÉ — step 0 (état du dernier token du prompt)
+   AUC min/max sur les couches : 0.500 / 0.500
+   attendu exactement 0.500 (état identique dans les deux classes) : OK
+
+2. CARTE (descriptif, non corrigé pour la sélection sur 104 cellules)
+   maximum : AUC = 0.892 au step 2, couche 2
+   moyenne par step : s0=0.50, s1=0.62, s2=0.87, s3=0.84, s4=0.81, s5=0.72, s6=0.68, s7=0.70
+
+3. TEST PRÉ-SPÉCIFIÉ — step 7, couche 12 (choisis avant la carte)
+   AUC observée      : 0.733
+   H0 (permutation intra-prompt, 200 tirages) : moyenne 0.498, écart-type 0.073
+   p bilatéral       : 0.0050
+
+LECTURE. Une séparation aux steps ≥ 1 est ATTENDUE : les tokens générés
+diffèrent, donc les états qui les portent diffèrent. Ce n'est pas une
+découverte. Ce qui informe, c'est la STRUCTURE — quelles couches portent la
+séparation, et si elle persiste ou s'estompe le long de la génération.
+La question de l'irréversibilité (D2) n'est PAS tranchée ici : elle demande
+une intervention causale (patcher à un step, voir si l'issue bascule), pas
+une mesure de séparabilité.

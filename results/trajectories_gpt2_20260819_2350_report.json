@@ -1,0 +1,172 @@
+[
+ {
+  "prompt": "The capital of Japan is",
+  "drawn": 40,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " Tokyo and the capital of the United States",
+    " Tokyo, and its major tourist attractions are"
+   ],
+   "Hallucination": [
+    " now home to 65 percent of the world",
+    " a national park.\n\nAccording to"
+   ]
+  }
+ },
+ {
+  "prompt": "The capital of Italy is",
+  "drawn": 40,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " Rome, but the city has its own",
+    " Rome and the city is the home of"
+   ],
+   "Hallucination": [
+    " the Diamantia, a city",
+    " now the capital of the Eastern European state"
+   ]
+  }
+ },
+ {
+  "prompt": "The capital of Germany is",
+  "drawn": 40,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " Berlin, and the capital is Berlin.",
+    " Berlin, and its capital is Munich."
+   ],
+   "Hallucination": [
+    " expected to spend a total of $5",
+    " the capital of other European nations such as"
+   ]
+  }
+ },
+ {
+  "prompt": "The capital of Spain is",
+  "drawn": 80,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " Madrid, where a number of major cities",
+    " Madrid and it is located in the country"
+   ],
+   "Hallucination": [
+    " the city of Barcelona, where many people",
+    " a city of 9.6 million people"
+   ]
+  }
+ },
+ {
+  "prompt": "The capital of Egypt is",
+  "drawn": 120,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " in Cairo, and the capital of Egypt",
+    " Cairo, home to the ancient city of"
+   ],
+   "Hallucination": [
+    " the capital of the Muslim Brotherhood and is",
+    " the capital of the Muslim Brotherhood. Their"
+   ]
+  }
+ },
+ {
+  "prompt": "The largest planet in the solar system is",
+  "drawn": 160,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " probably Jupiter, and probably one of the",
+    " Jupiter, at about 6.8 light"
+   ],
+   "Hallucination": [
+    " Saturn, about 90 degrees above the sun",
+    " only about 0.5 light-years"
+   ]
+  }
+ },
+ {
+  "prompt": "The currency of Japan is the",
+  "drawn": 40,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " yen, a legal tender in the Japanese",
+    " yen, which is pegged to the U"
+   ],
+   "Hallucination": [
+    " yen. Even today, Japanese banknotes",
+    " yen.\n\nYakuza \""
+   ]
+  }
+ },
+ {
+  "prompt": "The tallest mountain in the world is",
+  "drawn": 120,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " Mt. Everest, with the biggest part",
+    " at the top of Mt. Everest,"
+   ],
+   "Hallucination": [
+    " South U.S.A., about",
+    " 56.2 metres (89.9"
+   ]
+  }
+ },
+ {
+  "prompt": "The largest ocean on Earth is the",
+  "drawn": 80,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " Great Pacific Ocean.\n\nThe Great",
+    " South Pacific and the largest on land is"
+   ],
+   "Hallucination": [
+    " deep ocean, which contains an estimated 2",
+    " ocean of Pahrump. The"
+   ]
+  }
+ },
+ {
+  "prompt": "The largest desert in Africa is the",
+  "drawn": 40,
+  "kept_per_class": 6,
+  "correct_found": 6,
+  "hallucination_found": 6,
+  "examples": {
+   "Correct": [
+    " Sahara Desert, a wetland of an",
+    " Sahara, a vast region of sandy sand"
+   ],
+   "Hallucination": [
+    " Congo Basin, which is home to more",
+    " Marrakech Desert, which covers nearly"
+   ]
+  }
+ }
+]
