@@ -1,0 +1,151 @@
+
+ProbatioH1
+Vérification interne des trajectoires neuronales
+Document de synthèse — État du projet, résultats validés et feuille de route
+Dernière mise à jour : août 2026
+
+Résumé exécutif
+Question de départ : peut-on vérifier, depuis l'intérieur d'un modèle de langage et avant que la réponse ne soit produite, si sa trajectoire dans l'espace latent est admissible — en distinguant une transition créative légitime d'une dérive hallucinatoire par la forme du chemin parcouru, pas par le contenu généré.
+Le projet est passé par trois phases : (1) un prototype sur un paysage de potentiel synthétique, (2) une validation empirique rigoureuse sur GPT-2 réel, avec plusieurs cycles de correction méthodologique, et (3) une reformulation théorique (ProbatioH1) qui reste, à ce stade, en grande partie non testée.
+Élément
+Statut
+Résultat
+Dwell time au « col »
+RÉFUTÉ
+p = 0.085 à n = 50 — pas de signal distinguable du hasard
+Signal géométrique (courbure, cohérence directionnelle)
+VALIDÉ
+AUC = 0.82-0.94, p = 0.005 — mais réplique Chain-of-Embedding (ICLR 2025), pas une découverte
+Cadre ProbatioH1 (G0-G6, ∂V paramétrée)
+NON TESTÉ
+Cohérent conceptuellement, aucun ancrage empirique à ce jour
+
+1. Objectif du projet
+Construire un vérificateur interne capable de certifier — couche par couche, avant la fin de la génération — qu'une trajectoire neuronale reste dans un régime admissible. L'enjeu n'est pas de détecter une hallucination après coup dans le texte produit, mais de repérer, dans la géométrie de l'espace latent, la signature structurelle d'une dérive.
+Cas d'usage visé : aide à la décision clinique ou juridique par LLM, où il faut savoir, avant d'afficher une réponse, si le modèle est en train de « dériver ».
+2. Parcours méthodologique
+Le projet a suivi une discipline constante : chaque nouvelle définition opérationnelle (formule, seuil, normalisation) a été testée sur données synthétiques avec contrôle positif, contrôle négatif, et test de recouvrement contre un phénomène connu, avant d'être appliquée à GPT-2 réel.
+2.1 Phase 1 — Prototype synthétique
+	•	Paysage de potentiel jouet à 3 bassins (Factual / Creative / Hallucinatory), agent de vérification topologique, certificats de navigation avec traçabilité (début/fin de chaque épisode de dérive).
+	•	Résultat : preuve de concept — le cadre conceptuel tient sur un système contrôlé.
+2.2 Phase 2 — Validation empirique sur GPT-2 (le cœur du travail)
+	•	Bug de forme (mismatch de dimensions) détecté et corrigé avant toute exécution réelle.
+	•	Fuite de données éliminée : PCA et centroïdes recalculés à chaque pli de validation croisée.
+	•	Formule du « col » (saddle_score) : la première version discriminait les classes en captant un artefact du générateur synthétique (0 couche de recouvrement sur 9/10 échantillons avec le vrai palier injecté) — détecté par un test de recouvrement dédié, puis corrigée.
+	•	Saturation du dwell time sur données réelles (std = 0.000, AUC = 0.500) : diagnostiquée comme un effet architectural universel de GPT-2 (restructuration précoce identique pour toutes les trajectoires), corrigée en trois itérations successives (fenêtre restreinte → normalisation globale → normalisation relative à la population).
+	•	Résultat final, honnête : même corrigé, le dwell time reste non significatif (p = 0.085 à n = 50). Hypothèse réfutée, pas cachée.
+	•	Un signal géométrique différent (courbure moyenne, distance aux centroïdes, cohérence directionnelle) s'est révélé significatif (AUC jusqu'à 0.94, p = 0.005) — direction du signal vérifiée explicitement (courbure plus élevée chez les prompts factuels, pas chez les hallucinations, contre-intuitif par rapport à l'hypothèse de départ).
+2.3 Phase 3 — Calibration face à la littérature
+	•	Recherche systématique de travaux comparables avant de crier à la découverte.
+	•	« The Geometry of Truth » (LSD, 2025) : même modèle exact (GPT-2, 13 couches) — trouve un effet nul sur la magnitude (vitesse/accélération) mais un effet fort sur l'alignement directionnel à un référentiel de vérité externe.
+	•	Chain-of-Embedding (Wang et al., ICLR 2025) et D²HScore : magnitude + angle du déplacement inter-couches, même sens que notre résultat (hallucination = moins de mouvement). Testé fidèlement sur notre dataset : AUC = 0.87, quasi identique à notre propre feature (0.82) — combiner les deux n'apporte presque rien (+0.0008).
+	•	Conclusion : notre signal géométrique est une réplication indépendante de Chain-of-Embedding sur GPT-2 small, un cas qui n'avait apparemment pas été testé explicitement dans la littérature trouvée — valeur de réplication, pas de découverte.
+	•	FactCheckmate (Alnuhait et al., EMNLP Findings 2025) vérifié : +34.4% de facticité avec intervention précoce — confirme qu'une correction en cours de génération est possible, chiffre exact confirmé indépendamment.
+3. Résultats empiriques — tableau de synthèse
+Feature / méthode
+AUC
+p-value
+Sens
+Statut
+max_dwell_time (isolé)
+0.628
+0.085
+Hallu > Factual (faible)
+Non signif.
+mean_curvature (isolée)
+0.823
+0.005
+Factual > Hallu
+Validé
+4 features (curvature, velocity, dist, ratio)
+0.938
+0.005
+cf. détail
+Validé
+CoE-R + CoE-C (baseline publiée)
+0.873
+0.005
+Factual > Hallu (CoE-C)
+Répliqué
+Vecteur complet (10 features)
+0.939
+0.005
+dominé par ratio_dist / dist_hallucination
+Validé
+
+Protocole : GPT-2 small (124M, 13 couches), 50 prompts (25 factuels vérifiables / 25 hallucinatoires fabriqués), validation croisée stratifiée à 5 plis sans fuite de données, test de permutation à 200 tirages pour chaque p-value reportée.
+Corrélation notable : mean_curvature et max_velocity sont corrélées à r = 0.81 — le signal à 4 features est probablement un signal à 2-3 dimensions réelles, pas 4 indépendantes.
+
+4. Le cadre ProbatioH1 — état de validation
+ProbatioH1 reformule le problème : au lieu d'un verdict binaire (admissible / rejeté), il propose un niveau gradué de récupérabilité, paramétré par les moyens disponibles à l'instant de la décision.
+4.1 Les sept niveaux proposés
+Niveau
+Nom
+Signification
+G0
+TRAJECTOIRE_SÛRE
+Dans la région robuste, aucune dérive.
+G1
+CORRECTION_LÉGÈRE
+Dérive détectée, steering minimal suffit.
+G2
+CORRECTION_SOUTENUE
+Dérive avancée, intervention forte nécessaire.
+G3
+RÉCUPÉRABLE_AVEC_INFO
+Hors zone sûre, mais une source externe rouvrirait la porte.
+G4
+RÉCUPÉRABLE_PAR_REDÉMARRAGE
+Contaminée par son propre contexte, rollback possible.
+G5
+ABSTENTION_CERTIFIÉE
+Aucune récupération possible avec les moyens actuels.
+G6
+CONSÉQUENCE_IRRÉVERSIBLE
+Action déjà produite dans le monde réel.
+
+4.2 Ce qui est acquis vs. ce qui reste à démontrer
+Élément du cadre
+Statut
+Ce qui manque
+Rejet du dwell time comme mécanisme
+Acquis
+—
+Signal géométrique exploitable (courbure/cohérence)
+Acquis
+—
+Intervention corrective possible en cours de génération
+Acquis (tiers)
+Vérifié via FactCheckmate, pas testé dans ce projet
+∂V paramétrée par U, E, B, K
+Hypothèse
+Aucune mesure de U, E, B ou K n'a été faite
+Classifieur G0-G6 opérationnel
+Non testé
+Jamais implémenté ni évalué sur une trajectoire réelle
+« Théorème » de Certification Paramétrée
+Non prouvé
+C'est une taxonomie, pas une preuve dérivée d'axiomes
+Pont α : H → Q (soundness)
+Non vérifié ici
+Construit dans des textes antérieurs non audités dans ce fil
+Exemple « 87% à la couche 9, HaluEval × Llama-3-8B »
+Fictif
+Aucun calcul réel ne le sous-tend — à ne jamais citer comme résultat
+
+5. Le test irréductible à exécuter en priorité
+Toute la valeur opérationnelle de ProbatioH1 (intervenir avant la fin, graduer la réponse) dépend d'une seule prémisse : le signal doit apparaître progressivement, couche par couche — pas seulement à la toute fin de la trajectoire.
+Protocole : mesurer l'AUC de classification Factual / Hallucination en utilisant uniquement les couches 0 à k, pour k croissant de 2 à 12, sur les 50 trajectoires GPT-2 déjà extraites.
+	•	Si l'AUC dépasse ~0.70 dès la couche 6-8 : la prémisse tient, la certification précoce a un sens opérationnel — poursuivre vers un classifieur G0-G6.
+	•	Si l'AUC ne décolle qu'aux couches 10-12 : la prémisse est réfutée dans sa forme actuelle — pas de fenêtre d'intervention réelle avec ce signal géométrique ; il faut soit abandonner la gradation, soit chercher un signal non géométrique pour la détection précoce.
+Ce test n'a pas encore été exécuté au moment de la rédaction de ce document.
+6. Prochaines étapes
+	•	Exécuter le test de progressivité couche par couche (section 5) — décide si la gradation G0-G6 a un fondement empirique.
+	•	Si concluant : implémenter un classifieur G0/G1 minimal sur les données GPT-2 existantes avant d'étendre à d'autres niveaux.
+	•	Explorer la cohérence directionnelle (angle, alignement à un référentiel externe) plutôt que la magnitude seule — c'est la piste que LSD et Chain-of-Embedding convergent à désigner comme la plus prometteuse.
+	•	Étendre à un second modèle (gpt2-medium, ou un modèle de la famille testée par CoE/D²HScore) pour vérifier que le sens du signal se réplique.
+	•	Si un écrit est envisagé : le positionner honnêtement comme une réplication méthodologiquement renforcée de Chain-of-Embedding sur GPT-2, assortie d'une réfutation explicite de l'hypothèse de dwell time — pas comme une découverte.
+7. Livrables techniques produits
+	•	topological_navigation_agent_v33.py — agent de certification sur paysage synthétique, hiérarchie de sévérité, cartographie de navigation multi-régimes.
+	•	gpt2_navigation_certificate_validation.ipynb — notebook Colab complet (25 cellules) : garde-fou synthétique, extraction GPT-2, features sans fuite, tests de significativité isolés, comparaison à Chain-of-Embedding.
+	•	validate_pipeline_synthetic.py / validate_saddle_score.py — harnais de validation indépendants pour toute nouvelle définition de feature avant usage sur données réelles.
