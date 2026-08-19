@@ -1,0 +1,43 @@
+ÉTAPE 11 — DOMAINE VÉRIFIABLE
+date    : 2026-08-20T01:41:30
+modèle  : Qwen/Qwen2.5-1.5B-Instruct · 63 items · N=20 à T=0.7
+
+Vérification non circulaire : on teste la propriété que la réponse doit
+satisfaire, sans connaître la solution (substitution, modulo, produit).
+
+A. PARTITION
+
+   TOUJOURS-CORRECT      14 / 63 =  22.2%
+   BIFURQUANT            46 / 63 =  73.0%
+   TOUJOURS-FAUX          3 / 63 =   4.8%
+   MUET                   0 / 63 =   0.0%
+
+   Sur les 49 items où le modèle se trompe au moins une fois :
+     stochastique  :  93.9%
+     systématique  :   6.1%
+
+B. STRATÉGIES SANS VÉRIFICATION
+
+   ensemble commun : 63 items
+   tirage unique T=0.7                           65.0%
+   greedy (T->0)                             76.2%
+   vote majoritaire sur 20                     76.2%
+
+C. POLITIQUE VÉRIFIÉE — précision 100 % par construction
+
+   « je réponds si un tirage passe le check »
+       couverture  95.2%   précision 100.0%   (abstention  4.8%)
+   « je réponds si le VOTE passe le check »
+       couverture  76.2%   précision 100.0%   (abstention 23.8%)
+
+D. COMPARAISON DES DEUX RÉGIMES
+
+   domaine empirique (étape 10, seuil d'accord 0.70) :
+       couverture  57.6%   précision  70.6%   -> gradué, jamais garanti
+   domaine vérifiable (ici) :
+       couverture  95.2%   précision 100.0%   -> garanti, partiel
+
+LECTURE. Dans le domaine vérifiable, l'erreur ne se gradue plus : elle est
+éliminée sur ce qui est accepté. Tout le problème se déplace vers la
+couverture — combien de questions le système accepte de traiter. C'est le
+seul endroit où le mot « certifier » est légitime.

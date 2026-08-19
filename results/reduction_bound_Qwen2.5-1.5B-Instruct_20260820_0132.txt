@@ -1,0 +1,38 @@
+ÉTAPE 10 — BORNE DE RÉDUCTIBILITÉ
+date    : 2026-08-20T01:32:50
+modèle  : Qwen/Qwen2.5-1.5B-Instruct · 87 prompts · N=20 tirages à T=0.7
+
+A. PARTITION DES PROMPTS
+
+   TOUJOURS-CORRECT      39 / 87  =  44.8%
+   BIFURQUANT            48 / 87  =  55.2%
+   TOUJOURS-FAUX          0 / 87  =   0.0%
+   MUET                   0 / 87  =   0.0%
+
+   Sur les 87 prompts où le modèle asserte quelque chose :
+     réductible par agrégation (bifurquants) :  55.2%
+     irréductible sans connaissance (toujours-faux) :   0.0%
+
+B. STRATÉGIES SANS INFORMATION EXTERNE
+
+   Comparaison PAR PROMPT, sur l'ensemble commun où les quatre stratégies
+   assertent quelque chose. Agréger par tirage biaiserait vers les prompts
+   faciles, qui assertent plus souvent.
+
+   ensemble commun : 56 prompts
+
+   tirage unique T=0.7 (baseline)            88.0%
+   tirage unique T=0.3                       93.9%   (+5.9%)
+   greedy (T->0)                             94.6%   (+6.6%)
+   vote majoritaire sur 20 tirages           96.4%   (+8.4%)
+
+   Réduction relative du taux d'erreur :
+      T=0.3         49.2%
+      greedy        55.3%
+      vote          70.2%
+
+LECTURE. La catégorie TOUJOURS-FAUX borne toute méthode qui n'apporte pas
+de connaissance : aucune agrégation, aucun décodage, aucune perturbation ne
+la corrige — le modèle est confiant et faux. Seule la part BIFURQUANTE est
+accessible sans information externe. C'est le plafond réel de tout ce que
+ce projet peut viser côté intervention pure.

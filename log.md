@@ -976,3 +976,99 @@ connaissance est d'environ la moitié du problème.
 - L'auto-cohérence comme signal d'abstention est un procédé connu
   (SelfCheckGPT et suivants). Ce qui est propre ici, c'est la **partition
   quantifiée** qui en borne le rendement.
+
+---
+
+## 2026-08-20 — Étapes 10-bis et 11 : Qwen, puis le domaine vérifiable
+
+### Qwen2.5-1.5B-Instruct sur le corpus factuel — un plafond de corpus, pas un résultat
+
+| | GPT-2 small | Qwen2.5-1.5B-Instruct |
+|---|---|---|
+| TOUJOURS-CORRECT | 23.0 % | 44.8 % |
+| BIFURQUANT | 25.3 % | 55.2 % |
+| TOUJOURS-FAUX | 19.5 % | **0.0 %** |
+| MUET | 32.2 % | 0.0 % |
+| réduction d'erreur par le vote | 25.3 % | **70.2 %** |
+
+**Le zéro n'est pas une découverte.** Le corpus a été écrit pour GPT-2 small
+(capitales, planètes) ; pour un 1.5B instruction-tuned il ne contient plus de
+difficulté. La partition mesure le couple (modèle, corpus), pas le modèle. Les
+deux colonnes ne sont pas comparables et ne seront pas présentées comme telles.
+C'est précisément pourquoi HACK (arXiv 2510.24222) construit un dataset
+**spécifique à chaque modèle**.
+
+Ce qui reste valide, sur deux points : **le rendement de l'agrégation est
+gouverné par la part stochastique** (56 % → 25.3 % ; 100 % → 70.2 %).
+
+### Étape 11 — corpus vérifiable (`src/verifiable_bound.py`)
+
+63 items, cinq familles (équation linéaire, racine carrée, diviseur non trivial,
+complément de somme, facteur manquant). **Vérification non circulaire** : on teste
+la propriété que la réponse doit satisfaire, sans disposer de la solution — les
+items du type « 17 + 25 = » sont exclus, les recalculer reviendrait à connaître la
+réponse. Chaque `verify` a été validé contre sa réponse canonique avant le run.
+
+Effet de bord bienvenu : **plus de listes de distracteurs**. Les deux classes sont
+« un entier », leur largeur est identique par construction. Le degré de liberté qui
+gênait depuis l'étape 8 disparaît.
+
+**Partition** (Qwen2.5-1.5B-Instruct) : TOUJOURS-CORRECT 22.2 % · BIFURQUANT
+73.0 % · TOUJOURS-FAUX 4.8 % · MUET 0 %.
+Sur les 49 items avec erreur : **93.9 % stochastique, 6.1 % systématique**.
+
+**Résultat**
+
+| | tirage unique | greedy | vote | politique vérifiée |
+|---|---|---|---|---|
+| précision | 65.0 % | 76.2 % | 76.2 % | **100 %** |
+| couverture | 100 % | 100 % | 100 % | **95.2 %** |
+
+Seconde politique, plus stricte (« je réponds si le **vote** passe le check ») :
+couverture 76.2 %, précision 100 %. L'écart entre les deux montre que les 20
+tirages contiennent une bonne réponse bien plus souvent que le vote ne la
+désigne — le modèle **a** la réponse, il ne sait pas laquelle c'est.
+
+### Une identité, pas une coïncidence
+
+Couverture de la politique vérifiée = 95.2 %. Part TOUJOURS-FAUX = 4.8 %.
+Exactement complémentaires, et ce n'est pas un hasard : dès qu'au moins un tirage
+est correct, le vérificateur le trouve. D'où :
+
+> **couverture atteignable en domaine vérifiable = 1 − part systématique**
+
+L'agrégation, elle, ne capture qu'une fraction du stochastique. Le vérificateur le
+capture **en entier**. C'est la différence structurelle entre graduer et vérifier.
+
+### Comparaison des deux régimes
+
+| | couverture | précision | nature |
+|---|---|---|---|
+| empirique (étape 10, seuil 0.70) | 57.6 % | 70.6 % | gradué, jamais garanti |
+| **vérifiable (étape 11)** | **95.2 %** | **100 %** | garanti, partiel |
+
+Et le domaine vérifiable est le **plus difficile** des deux pour ce modèle
+(65.0 % contre 88.0 % en tirage unique). Un domaine plus dur, un résultat
+strictement meilleur : ce n'est pas un gain de facilité, c'est un changement de
+nature de la garantie.
+
+### Conséquence pour l'architecture
+
+L'étage 3-bis (vérification) n'est pas un complément des étages 1-3, il les
+**domine** partout où il s'applique. La spécification du système se reformule :
+
+> maximiser la fraction des questions traitables en régime vérifiable
+
+Ce qui donne leur place aux trois usages discutés : Lean/Mathlib étendent le
+régime vérifiable aux énoncés formels ; la récupération documentaire l'étend aux
+faits sourçables (vérifier = retrouver la source) ; l'abstention graduée ne sert
+que pour le résidu qui n'entre dans aucun des deux.
+
+### Réserves
+
+- Corpus différents entre les deux régimes (faits encyclopédiques vs arithmétique).
+  La comparaison porte sur la **nature de la garantie**, pas sur un même matériau.
+- 63 items, une seule famille de difficulté arithmétique. À étendre avant tout
+  claim de généralité.
+- La vérification arithmétique est bon marché. En Lean, le coût de vérification
+  et le taux d'échec de compilation changeraient la couverture — non mesuré.

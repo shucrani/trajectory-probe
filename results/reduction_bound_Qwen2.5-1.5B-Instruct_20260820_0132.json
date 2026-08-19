@@ -1,0 +1,1320 @@
+{
+ "categories": {
+  "BIFURQUANT": 48,
+  "TOUJOURS-CORRECT": 39
+ },
+ "strategies": {
+  "tirage_unique": [
+   0,
+   0
+  ],
+  "greedy": [
+   0,
+   0
+  ],
+  "vote": [
+   0,
+   0
+  ],
+  "basse_temp": [
+   0,
+   0
+  ]
+ },
+ "rows": [
+  {
+   "prompt": "The capital of France is",
+   "categorie": "BIFURQUANT",
+   "correct": 9,
+   "faux": 1,
+   "muet": 10,
+   "p_unique": 0.9,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 9,
+    "london": 1
+   }
+  },
+  {
+   "prompt": "The capital of Japan is",
+   "categorie": "BIFURQUANT",
+   "correct": 10,
+   "faux": 1,
+   "muet": 9,
+   "p_unique": 0.9090909090909091,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 0.9,
+   "entities": {
+    "CORRECT": 10,
+    "beijing": 1
+   }
+  },
+  {
+   "prompt": "The capital of Italy is",
+   "categorie": "BIFURQUANT",
+   "correct": 8,
+   "faux": 1,
+   "muet": 11,
+   "p_unique": 0.8888888888888888,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 8,
+    "milan": 1
+   }
+  },
+  {
+   "prompt": "The capital of Germany is",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 8,
+   "faux": 0,
+   "muet": 12,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 8
+   }
+  },
+  {
+   "prompt": "The capital of Spain is",
+   "categorie": "BIFURQUANT",
+   "correct": 7,
+   "faux": 1,
+   "muet": 12,
+   "p_unique": 0.875,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 7,
+    "zaragoza": 1
+   }
+  },
+  {
+   "prompt": "The capital of Russia is",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 7,
+   "faux": 0,
+   "muet": 13,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 7
+   }
+  },
+  {
+   "prompt": "The capital of Egypt is",
+   "categorie": "BIFURQUANT",
+   "correct": 14,
+   "faux": 1,
+   "muet": 5,
+   "p_unique": 0.9333333333333333,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 14,
+    "luxor": 1
+   }
+  },
+  {
+   "prompt": "The capital of Canada is",
+   "categorie": "BIFURQUANT",
+   "correct": 6,
+   "faux": 2,
+   "muet": 12,
+   "p_unique": 0.75,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 6,
+    "toronto": 2
+   }
+  },
+  {
+   "prompt": "The largest planet in the solar system is",
+   "categorie": "BIFURQUANT",
+   "correct": 4,
+   "faux": 5,
+   "muet": 11,
+   "p_unique": 0.4444444444444444,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 0.3333333333333333,
+   "entities": {
+    "mercury": 2,
+    "saturn": 2,
+    "mars": 1,
+    "CORRECT": 4
+   }
+  },
+  {
+   "prompt": "The closest planet to the Sun is",
+   "categorie": "BIFURQUANT",
+   "correct": 13,
+   "faux": 1,
+   "muet": 6,
+   "p_unique": 0.9285714285714286,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 13,
+    "earth": 1
+   }
+  },
+  {
+   "prompt": "The chemical symbol for gold is",
+   "categorie": "BIFURQUANT",
+   "correct": 14,
+   "faux": 2,
+   "muet": 4,
+   "p_unique": 0.875,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 14,
+    "cu": 2
+   }
+  },
+  {
+   "prompt": "The chemical symbol for water is",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 11,
+   "faux": 0,
+   "muet": 9,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 11
+   }
+  },
+  {
+   "prompt": "The author of Hamlet was",
+   "categorie": "BIFURQUANT",
+   "correct": 10,
+   "faux": 1,
+   "muet": 9,
+   "p_unique": 0.9090909090909091,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 10,
+    "goethe": 1
+   }
+  },
+  {
+   "prompt": "The author of the Odyssey was",
+   "categorie": "BIFURQUANT",
+   "correct": 6,
+   "faux": 1,
+   "muet": 13,
+   "p_unique": 0.8571428571428571,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 6,
+    "ovid": 1
+   }
+  },
+  {
+   "prompt": "The inventor of the telephone was",
+   "categorie": "BIFURQUANT",
+   "correct": 11,
+   "faux": 8,
+   "muet": 1,
+   "p_unique": 0.5789473684210527,
+   "vote": 1,
+   "greedy": 0,
+   "p_low": 0.6,
+   "entities": {
+    "CORRECT": 11,
+    "marconi": 1,
+    "edison": 6,
+    "watt": 1
+   }
+  },
+  {
+   "prompt": "The first president of the United States was",
+   "categorie": "BIFURQUANT",
+   "correct": 3,
+   "faux": 2,
+   "muet": 15,
+   "p_unique": 0.6,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 3,
+    "jefferson": 1,
+    "adams": 1
+   }
+  },
+  {
+   "prompt": "The currency of Japan is the",
+   "categorie": "BIFURQUANT",
+   "correct": 15,
+   "faux": 2,
+   "muet": 3,
+   "p_unique": 0.8823529411764706,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 15,
+    "dollar": 1,
+    "yuan": 1
+   }
+  },
+  {
+   "prompt": "The currency of the United Kingdom is the",
+   "categorie": "BIFURQUANT",
+   "correct": 17,
+   "faux": 2,
+   "muet": 1,
+   "p_unique": 0.8947368421052632,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 17,
+    "euro": 1,
+    "dollar": 1
+   }
+  },
+  {
+   "prompt": "The tallest mountain in the world is",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 14,
+   "faux": 0,
+   "muet": 6,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 14
+   }
+  },
+  {
+   "prompt": "The longest river in the world is",
+   "categorie": "BIFURQUANT",
+   "correct": 11,
+   "faux": 3,
+   "muet": 6,
+   "p_unique": 0.7857142857142857,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 0.9411764705882353,
+   "entities": {
+    "yangtze": 2,
+    "CORRECT": 11,
+    "ganges": 1
+   }
+  },
+  {
+   "prompt": "The largest ocean on Earth is the",
+   "categorie": "BIFURQUANT",
+   "correct": 19,
+   "faux": 1,
+   "muet": 0,
+   "p_unique": 0.95,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 19,
+    "indian": 1
+   }
+  },
+  {
+   "prompt": "The largest desert in Africa is the",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 18,
+   "faux": 0,
+   "muet": 2,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 18
+   }
+  },
+  {
+   "prompt": "Water freezes at a temperature of",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 18,
+   "faux": 0,
+   "muet": 2,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 18
+   }
+  },
+  {
+   "prompt": "Water boils at a temperature of",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 20,
+   "faux": 0,
+   "muet": 0,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 0.95,
+   "entities": {
+    "CORRECT": 20
+   }
+  },
+  {
+   "prompt": "The number of continents on Earth is",
+   "categorie": "BIFURQUANT",
+   "correct": 2,
+   "faux": 13,
+   "muet": 5,
+   "p_unique": 0.13333333333333333,
+   "vote": 0,
+   "greedy": 0,
+   "p_low": 0.0,
+   "entities": {
+    "4": 4,
+    "four": 1,
+    "CORRECT": 2,
+    "2": 3,
+    "3": 1,
+    "5": 2,
+    "6": 2
+   }
+  },
+  {
+   "prompt": "The number of days in a leap year is",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 10,
+   "faux": 0,
+   "muet": 10,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 10
+   }
+  },
+  {
+   "prompt": "The speed of light is approximately",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 5,
+   "faux": 0,
+   "muet": 15,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 5
+   }
+  },
+  {
+   "prompt": "The human body has a total of",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 16,
+   "faux": 0,
+   "muet": 4,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 16
+   }
+  },
+  {
+   "prompt": "The Great Wall is located in",
+   "categorie": "BIFURQUANT",
+   "correct": 10,
+   "faux": 2,
+   "muet": 8,
+   "p_unique": 0.8333333333333334,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 10,
+    "tibet": 1,
+    "russia": 1
+   }
+  },
+  {
+   "prompt": "The Eiffel Tower is located in",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 13,
+   "faux": 0,
+   "muet": 7,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 13
+   }
+  },
+  {
+   "prompt": "The capital of Portugal is",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 10,
+   "faux": 0,
+   "muet": 10,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 0.625,
+   "entities": {
+    "CORRECT": 10
+   }
+  },
+  {
+   "prompt": "The capital of the Netherlands is",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 9,
+   "faux": 0,
+   "muet": 11,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 9
+   }
+  },
+  {
+   "prompt": "The capital of Belgium is",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 10,
+   "faux": 0,
+   "muet": 10,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 10
+   }
+  },
+  {
+   "prompt": "The capital of Austria is",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 10,
+   "faux": 0,
+   "muet": 10,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 10
+   }
+  },
+  {
+   "prompt": "The capital of Greece is",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 10,
+   "faux": 0,
+   "muet": 10,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 10
+   }
+  },
+  {
+   "prompt": "The capital of Poland is",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 12,
+   "faux": 0,
+   "muet": 8,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 12
+   }
+  },
+  {
+   "prompt": "The capital of Sweden is",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 6,
+   "faux": 0,
+   "muet": 14,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 6
+   }
+  },
+  {
+   "prompt": "The capital of Norway is",
+   "categorie": "BIFURQUANT",
+   "correct": 6,
+   "faux": 1,
+   "muet": 13,
+   "p_unique": 0.8571428571428571,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 0.9285714285714286,
+   "entities": {
+    "CORRECT": 6,
+    "copenhagen": 1
+   }
+  },
+  {
+   "prompt": "The capital of Turkey is",
+   "categorie": "BIFURQUANT",
+   "correct": 7,
+   "faux": 6,
+   "muet": 7,
+   "p_unique": 0.5384615384615384,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 0.9166666666666666,
+   "entities": {
+    "CORRECT": 7,
+    "istanbul": 6
+   }
+  },
+  {
+   "prompt": "The capital of India is",
+   "categorie": "BIFURQUANT",
+   "correct": 8,
+   "faux": 1,
+   "muet": 11,
+   "p_unique": 0.8888888888888888,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 0.8125,
+   "entities": {
+    "CORRECT": 8,
+    "mumbai": 1
+   }
+  },
+  {
+   "prompt": "The capital of China is",
+   "categorie": "BIFURQUANT",
+   "correct": 10,
+   "faux": 3,
+   "muet": 7,
+   "p_unique": 0.7692307692307693,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 10,
+    "shanghai": 3
+   }
+  },
+  {
+   "prompt": "The capital of Brazil is",
+   "categorie": "BIFURQUANT",
+   "correct": 1,
+   "faux": 8,
+   "muet": 11,
+   "p_unique": 0.1111111111111111,
+   "vote": 0,
+   "greedy": 1,
+   "p_low": 0.2727272727272727,
+   "entities": {
+    "rio": 7,
+    "paulo": 1,
+    "CORRECT": 1
+   }
+  },
+  {
+   "prompt": "The capital of Australia is",
+   "categorie": "BIFURQUANT",
+   "correct": 5,
+   "faux": 5,
+   "muet": 10,
+   "p_unique": 0.5,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 0.8571428571428571,
+   "entities": {
+    "CORRECT": 5,
+    "sydney": 4,
+    "melbourne": 1
+   }
+  },
+  {
+   "prompt": "The capital of Kenya is",
+   "categorie": "BIFURQUANT",
+   "correct": 9,
+   "faux": 1,
+   "muet": 10,
+   "p_unique": 0.9,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 9,
+    "nakuru": 1
+   }
+  },
+  {
+   "prompt": "The Colosseum is located in",
+   "categorie": "BIFURQUANT",
+   "correct": 10,
+   "faux": 1,
+   "muet": 9,
+   "p_unique": 0.9090909090909091,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 10,
+    "athens": 1
+   }
+  },
+  {
+   "prompt": "The Louvre is located in",
+   "categorie": "BIFURQUANT",
+   "correct": 11,
+   "faux": 1,
+   "muet": 8,
+   "p_unique": 0.9166666666666666,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 11,
+    "england": 1
+   }
+  },
+  {
+   "prompt": "The Kremlin is located in",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 12,
+   "faux": 0,
+   "muet": 8,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 12
+   }
+  },
+  {
+   "prompt": "Big Ben is located in",
+   "categorie": "BIFURQUANT",
+   "correct": 8,
+   "faux": 2,
+   "muet": 10,
+   "p_unique": 0.8,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 8,
+    "york": 1,
+    "edinburgh": 1
+   }
+  },
+  {
+   "prompt": "The Statue of Liberty is located in",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 17,
+   "faux": 0,
+   "muet": 3,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 17
+   }
+  },
+  {
+   "prompt": "The Taj Mahal is located in",
+   "categorie": "BIFURQUANT",
+   "correct": 11,
+   "faux": 1,
+   "muet": 8,
+   "p_unique": 0.9166666666666666,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 11,
+    "mumbai": 1
+   }
+  },
+  {
+   "prompt": "Machu Picchu is located in",
+   "categorie": "BIFURQUANT",
+   "correct": 10,
+   "faux": 1,
+   "muet": 9,
+   "p_unique": 0.9090909090909091,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 10,
+    "colombia": 1
+   }
+  },
+  {
+   "prompt": "The Acropolis is located in",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 15,
+   "faux": 0,
+   "muet": 5,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 15
+   }
+  },
+  {
+   "prompt": "The Great Pyramid is located in",
+   "categorie": "BIFURQUANT",
+   "correct": 8,
+   "faux": 2,
+   "muet": 10,
+   "p_unique": 0.8,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 8,
+    "mexico": 1,
+    "cairo": 1
+   }
+  },
+  {
+   "prompt": "Mount Fuji is located in",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 4,
+   "faux": 0,
+   "muet": 16,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 4
+   }
+  },
+  {
+   "prompt": "The official language of Brazil is",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 14,
+   "faux": 0,
+   "muet": 6,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 14
+   }
+  },
+  {
+   "prompt": "The official language of Egypt is",
+   "categorie": "BIFURQUANT",
+   "correct": 8,
+   "faux": 2,
+   "muet": 10,
+   "p_unique": 0.8,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 8,
+    "english": 2
+   }
+  },
+  {
+   "prompt": "The official language of Austria is",
+   "categorie": "BIFURQUANT",
+   "correct": 17,
+   "faux": 1,
+   "muet": 2,
+   "p_unique": 0.9444444444444444,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 17,
+    "czech": 1
+   }
+  },
+  {
+   "prompt": "The official language of Mexico is",
+   "categorie": "BIFURQUANT",
+   "correct": 14,
+   "faux": 1,
+   "muet": 5,
+   "p_unique": 0.9333333333333333,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "english": 1,
+    "CORRECT": 14
+   }
+  },
+  {
+   "prompt": "The official language of Argentina is",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 15,
+   "faux": 0,
+   "muet": 5,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 15
+   }
+  },
+  {
+   "prompt": "The currency of India is the",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 14,
+   "faux": 0,
+   "muet": 6,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 14
+   }
+  },
+  {
+   "prompt": "The currency of Russia is the",
+   "categorie": "BIFURQUANT",
+   "correct": 12,
+   "faux": 1,
+   "muet": 7,
+   "p_unique": 0.9230769230769231,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 12,
+    "euro": 1
+   }
+  },
+  {
+   "prompt": "The currency of China is the",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 10,
+   "faux": 0,
+   "muet": 10,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 10
+   }
+  },
+  {
+   "prompt": "The currency of Mexico is the",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 14,
+   "faux": 0,
+   "muet": 6,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 14
+   }
+  },
+  {
+   "prompt": "The chemical symbol for iron is",
+   "categorie": "BIFURQUANT",
+   "correct": 6,
+   "faux": 1,
+   "muet": 13,
+   "p_unique": 0.8571428571428571,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 6,
+    "au": 1
+   }
+  },
+  {
+   "prompt": "The chemical symbol for silver is",
+   "categorie": "BIFURQUANT",
+   "correct": 7,
+   "faux": 3,
+   "muet": 10,
+   "p_unique": 0.7,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 0.7272727272727273,
+   "entities": {
+    "pb": 1,
+    "CORRECT": 7,
+    "zn": 1,
+    "cu": 1
+   }
+  },
+  {
+   "prompt": "The chemical symbol for sodium is",
+   "categorie": "BIFURQUANT",
+   "correct": 12,
+   "faux": 2,
+   "muet": 6,
+   "p_unique": 0.8571428571428571,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "ca": 1,
+    "CORRECT": 12,
+    "k": 1
+   }
+  },
+  {
+   "prompt": "The chemical symbol for oxygen is",
+   "categorie": "BIFURQUANT",
+   "correct": 9,
+   "faux": 6,
+   "muet": 5,
+   "p_unique": 0.6,
+   "vote": 1,
+   "greedy": 0,
+   "p_low": 0.4444444444444444,
+   "entities": {
+    "c": 1,
+    "n": 2,
+    "CORRECT": 9,
+    "h": 3
+   }
+  },
+  {
+   "prompt": "The planet known as the Red Planet is",
+   "categorie": "BIFURQUANT",
+   "correct": 2,
+   "faux": 2,
+   "muet": 16,
+   "p_unique": 0.5,
+   "vote": 0,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "venus": 2,
+    "CORRECT": 2
+   }
+  },
+  {
+   "prompt": "The planet with the most prominent rings is",
+   "categorie": "BIFURQUANT",
+   "correct": 10,
+   "faux": 5,
+   "muet": 5,
+   "p_unique": 0.6666666666666666,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 10,
+    "jupiter": 3,
+    "mars": 1,
+    "uranus": 1
+   }
+  },
+  {
+   "prompt": "The closest star to the Earth is the",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 11,
+   "faux": 0,
+   "muet": 9,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 11
+   }
+  },
+  {
+   "prompt": "The hottest planet in the solar system is",
+   "categorie": "BIFURQUANT",
+   "correct": 5,
+   "faux": 2,
+   "muet": 13,
+   "p_unique": 0.7142857142857143,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 5,
+    "mercury": 2
+   }
+  },
+  {
+   "prompt": "The author of Romeo and Juliet was",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 15,
+   "faux": 0,
+   "muet": 5,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 15
+   }
+  },
+  {
+   "prompt": "The author of Don Quixote was",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 4,
+   "faux": 0,
+   "muet": 16,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 4
+   }
+  },
+  {
+   "prompt": "The Mona Lisa was painted by",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 15,
+   "faux": 0,
+   "muet": 5,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 15
+   }
+  },
+  {
+   "prompt": "The theory of relativity was developed by",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 11,
+   "faux": 0,
+   "muet": 9,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 11
+   }
+  },
+  {
+   "prompt": "The Origin of Species was written by",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 14,
+   "faux": 0,
+   "muet": 6,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 14
+   }
+  },
+  {
+   "prompt": "The longest river in Africa is the",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 9,
+   "faux": 0,
+   "muet": 11,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 9
+   }
+  },
+  {
+   "prompt": "The largest country in the world is",
+   "categorie": "BIFURQUANT",
+   "correct": 7,
+   "faux": 2,
+   "muet": 11,
+   "p_unique": 0.7777777777777778,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 7,
+    "canada": 1,
+    "china": 1
+   }
+  },
+  {
+   "prompt": "The smallest country in the world is",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 7,
+   "faux": 0,
+   "muet": 13,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 7
+   }
+  },
+  {
+   "prompt": "The largest island in the world is",
+   "categorie": "BIFURQUANT",
+   "correct": 13,
+   "faux": 1,
+   "muet": 6,
+   "p_unique": 0.9285714285714286,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 13,
+    "madagascar": 1
+   }
+  },
+  {
+   "prompt": "The deepest ocean trench is the",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 19,
+   "faux": 0,
+   "muet": 1,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 19
+   }
+  },
+  {
+   "prompt": "The largest land animal is the",
+   "categorie": "BIFURQUANT",
+   "correct": 8,
+   "faux": 1,
+   "muet": 11,
+   "p_unique": 0.8888888888888888,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 8,
+    "whale": 1
+   }
+  },
+  {
+   "prompt": "The fastest land animal is the",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 13,
+   "faux": 0,
+   "muet": 7,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 13
+   }
+  },
+  {
+   "prompt": "The largest animal in the ocean is the",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 7,
+   "faux": 0,
+   "muet": 13,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 7
+   }
+  },
+  {
+   "prompt": "The Olympic Games originated in",
+   "categorie": "BIFURQUANT",
+   "correct": 11,
+   "faux": 1,
+   "muet": 8,
+   "p_unique": 0.9166666666666666,
+   "vote": 1,
+   "greedy": 1,
+   "p_low": 1.0,
+   "entities": {
+    "china": 1,
+    "CORRECT": 11
+   }
+  },
+  {
+   "prompt": "The sport played at Wimbledon is",
+   "categorie": "BIFURQUANT",
+   "correct": 8,
+   "faux": 3,
+   "muet": 9,
+   "p_unique": 0.7272727272727273,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 0.7777777777777778,
+   "entities": {
+    "CORRECT": 8,
+    "badminton": 1,
+    "cricket": 1,
+    "golf": 1
+   }
+  },
+  {
+   "prompt": "The first man to walk on the Moon was",
+   "categorie": "TOUJOURS-CORRECT",
+   "correct": 7,
+   "faux": 0,
+   "muet": 13,
+   "p_unique": 1.0,
+   "vote": 1,
+   "greedy": null,
+   "p_low": 1.0,
+   "entities": {
+    "CORRECT": 7
+   }
+  }
+ ]
+}
