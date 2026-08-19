@@ -381,3 +381,84 @@ réelle et significative — mais elle reste de nature lexicale au vu du point 3
   (corruption 87.5 % / correction 33.3 %), et c'est la prochaine étape.
 - **Non établi** : que la décroissance après le step 2 soit un rapprochement des
   classes plutôt qu'une dispersion intra-classe.
+
+---
+
+## 2026-08-20 — Étape 4 : test causal. D2 n'est pas soutenu sur GPT-2 small
+
+`src/causal_patching.py`. Sur un même prompt : un run receveur, un run donneur de
+l'autre classe ; on force les s premiers tokens du receveur, on remplace son
+activation à la couche l par celle du donneur au même (step, couche), puis greedy.
+Steps 1-3, couches 4/8/11, 6 paires par prompt, 10 prompts.
+
+### Le premier run était faux — le contrôle l'a dit
+
+Self-patch (patcher avec sa propre activation, qui doit être un no-op exact) :
+**18.1 % de générations modifiées → ÉCHEC.** Cause trouvée en relisant
+`extract_trajectories.py` : le rapport ne conservait que **2 textes par classe**
+pour **6 trajectoires**, si bien que le texte rejoué et le vecteur d'activation
+provenaient de runs différents. Corrigé en appariant strictement les tokens
+générés à leur trajectoire dans le `.npz`.
+
+Couche 12 également retirée du patch : dans `hidden_states`, elle est prise
+**après `ln_f`**, qu'un hook posé sur un bloc ne peut pas reproduire. Patch
+restreint aux couches 1-11.
+
+Second run — **self-patch : 0/1080 = 0.0 %. Mécanisme validé.**
+
+### Résultats
+
+| Intervention | taux | IC 95 % |
+|---|---|---|
+| corruption (Correct ← Hallucination) | **6.7 %** | [4.6 %, 8.8 %] |
+| correction (Hallucination ← Correct) | **4.4 %** | [2.7 %, 6.2 %] |
+| **patch aléatoire (contrôle)** | **6.5 %** | [5.0 %, 7.9 %] |
+
+**corruption vs contrôle aléatoire : z = 0.14.** Aucune différence.
+
+Le patch dirigé ne fait **rien de plus qu'un bruit gaussien de même moyenne et
+variance**. L'asymétrie apparente (6.7 % contre 4.4 %, « ratio 1.5× ») est sans
+objet une fois le contrôle pris en compte : le numérateur est au niveau du bruit.
+
+Référence Akarlar sur Qwen2.5-1.5B : corruption 87.5 %, correction 33.3 %,
+aléatoire 12.5 % — soit 7× le contrôle. Ici : 1.03× le contrôle.
+
+### Ce que ça établit
+
+**D2 (point de commitment irréversible) n'est pas soutenu sur GPT-2 small par une
+intervention ponctuelle.** Il n'y a pas de bassin absorbant détectable : injecter
+l'état d'une trajectoire hallucinée dans une trajectoire correcte ne la fait pas
+basculer plus souvent que du bruit.
+
+Trois explications concurrentes, non départagées :
+
+1. **GPT-2 small n'a pas ces bassins.** 124M paramètres, non instruction-tuned —
+   le phénomène d'Akarlar pourrait n'émerger qu'à plus grande échelle.
+2. **L'intervention ponctuelle est trop faible.** Akarlar note explicitement que
+   la *correction* exige une intervention soutenue multi-étapes, là où la
+   corruption suffit en un coup. Notre patch est ponctuel sur les deux
+   directions. Le **window patching** (plusieurs steps consécutifs) est le test
+   qui manque.
+3. **Notre définition de Hallucination est plus lâche** (toute entité assertée
+   différente de la réponse attendue), ce qui dilue le contraste.
+
+L'explication 2 est la plus testable et la moins coûteuse : c'est la prochaine
+étape. Tant qu'elle n'est pas faite, **ne pas conclure que le phénomène est
+absent** — conclure que l'intervention ponctuelle ne le fait pas apparaître.
+
+### Bilan de la nuit pour ProbatioH1
+
+| Élément du programme | Statut après mesure |
+|---|---|
+| Dwell time au col | réfuté (p = 0.085, n = 50) |
+| Signal géométrique sur le dataset artisanal | invalidé par C1 (longueur seule : 0.939) |
+| « Certifier avant production de la réponse » (§ V) | réfuté par construction (step 0 = AUC 0.500) |
+| Séparation inter-couches | quasi entièrement lexicale (embedding 0.84 / max 0.89) |
+| D2, irréversibilité | non soutenu par patch ponctuel (6.7 % vs 6.5 % aléatoire) |
+| D1, convergence vers bassin | en tension avec la décroissance après le step 2 |
+| Garde-fou synthétique triple | **reste le seul actif non entamé** |
+
+Cinq mesures, cinq résultats négatifs ou nuls — tous obtenus avec des contrôles
+qui ont chacun attrapé une erreur réelle (substring `"0"` dans `"110"`,
+non-réponses comptées comme hallucinations, appariement rompu entre texte et
+activation). C'est la méthode qui tient, pas les hypothèses.

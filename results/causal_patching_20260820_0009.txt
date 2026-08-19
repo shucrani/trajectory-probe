@@ -1,0 +1,15 @@
+ÉTAPE 4 — TEST CAUSAL (activation patching)
+date     : 2026-08-20T00:09:17
+modèle   : gpt2 · steps [1, 2, 3] · couches [4, 8, 11]
+greedy après patch (le hasard de sampling est retiré de la mesure)
+
+CONTRÔLE self-patch : 0/1080 générations modifiées = 0.0%
+   attendu 0.0% — patcher avec sa propre activation doit être un no-op. OK
+
+corruption   Correct <- Hallucination           36/540  =   6.7%
+correction   Hallucination <- Correct           24/540  =   4.4%
+random       patch aléatoire (contrôle)         70/1080 =   6.5%
+
+Référence Akarlar (Qwen2.5-1.5B, 28 couches) : corruption 87.5%, correction 33.3%, random 12.5%.
+
+Asymétrie mesurée : corruption 6.7% vs correction 4.4%  (ratio 1.50x)

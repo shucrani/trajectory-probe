@@ -61,7 +61,7 @@ def main():
     tok.pad_token = tok.eos_token
     model = AutoModelForCausalLM.from_pretrained(args.model).to(device).eval()
 
-    X, y, groups, report = [], [], [], []
+    X, y, groups, tokens, report = [], [], [], [], []
 
     for gi, prompt in enumerate(targets):
         answers = answers_of[prompt]
@@ -92,19 +92,24 @@ def main():
                     traj[:, s, l, :] = h.float().cpu().numpy()
 
             for b in range(n):
+                gen_ids = out.sequences[b][plen:].tolist()
                 text = tok.decode(out.sequences[b][plen:], skip_special_tokens=True)
                 label = classify(text, answers, prompt)
                 if label in kept and len(kept[label]) < args.k:
-                    kept[label].append((traj[b].copy(), text))
+                    # Les tokens générés sont conservés AVEC leur trajectoire.
+                    # Sans cet appariement strict, un rejeu ultérieur (patching)
+                    # associerait le texte d'un run aux activations d'un autre.
+                    kept[label].append((traj[b].copy(), text, gen_ids))
 
         n_min = min(len(kept["Correct"]), len(kept["Hallucination"]))
         for label, code in (("Correct", 0), ("Hallucination", 1)):
-            for arr, _ in kept[label][:n_min]:
+            for arr, _, gen_ids in kept[label][:n_min]:
                 X.append(arr); y.append(code); groups.append(gi)
+                tokens.append(gen_ids)
         report.append({
             "prompt": prompt, "drawn": drawn, "kept_per_class": n_min,
             "correct_found": len(kept["Correct"]), "hallucination_found": len(kept["Hallucination"]),
-            "examples": {k: [t for _, t in v[:2]] for k, v in kept.items()},
+            "examples": {k: [t for _, t, _ in v[:2]] for k, v in kept.items()},
         })
         print(f"  {prompt[:44]:<46} tirées={drawn:>4}  gardées={n_min}/classe"
               f"  (C={len(kept['Correct'])}, H={len(kept['Hallucination'])})")
@@ -112,9 +117,10 @@ def main():
     if not X:
         raise SystemExit("Aucune trajectoire retenue.")
     X = np.stack(X); y = np.array(y); groups = np.array(groups)
+    tokens = np.array(tokens, dtype=np.int32)
     stamp = datetime.now().strftime("%Y%m%d_%H%M")
     dest = ROOT / "results" / f"trajectories_{tag}_{stamp}.npz"
-    np.savez_compressed(dest, X=X, y=y, groups=groups,
+    np.savez_compressed(dest, X=X, y=y, groups=groups, tokens=tokens,
                         prompts=np.array(targets, dtype=object), allow_pickle=True)
     (ROOT / "results" / f"trajectories_{tag}_{stamp}_report.json").write_text(
         json.dumps(report, indent=1, ensure_ascii=False))
