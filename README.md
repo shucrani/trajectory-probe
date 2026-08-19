@@ -4,8 +4,10 @@
 d'un Transformer porte-t-elle un signal exploitable de l'hallucination — et ce
 signal survit-il à une comparaison avec les métriques déjà publiées ?
 
-Statut : **exploratoire, avec un confond de dataset non résolu** (§ 3). Aucun
-résultat n'est établi comme portant sur l'hallucination.
+Statut : **le dataset initial est invalidé** (§ 1, contrôle C1 exécuté le
+19/08/2026). Aucun résultat n'est attribuable à la géométrie des trajectoires
+tant que le protocole n'a pas changé. Le résultat négatif sur le dwell time
+(§ 2) reste, lui, valide.
 
 ---
 
@@ -18,8 +20,26 @@ résultat n'est établi comme portant sur l'hallucination.
 | 4 features (curvature, velocity, dist, ratio) | 0.938 | 0.005 | — | significatif |
 | Vecteur complet (10 features) | 0.939 | 0.005 | dominé par `ratio_dist`, `dist_hallucination` | significatif |
 | **CoE-R + CoE-C** (baseline publiée, Wang et al. ICLR 2025) | **0.873** | 0.005 | Factual > Hallu | **répliquée** |
+| — | | | | |
+| **`n_words` — compter les mots, sans modèle** | **0.939** | 0.00005 | Hallu > Factual | **contrôle C1** |
+| **`n_chars` — compter les caractères, sans modèle** | **0.942** | 0.00005 | Hallu > Factual | **contrôle C1** |
 
 Combiner nos features avec CoE apporte **+0.0008** d'AUC. C'est le même signal.
+
+> **C1 exécuté le 19/08/2026 — le confond est confirmé, pas seulement suspecté.**
+> Le nombre de mots d'une phrase, seul, sans qu'aucun modèle soit chargé, atteint
+> **exactement l'AUC du pipeline complet sur hidden states (0.939)**. Le nombre de
+> caractères fait mieux (0.942). Les deux métriques géométriques — `mean_curvature`
+> (0.823) et la baseline CoE (0.873) — sont **inférieures** à un comptage de
+> caractères.
+>
+> Conséquence : sur ce dataset, aucun résultat n'est attribuable à la géométrie
+> des trajectoires. Le classifieur pouvait tout obtenir en mesurant la longueur.
+> Script : `src/c1_surface_confound.py` · sortie : `results/c1_surface_confound_20260819.txt`
+> (AUC exacte par Mann-Whitney, p par permutation à 20 000 tirages).
+>
+> Marqueurs évidentiels : AUC 0.620 (p = 0.023). Présence d'une année : 0.720
+> (p = 0.0009). Les trois confonds sont réels et indépendamment significatifs.
 
 `mean_curvature` et `max_velocity` corrèlent à r = 0.81 : le « signal à 4
 features » a probablement 2 dimensions réelles, pas 4.
@@ -111,8 +131,8 @@ fabrication, quelle que soit l'intention.
 peut-être la longueur des phrases. Coût : quelques minutes sur les trajectoires
 déjà extraites.
 
-- **C1** — classifier sur le **nombre de tokens seul**. Si AUC ≳ 0.85, tous les
-  résultats de la § 1 sont suspendus.
+- **C1** — ~~classifier sur le nombre de tokens seul~~ **FAIT (19/08). AUC 0.939
+  en mots, 0.942 en caractères. Les résultats de la § 1 sont suspendus.**
 - **C2** — réapparier les deux classes en longueur (± 1 token) et en format, puis
   refaire tourner § 1. L'AUC survit-elle ?
 - **C3** — passer à un dataset apparié par construction : TruthfulQA ou HaluEval,
@@ -141,9 +161,10 @@ magnifique sur un artefact de longueur reste un artefact.
   combinaison n'apporte rien. Il n'y a pas de découverte, au mieux une
   réplication indépendante sur GPT-2 small.
 - **K3** — pas de réplication sur un second modèle : non testé.
-- **K4** (nouveau) — si C1/C2 montrent que la longueur explique le signal, le
-  résultat empirique tombe entièrement et le projet se réduit à son résultat
-  négatif (§ 2), qui reste publiable seul.
+- **K4** — **TOMBÉ (19/08)**. La longueur explique le signal : `n_chars` seul
+  atteint 0.942 contre 0.939 pour le pipeline complet. Le volet empirique du
+  projet est réduit à son résultat négatif (§ 2) tant qu'un dataset apparié n'a
+  pas été utilisé.
 
 **Revue : 19/09/2026.** Sans contrôles de confond exécutés d'ici là, projet
 déclaré dormant.

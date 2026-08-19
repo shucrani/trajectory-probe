@@ -1,0 +1,21 @@
+C1 — CONTROLE DE CONFOND DE SURFACE
+date            : 2026-08-19T23:34:21
+source          : notebooks/gpt2_navigation_certificate_validation.ipynb
+n               : 50 (25 factuels / 25 hallucinatoires)
+permutations    : 20000 (seed 42)
+aucun modele charge — proprietes de surface uniquement
+
+feature                AUC         p           factuels   hallucinatoires
+--------------------------------------------------------------------------
+n_words              0.939   0.00005       7.28 ± 1.99      11.84 ± 2.39 
+n_chars              0.942   0.00005      42.88 ± 12.01     71.96 ± 11.16
+has_evidential       0.620   0.02270       0.00 ± 0.00       0.24 ± 0.43 
+has_year             0.720   0.00090       0.04 ± 0.20       0.48 ± 0.50 
+
+Lecture : AUC = 1.000 signifie separation parfaite par cette seule propriete
+de surface. Toute AUC obtenue sur les hidden states qui n'excede pas ces
+valeurs ne demontre rien sur la geometrie des trajectoires.
+
+Limite : le comptage en mots approxime le comptage en tokens BPE (correlation
+elevee sur de l'anglais standard, mais non identique). Refaire avec le
+tokenizer GPT-2 quand transformers sera installe.

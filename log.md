@@ -191,3 +191,51 @@ ICR aux couches 10-15 sur 28. L'encadré coche ✓ des axiomes classés
    produit réellement) existe explicitement pour isoler la dynamique des confonds
    de prompt. L'adopter règle C1-C4 d'un coup et rend les résultats comparables.
    **Décision : abandonner le dataset de 50 prompts écrits à la main.**
+
+---
+
+## 2026-08-19 (nuit) — C1 EXÉCUTÉ : le confond est confirmé
+
+Script `src/c1_surface_confound.py`, sortie `results/c1_surface_confound_20260819.txt`.
+Aucun modèle chargé. AUC exacte par rangs (Mann-Whitney), p par permutation
+bilatérale à 20 000 tirages, seed 42. Les prompts sont lus directement depuis le
+notebook, pas recopiés.
+
+| Propriété de surface | AUC | p | factuels | hallucinatoires |
+|---|---|---|---|---|
+| `n_words` | **0.939** | 0.00005 | 7.28 ± 1.99 | 11.84 ± 2.39 |
+| `n_chars` | **0.942** | 0.00005 | 42.9 ± 12.0 | 72.0 ± 11.2 |
+| `has_year` | 0.720 | 0.0009 | 0.04 | 0.48 |
+| `has_evidential` | 0.620 | 0.023 | 0.00 | 0.24 |
+
+**Comparaison directe :**
+
+| Méthode | AUC |
+|---|---|
+| Vecteur complet, 10 features sur hidden states | 0.939 |
+| **Nombre de mots, sans modèle** | **0.939** |
+| **Nombre de caractères, sans modèle** | **0.942** |
+| Baseline CoE (états bruts) | 0.873 |
+| `mean_curvature` isolée | 0.823 |
+
+**Verdict.** Sur ce dataset, la géométrie des trajectoires n'apporte rien qu'un
+comptage de caractères ne donne déjà. Les deux métriques géométriques sont
+*inférieures* au contrôle trivial. **K4 est tombé.**
+
+Ce résultat n'invalide pas le projet : il invalide le dataset. Le résultat
+négatif sur le dwell time (§ 2 du README) reste valide — il était négatif, donc
+non menacé par un confond qui aurait aidé à séparer les classes.
+
+Il invalide en revanche la § II du programme ProbatioH1 v3 (« le signal réel »)
+et rend caduque la § IX (test irréductible) telle qu'écrite : mesurer la
+progressivité couche par couche de ce signal reviendrait à mesurer à quelle
+couche GPT-2 encode la longueur de la phrase.
+
+**Décision confirmée** : passer au protocole *same-prompt bifurcation*
+(Akarlar, arXiv 2604.15400) où les deux classes viennent du même prompt et ne
+peuvent donc pas différer en surface. Un deep search est en cours pour cadrer
+l'implémentation et le choix des datasets.
+
+**Limite** : le comptage en mots approxime le comptage en tokens BPE. À refaire
+avec le tokenizer GPT-2 une fois `transformers` installé — mais avec un écart de
+cette taille (7.3 mots contre 11.8), la conclusion ne bougera pas.
