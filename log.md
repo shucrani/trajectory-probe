@@ -1208,3 +1208,52 @@ contexte est le geste central, dans les deux domaines.
 réellement. Le premier run a été interrompu par le coût de l'import global. Sans
 ce chiffre on connaît le prix du régime, pas ce qu'il rapporte. Mesure lancée
 juste après, avec imports ciblés.
+
+---
+
+## 2026-08-20 — DÉCLARATION DE PROTOCOLE (avant exécution) : chantier 1, code réel
+
+Plan approuvé (`~/.claude/plans/luminous-greeting-chipmunk.md`). Transfert du
+régime vérifiable vers l'ingénierie logicielle.
+
+### Protocole
+
+Corpus **MBPP sanitized** (427 problèmes, `data/sanitized-mbpp.json`), 60 premiers
+retenus. Modèle Qwen2.5-1.5B-Instruct, N = 10 candidats, T = 0.7, seed 42 —
+paramètres alignés sur les étapes 10-11 pour comparabilité.
+
+**Vérificateur indépendant** : les tests viennent des auteurs du benchmark, pas du
+modèle. Trois forces mesurées sur les mêmes candidats :
+G4 syntaxe (`compile`) · G3 exécution sans exception · G2 tests fournis.
+
+**Choix de protocole déclaré** : le premier test est donné au modèle comme
+spécification (il fournit la signature de la fonction) ; les trois tests servent à
+la vérification. C'est le protocole MBPP standard. Le test donné n'est pas écrit
+par le modèle, l'indépendance du vérificateur est préservée.
+
+**Isolation** (validée par Lamar) : sous-processus séparé, timeout 5 s, dossier
+temporaire hors du dépôt, jamais d'`exec` en processus principal.
+
+### Contrôles passés avant le run
+
+- **60/60 solutions de référence passent leurs propres tests** → l'exécuteur est
+  correct ; tout échec sera imputable au modèle.
+- boucle infinie coupée par le timeout : oui (3.0 s)
+- syntaxe invalide rejetée : oui · exception détectée : oui
+- coût mesuré : **~40 ms par vérification** (2.4 s pour 60)
+
+### Prédictions déposées
+
+- La couverture G2 devrait dépasser le taux de tirage unique, comme aux étapes
+  10-11 — c'est l'effet « le modèle a la réponse mais ne sait pas laquelle ».
+- L'identité `couverture = 1 − part systématique` doit se retrouver ; si elle ne
+  se retrouve pas, c'est que la partition ou la politique diffère de l'étape 11 et
+  il faudra dire pourquoi.
+- La couverture doit décroître avec la force : G4 ≥ G3 ≥ G2 par construction.
+  Toute violation signale un bug.
+
+### Nouveau degré de liberté
+
+Le corpus est constitué des 60 **premiers** problèmes MBPP, pas d'un tirage
+aléatoire — choix figé avant le run pour éviter toute sélection post-hoc. À
+ajouter à `docs/DEGRES-DE-LIBERTE.md`.
