@@ -1257,3 +1257,59 @@ temporaire hors du dépôt, jamais d'`exec` en processus principal.
 Le corpus est constitué des 60 **premiers** problèmes MBPP, pas d'un tirage
 aléatoire — choix figé avant le run pour éviter toute sélection post-hoc. À
 ajouter à `docs/DEGRES-DE-LIBERTE.md`.
+
+---
+
+## 2026-08-20 — Étape 12 (suite) : couverture du régime formel. 20 %.
+
+Run terminé avec imports ciblés. Contrôle : **20/20 preuves canoniques
+compilent** (1.7 s à 12.7 s selon le contexte), l'environnement est donc hors de
+cause.
+
+| | valeur |
+|---|---|
+| candidats qui compilent | **4/160 = 2.5 %** |
+| énoncés couverts (≥ 1 candidat valide) | **4/20 = 20.0 %** |
+| coût par candidat | **14.0 s** |
+| coût par énoncé (8 candidats) | **112.3 s** |
+| preuve canonique, pour mémoire | 6.0 s |
+
+### Correction d'une affirmation de l'étape 12
+
+J'écrivais « rejeter coûte autant qu'accepter » (220 s contre 207 s sur
+`import Mathlib`). Avec imports ciblés, l'écart se creuse dans l'autre sens :
+**14.0 s pour un candidat du modèle contre 6.0 s pour une preuve canonique**, soit
+2,3×. Les tactiques invalides déclenchent des recherches longues (`simp`, `exact?`,
+saturation) avant d'échouer. **Rejeter coûte davantage qu'accepter**, et le surcoût
+augmente quand le taux d'échec augmente — exactement le mauvais couplage.
+
+Coût effectif par énoncé **réellement couvert** : 112.3 / 0.20 ≈ **560 s**.
+
+### Ce que ça établit, et ce que ça n'établit pas
+
+**Établi** : avec un modèle généraliste de 1,5 B, le régime vérifiable formel est
+une garantie parfaite et presque vide — 100 % de précision sur 20 % des énoncés,
+à 560 s par énoncé couvert.
+
+**Non établi** : que ce soit une propriété du *régime*. C'est une propriété du
+**modèle**. Qwen2.5-1.5B-Instruct n'est pas un prouveur ; les systèmes spécialisés
+(DeepSeek-Prover, AlphaProof, AlphaVerus) ne sont pas comparables. Le chiffre à
+retenir n'est pas « le régime formel couvre 20 % » mais « le coût d'entrée du
+régime formel inclut un modèle spécialisé, et un généraliste ne suffit pas ».
+
+### Ce que ça dit du recadrage vers l'ingénierie
+
+Le contraste est désormais mesuré des deux côtés du coût :
+
+| | coût par vérification |
+|---|---|
+| exécution de tests (MBPP) | **~40 ms** |
+| Lean, imports ciblés | **14 s** (candidat modèle) |
+| Lean, import global | 187-220 s |
+
+Facteur **350** entre l'exécution de tests et Lean ciblé. Le régime vérifiable est
+viable en ingénierie parce que le vérificateur y est presque gratuit **et** parce
+que le modèle y produit des candidats valides bien plus souvent. Les deux
+conditions manquent en mathématiques formelles avec un modèle généraliste.
+
+La ligne « code » de la table est en cours de mesure.

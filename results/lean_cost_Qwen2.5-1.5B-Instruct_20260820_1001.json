@@ -1,0 +1,942 @@
+[
+ {
+  "statement": "theorem t1 (a b : Nat) : a + b = b + a",
+  "imports": "",
+  "covered": false,
+  "candidates": [
+   {
+    "tactic": "refl",
+    "ok": false,
+    "sec": 15.84
+   },
+   {
+    "tactic": "begin\n  rw [add_comm],\n  end",
+    "ok": false,
+    "sec": 9.47
+   },
+   {
+    "tactic": "begin\n  rw [add_comm],\n  end",
+    "ok": false,
+    "sec": 31.33
+   },
+   {
+    "tactic": "apply le_antisym ; apply le_trans // by congr // sorry",
+    "ok": false,
+    "sec": 15.46
+   },
+   {
+    "tactic": "apply add_comm _ _ ; exact rfl",
+    "ok": false,
+    "sec": 10.68
+   },
+   {
+    "tactic": "apply le_antisymm\n  reflexivity\n  reflexivity",
+    "ok": false,
+    "sec": 9.71
+   },
+   {
+    "tactic": "x ≤ x + 0 :=\n  begin\n  rw add_zero,",
+    "ok": false,
+    "sec": 5.05
+   },
+   {
+    "tactic": "sorry\n  cannot prove it in one line",
+    "ok": false,
+    "sec": 6.45
+   }
+  ]
+ },
+ {
+  "statement": "theorem t2 (a b c : Nat) : a + b + c = a + (b + c)",
+  "imports": "",
+  "covered": false,
+  "candidates": [
+   {
+    "tactic": "begin\n  rw add_comm,\n  refl",
+    "ok": false,
+    "sec": 27.18
+   },
+   {
+    "tactic": "rw add_assoc",
+    "ok": false,
+    "sec": 6.76
+   },
+   {
+    "tactic": "reflNat (a + (b + c)) ((natAddComm _ _ _) a b c)",
+    "ok": false,
+    "sec": 6.51
+   },
+   {
+    "tactic": "refl _; simp [t1]",
+    "ok": false,
+    "sec": 8.83
+   },
+   {
+    "tactic": "by rw [add_assoc]",
+    "ok": false,
+    "sec": 5.99
+   },
+   {
+    "tactic": "by rw add_comm; refl",
+    "ok": false,
+    "sec": 7.06
+   },
+   {
+    "tactic": "begin\n  rw add_assoc at c,\n  end",
+    "ok": false,
+    "sec": 6.16
+   },
+   {
+    "tactic": "reflNatAddCongruence _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _",
+    "ok": false,
+    "sec": 5.49
+   }
+  ]
+ },
+ {
+  "statement": "theorem t3 (a : Nat) : a + 0 = a",
+  "imports": "",
+  "covered": false,
+  "candidates": [
+   {
+    "tactic": "exact add_zero a",
+    "ok": false,
+    "sec": 16.07
+   },
+   {
+    "tactic": "reflexivity",
+    "ok": false,
+    "sec": 5.3
+   },
+   {
+    "tactic": "begin\n  apply le_antisymm,\n  { exact zero_le_self },",
+    "ok": false,
+    "sec": 6.06
+   },
+   {
+    "tactic": "refl a; add_zero a",
+    "ok": false,
+    "sec": 5.93
+   },
+   {
+    "tactic": "refl_eq $ add_zero _ a",
+    "ok": false,
+    "sec": 4.7
+   },
+   {
+    "tactic": "refl _ <;>\n  rw add_zero_right <;> refl",
+    "ok": false,
+    "sec": 5.29
+   },
+   {
+    "tactic": "refl",
+    "ok": false,
+    "sec": 7.4
+   },
+   {
+    "tactic": "reflexivity",
+    "ok": false,
+    "sec": 4.59
+   }
+  ]
+ },
+ {
+  "statement": "theorem t4 (n : Nat) : n <= n + 1",
+  "imports": "",
+  "covered": false,
+  "candidates": [
+   {
+    "tactic": "sorry\n  reflexivity\n  add_one_le_add_one",
+    "ok": false,
+    "sec": 29.83
+   },
+   {
+    "tactic": "by rw lt_def; exact le_refl _",
+    "ok": false,
+    "sec": 6.28
+   },
+   {
+    "tactic": "exact le_refl n",
+    "ok": false,
+    "sec": 2.64
+   },
+   {
+    "tactic": "by rw le_self; exact succ_le_self n",
+    "ok": false,
+    "sec": 8.2
+   },
+   {
+    "tactic": "begin\n  cases n,\n  {",
+    "ok": false,
+    "sec": 2.96
+   },
+   {
+    "tactic": "reflexivity",
+    "ok": false,
+    "sec": 2.67
+   },
+   {
+    "tactic": "reflexivity //",
+    "ok": false,
+    "sec": 2.52
+   },
+   {
+    "tactic": "exact le_succ_of_le_left n\tn succ_le_pred _ le_refl n",
+    "ok": false,
+    "sec": 2.47
+   }
+  ]
+ },
+ {
+  "statement": "theorem t5 (n : Nat) (h : n > 0) : n >= 1",
+  "imports": "",
+  "covered": false,
+  "candidates": [
+   {
+    "tactic": "exact le_of_gt h 1",
+    "ok": false,
+    "sec": 30.35
+   },
+   {
+    "tactic": "exact h.left",
+    "ok": false,
+    "sec": 22.61
+   },
+   {
+    "tactic": "exact le_of_gt h",
+    "ok": false,
+    "sec": 7.23
+   },
+   {
+    "tactic": "refl",
+    "ok": false,
+    "sec": 7.62
+   },
+   {
+    "tactic": "exact le_rfl h",
+    "ok": false,
+    "sec": 8.66
+   },
+   {
+    "tactic": "reflNat h",
+    "ok": false,
+    "sec": 3.87
+   },
+   {
+    "tactic": "exact h.left",
+    "ok": false,
+    "sec": 2.75
+   },
+   {
+    "tactic": "sorry\n  exact h\n  sorry",
+    "ok": false,
+    "sec": 5.98
+   }
+  ]
+ },
+ {
+  "statement": "theorem t6 (a b : Nat) (h : a = b) : b = a",
+  "imports": "",
+  "covered": true,
+  "candidates": [
+   {
+    "tactic": "sorry, your request does not contain any mathematics related content that needs to be processed by Mathlib or Lean 4. Could you please provide more details or complete the task?",
+    "ok": false,
+    "sec": 37.2
+   },
+   {
+    "tactic": "exact h.rec_on(1)",
+    "ok": false,
+    "sec": 6.1
+   },
+   {
+    "tactic": "refl b h",
+    "ok": false,
+    "sec": 4.9
+   },
+   {
+    "tactic": "sorry, unable to complete the lean 4 proof as it needs more context or specific operations on nat types to prove equality through assignment equivalence.",
+    "ok": false,
+    "sec": 2.55
+   },
+   {
+    "tactic": "exact h.symm",
+    "ok": true,
+    "sec": 2.73
+   },
+   {
+    "tactic": "sorry, that's not correct. I'll need more information or context to provide you with a complete and accurate solution. Can you please provide additional details about the problem you're trying to prove?",
+    "ok": false,
+    "sec": 2.47
+   },
+   {
+    "tactic": "refl h",
+    "ok": false,
+    "sec": 2.45
+   },
+   {
+    "tactic": "sorry a = b sorry b = a sorry",
+    "ok": false,
+    "sec": 2.56
+   }
+  ]
+ },
+ {
+  "statement": "theorem t7 (p q : Prop) (hp : p) (hq : q) : p /\\ q",
+  "imports": "",
+  "covered": false,
+  "candidates": [
+   {
+    "tactic": "by auto",
+    "ok": false,
+    "sec": 15.25
+   },
+   {
+    "tactic": "exact hp,\n  ex fdp,\n  exact hq,",
+    "ok": false,
+    "sec": 3.04
+   },
+   {
+    "tactic": "exact hp\n  and\n  exact hq",
+    "ok": false,
+    "sec": 2.67
+   },
+   {
+    "tactic": "exact hp\n  exact hq",
+    "ok": false,
+    "sec": 2.86
+   },
+   {
+    "tactic": "by rw [← hp, hq]",
+    "ok": false,
+    "sec": 2.64
+   },
+   {
+    "tactic": "reflexivity\n  /subtraction_cancel_right _ _ /",
+    "ok": false,
+    "sec": 2.57
+   },
+   {
+    "tactic": "by rw [and.intro hp hq]",
+    "ok": false,
+    "sec": 6.68
+   },
+   {
+    "tactic": "by rw [congr_arg]; exact hp; exact hq",
+    "ok": false,
+    "sec": 6.5
+   }
+  ]
+ },
+ {
+  "statement": "theorem t8 (p q : Prop) (h : p /\\ q) : p",
+  "imports": "",
+  "covered": true,
+  "candidates": [
+   {
+    "tactic": "exact h.left\n  exact h.right",
+    "ok": false,
+    "sec": 38.64
+   },
+   {
+    "tactic": "python\n  using h\n  `/\\",
+    "ok": false,
+    "sec": 13.52
+   },
+   {
+    "tactic": "apply h",
+    "ok": false,
+    "sec": 5.3
+   },
+   {
+    "tactic": "refine h.left;\n  refine h.right;",
+    "ok": false,
+    "sec": 2.76
+   },
+   {
+    "tactic": "refl h",
+    "ok": false,
+    "sec": 2.4
+   },
+   {
+    "tactic": "exact h.left\n  exact h.right",
+    "ok": false,
+    "sec": 2.68
+   },
+   {
+    "tactic": "exact h.left; exact h.right",
+    "ok": false,
+    "sec": 2.51
+   },
+   {
+    "tactic": "sorry",
+    "ok": true,
+    "sec": 2.33
+   }
+  ]
+ },
+ {
+  "statement": "theorem t9 (p q : Prop) (h : p) : p \\/ q",
+  "imports": "",
+  "covered": false,
+  "candidates": [
+   {
+    "tactic": "exact h.Union_left_of_disjoint_right_eq_left",
+    "ok": false,
+    "sec": 41.23
+   },
+   {
+    "tactic": "exact h",
+    "ok": false,
+    "sec": 8.0
+   },
+   {
+    "tactic": "lean.context [p].elim h; exact p",
+    "ok": false,
+    "sec": 7.23
+   },
+   {
+    "tactic": "exact h; or_tac",
+    "ok": false,
+    "sec": 6.48
+   },
+   {
+    "tactic": "sorry\n  exact h\n  sorry",
+    "ok": false,
+    "sec": 4.53
+   },
+   {
+    "tactic": "exact h",
+    "ok": false,
+    "sec": 2.95
+   },
+   {
+    "tactic": "by rw [disj_right] h",
+    "ok": false,
+    "sec": 2.99
+   },
+   {
+    "tactic": "exact h.",
+    "ok": false,
+    "sec": 3.23
+   }
+  ]
+ },
+ {
+  "statement": "theorem t10 (f : Nat -> Nat) (a : Nat) : f a = f a",
+  "imports": "",
+  "covered": false,
+  "candidates": [
+   {
+    "tactic": "lean.simp",
+    "ok": false,
+    "sec": 15.48
+   },
+   {
+    "tactic": "sorry\n  exact rfl",
+    "ok": false,
+    "sec": 5.45
+   },
+   {
+    "tactic": "by rw refl",
+    "ok": false,
+    "sec": 4.81
+   },
+   {
+    "tactic": "reflNat' f a",
+    "ok": false,
+    "sec": 2.85
+   },
+   {
+    "tactic": "exact congruence_of_function_eq f a a",
+    "ok": false,
+    "sec": 2.59
+   },
+   {
+    "tactic": "exact eq.refl a.val",
+    "ok": false,
+    "sec": 2.7
+   },
+   {
+    "tactic": "reflexivity",
+    "ok": false,
+    "sec": 3.83
+   },
+   {
+    "tactic": "begin\n  rw add_zero,\n  rw mul_one,",
+    "ok": false,
+    "sec": 2.61
+   }
+  ]
+ },
+ {
+  "statement": "theorem t11 (a b : Int) : a * b = b * a",
+  "imports": "import Mathlib.Tactic.Ring",
+  "covered": true,
+  "candidates": [
+   {
+    "tactic": "||- a * b = b * a\n  sorry\n  ||- sorry",
+    "ok": false,
+    "sec": 80.12
+   },
+   {
+    "tactic": "sorry, this is a simple commutative property of multiplication that can be directly stated without proof in Lean. There's no need to use tactics for this identity.",
+    "ok": false,
+    "sec": 31.52
+   },
+   {
+    "tactic": "exact mul_comm a b",
+    "ok": true,
+    "sec": 18.7
+   },
+   {
+    "tactic": "rw mul_comm a b",
+    "ok": false,
+    "sec": 15.65
+   },
+   {
+    "tactic": "begin\n  rw mul_comm,\n  end",
+    "ok": false,
+    "sec": 13.22
+   },
+   {
+    "tactic": "begin\n  rw mul_comm,\n  end",
+    "ok": false,
+    "sec": 24.68
+   },
+   {
+    "tactic": "sorry\n  this is not mathlib style. it should be something like: sorry ; cases a; cases b; refine ... ; exact eq_of_mul_self _ ; refine ... ; exact eq_of_mul_comm _ _ ; etc.",
+    "ok": false,
+    "sec": 16.89
+   },
+   {
+    "tactic": "1 / 2 + 1 / 3 = 5 / 6",
+    "ok": false,
+    "sec": 19.93
+   }
+  ]
+ },
+ {
+  "statement": "theorem t12 (a b : Int) : (a + b) ^ 2 = a ^ 2 + 2 * a * b + b ^ 2",
+  "imports": "import Mathlib.Tactic.Ring",
+  "covered": false,
+  "candidates": [
+   {
+    "tactic": "exact eq.mul_add_eq_of_mul_eq_of_mem_zero_or_one_of_mem $ mul_self _ _\n  exactly rfl",
+    "ok": false,
+    "sec": 59.54
+   },
+   {
+    "tactic": "begin\n  end",
+    "ok": false,
+    "sec": 18.64
+   },
+   {
+    "tactic": "begin\n  rw [pow_add, pow_mul],\n  refl,",
+    "ok": false,
+    "sec": 16.86
+   },
+   {
+    "tactic": "by refl",
+    "ok": false,
+    "sec": 20.81
+   },
+   {
+    "tactic": "python\n  exact (by rw [mul_add])",
+    "ok": false,
+    "sec": 12.67
+   },
+   {
+    "tactic": "exact le_antisymm (by simp [le_def]) (by rw [sq_add sq])",
+    "ok": false,
+    "sec": 12.06
+   },
+   {
+    "tactic": "sorry, that's not a mathlib tactic, please provide more context or clarify your question.",
+    "ok": false,
+    "sec": 14.33
+   },
+   {
+    "tactic": "begin\n  rw [pow_add_pow],\n  rw [mul_mul_assoc],",
+    "ok": false,
+    "sec": 9.78
+   }
+  ]
+ },
+ {
+  "statement": "theorem t13 (a : Int) : a - a = 0",
+  "imports": "import Mathlib.Tactic.Ring",
+  "covered": true,
+  "candidates": [
+   {
+    "tactic": "begin\n  rw [sub_self],\n  end",
+    "ok": false,
+    "sec": 23.67
+   },
+   {
+    "tactic": "sorry\n  sorry\n  sorry",
+    "ok": false,
+    "sec": 10.71
+   },
+   {
+    "tactic": "refl_eq a",
+    "ok": false,
+    "sec": 9.63
+   },
+   {
+    "tactic": "reflexivity",
+    "ok": false,
+    "sec": 11.46
+   },
+   {
+    "tactic": "sorry\n  exact zero_sub_of_zero_eq_zero _\n  sorry",
+    "ok": false,
+    "sec": 6.93
+   },
+   {
+    "tactic": "=context.size() < 256\n  revert a\n  reflexivity",
+    "ok": false,
+    "sec": 8.88
+   },
+   {
+    "tactic": "refl",
+    "ok": false,
+    "sec": 14.56
+   },
+   {
+    "tactic": "sorry",
+    "ok": true,
+    "sec": 13.47
+   }
+  ]
+ },
+ {
+  "statement": "theorem t14 (a b : Int) : a + b - b = a",
+  "imports": "import Mathlib.Tactic.Ring",
+  "covered": false,
+  "candidates": [
+   {
+    "tactic": "rw [add_comm]",
+    "ok": false,
+    "sec": 34.51
+   },
+   {
+    "tactic": "refl,",
+    "ok": false,
+    "sec": 15.34
+   },
+   {
+    "tactic": "ab - b = a",
+    "ok": false,
+    "sec": 12.42
+   },
+   {
+    "tactic": "tac rootReducer _ rootSubtrahend a subtrahendDiff addend diff res {x} [eq] {y} ← eq => simp at y; refl.",
+    "ok": false,
+    "sec": 9.29
+   },
+   {
+    "tactic": "begin\n  rw [add_sub_cancel],\n  end",
+    "ok": false,
+    "sec": 10.09
+   },
+   {
+    "tactic": "exact add_sub_cancel _ _",
+    "ok": false,
+    "sec": 9.79
+   },
+   {
+    "tactic": "apply plus_comm; exact rfl",
+    "ok": false,
+    "sec": 11.04
+   },
+   {
+    "tactic": "rw [sub_cancel_left]",
+    "ok": false,
+    "sec": 7.56
+   }
+  ]
+ },
+ {
+  "statement": "theorem t15 (a b : Int) : (a - b) * (a + b) = a^2 - b^2",
+  "imports": "import Mathlib.Tactic.Ring",
+  "covered": false,
+  "candidates": [
+   {
+    "tactic": "sorry, it seems that there is an error in your question. you want to prove a mathematical identity or equality by tactic mode of lean but it doesn't seem to be correct, since the left-hand side and right-hand side don't match for all values of `a` and `b`. could you please provide more",
+    "ok": false,
+    "sec": 32.36
+   },
+   {
+    "tactic": "begin\n  rw ← mul_add,\n  rw ← add_sub_cancel,",
+    "ok": false,
+    "sec": 14.68
+   },
+   {
+    "tactic": "begin\n  rw [mul_add],\n  congr,",
+    "ok": false,
+    "sec": 11.4
+   },
+   {
+    "tactic": "begin\n  rw [mul_add],\n  rw [(add_mul_cancel_left _ _) ((mul_comm a b))],",
+    "ok": false,
+    "sec": 13.96
+   },
+   {
+    "tactic": "begin\n  rw [mul_sub],\n  rw [add_sub_cancel_left a b],",
+    "ok": false,
+    "sec": 16.79
+   },
+   {
+    "tactic": "begin\n  rw mul_sub,\n  rw add_mul,",
+    "ok": false,
+    "sec": 11.57
+   },
+   {
+    "tactic": "begin\n  rw [←mul_add a b],\n  rw add_sub_cancel a (-b),",
+    "ok": false,
+    "sec": 9.91
+   },
+   {
+    "tactic": "refl _",
+    "ok": false,
+    "sec": 10.03
+   }
+  ]
+ },
+ {
+  "statement": "theorem t16 (x : Int) (h : x > 0) : x >= 0",
+  "imports": "import Mathlib.Tactic.Linarith",
+  "covered": false,
+  "candidates": [
+   {
+    "tactic": "by rw [lt_def, ne.symm, h]",
+    "ok": false,
+    "sec": 41.76
+   },
+   {
+    "tactic": "refl",
+    "ok": false,
+    "sec": 25.54
+   },
+   {
+    "tactic": "sorry I am unable to complete your task as it seems you want me to write an ML file code that's not within my capabilities. However, if you give me more details on what you need or ask a new question, I'll be happy to help!",
+    "ok": false,
+    "sec": 34.24
+   },
+   {
+    "tactic": "exact h.le_zero_pos.h' h.zero_le_one_hole h.one_pos.h.zero_le_two",
+    "ok": false,
+    "sec": 34.73
+   },
+   {
+    "tactic": "exact le_of_gt h",
+    "ok": false,
+    "sec": 24.41
+   },
+   {
+    "tactic": "exact zero_le_one.mpr",
+    "ok": false,
+    "sec": 25.84
+   },
+   {
+    "tactic": "exact le_of_gt h",
+    "ok": false,
+    "sec": 30.36
+   },
+   {
+    "tactic": "scala\n  by rw h",
+    "ok": false,
+    "sec": 30.06
+   }
+  ]
+ },
+ {
+  "statement": "theorem t17 (x y : Int) (h1 : x <= y) (h2 : y <= x) : x = y",
+  "imports": "import Mathlib.Tactic.Linarith",
+  "covered": false,
+  "candidates": [
+   {
+    "tactic": "reflexivity.",
+    "ok": false,
+    "sec": 39.2
+   },
+   {
+    "tactic": "sorry, i am not able to understand the question. could you please provide more details?",
+    "ok": false,
+    "sec": 20.5
+   },
+   {
+    "tactic": "sorry, i cannot do that because there is not enough information or context to complete a lean 4 proof using mathlib. Please provide more details or clarify your question.",
+    "ok": false,
+    "sec": 12.91
+   },
+   {
+    "tactic": "reflexivity.",
+    "ok": false,
+    "sec": 27.87
+   },
+   {
+    "tactic": "sorry I don't know Lean and mathlib",
+    "ok": false,
+    "sec": 27.36
+   },
+   {
+    "tactic": "refl_equal h1 h2",
+    "ok": false,
+    "sec": 17.1
+   },
+   {
+    "tactic": "sorry, I don't see any Lean code provided to complete or modify. Can you please provide me with the specific Lean 4 proof that needs to be completed?",
+    "ok": false,
+    "sec": 18.32
+   },
+   {
+    "tactic": "sorry, I don't know how to do this.",
+    "ok": false,
+    "sec": 13.4
+   }
+  ]
+ },
+ {
+  "statement": "theorem t18 (x : Int) (h : 2 * x = 6) : x = 3",
+  "imports": "import Mathlib.Tactic.Linarith",
+  "covered": false,
+  "candidates": [
+   {
+    "tactic": "cases h as ⟨_, y⟩;\n  refl;",
+    "ok": false,
+    "sec": 37.85
+   },
+   {
+    "tactic": "python\n  refl",
+    "ok": false,
+    "sec": 26.79
+   },
+   {
+    "tactic": "by rw [mul_right_inj]; exact h.div 2",
+    "ok": false,
+    "sec": 32.88
+   },
+   {
+    "tactic": "exact h.left_inv_right (mul_div_cancel' _ 2)",
+    "ok": false,
+    "sec": 18.8
+   },
+   {
+    "tactic": "python\n  reflexivity",
+    "ok": false,
+    "sec": 16.73
+   },
+   {
+    "tactic": "exact h.div 2 div 2.rec_on x.rec_divisors 2 div 2.add_one_half' div_two_add_hyp' 6.div_two_add_hyp'.rec_on x.div_two_add_hyp' 6.div_two_add_hyp'.div_two_add_hyp'.sub_one_half'",
+    "ok": false,
+    "sec": 22.05
+   },
+   {
+    "tactic": "sorry, I cannot provide the complete code as it does not match my knowledge base.",
+    "ok": false,
+    "sec": 27.67
+   },
+   {
+    "tactic": "exact h.div 2",
+    "ok": false,
+    "sec": 11.11
+   }
+  ]
+ },
+ {
+  "statement": "theorem t19 (a : Nat) : a * 1 = a",
+  "imports": "import Mathlib.Data.Nat.Basic",
+  "covered": false,
+  "candidates": [
+   {
+    "tactic": "refl_eq' a a",
+    "ok": false,
+    "sec": 29.9
+   },
+   {
+    "tactic": "exact mul_one a",
+    "ok": false,
+    "sec": 6.02
+   },
+   {
+    "tactic": "refl a ; rw [mul_one]",
+    "ok": false,
+    "sec": 5.13
+   },
+   {
+    "tactic": "change a * 1 with a; ext n; rw [add_comm]; congr; exact rfl",
+    "ok": false,
+    "sec": 4.35
+   },
+   {
+    "tactic": "exact mul_oneₓ a",
+    "ok": false,
+    "sec": 4.23
+   },
+   {
+    "tactic": "rw mul_one a",
+    "ok": false,
+    "sec": 5.71
+   },
+   {
+    "tactic": "sorry\n  =====================\n  exact one_mul a",
+    "ok": false,
+    "sec": 5.1
+   },
+   {
+    "tactic": "exact mul_one a",
+    "ok": false,
+    "sec": 3.65
+   }
+  ]
+ },
+ {
+  "statement": "theorem t20 (l : List Nat) : l ++ [] = l",
+  "imports": "import Mathlib.Data.List.Basic",
+  "covered": false,
+  "candidates": [
+   {
+    "tactic": "reflexivity",
+    "ok": false,
+    "sec": 70.59
+   },
+   {
+    "tactic": "reflexivity",
+    "ok": false,
+    "sec": 24.18
+   },
+   {
+    "tactic": "run_target_option equiv.add_left_reflection' l []",
+    "ok": false,
+    "sec": 29.62
+   },
+   {
+    "tactic": "reflexivity.",
+    "ok": false,
+    "sec": 11.94
+   },
+   {
+    "tactic": "have h₁ : l ++ [] = l := rfl,\n  exact h₁.trans (λ _, refl)",
+    "ok": false,
+    "sec": 14.03
+   },
+   {
+    "tactic": "reflexivity; congr; assumption",
+    "ok": false,
+    "sec": 9.38
+   },
+   {
+    "tactic": "reflexivity\n  addition_left_cancel _ _",
+    "ok": false,
+    "sec": 8.65
+   },
+   {
+    "tactic": "begin\n  rw list_append_empty,\n  end",
+    "ok": false,
+    "sec": 9.55
+   }
+  ]
+ }
+]

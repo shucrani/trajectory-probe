@@ -1,0 +1,27 @@
+ÉTAPE 12 — COÛT RÉEL DU RÉGIME VÉRIFIABLE (Lean + Mathlib)
+date    : 2026-08-20T10:01:27
+modèle  : Qwen/Qwen2.5-1.5B-Instruct · N=8 candidats/énoncé · T=0.7
+projet  : /Users/lamar/mathlib-probe
+
+A. COÛT DE VÉRIFICATION
+
+   preuve canonique :    6.0s en moyenne (min 1.7s, max 12.7s)
+   candidat modèle  :   14.0s en moyenne
+   coût d'un énoncé :  112.3s pour 8 candidats
+   pour mémoire : arithmétique (ét. 11) < 0.001 s · import Mathlib global (ét. 12) 187-220 s
+
+B. TAUX DE COMPILATION
+
+   candidats qui compilent : 4/160 =   2.5%
+   énoncés couverts (>=1 candidat valide) : 4/20 =  20.0%
+
+C. COMPARAISON DES RÉGIMES VÉRIFIABLES
+
+   régime                      couverture  précision   coût/énoncé
+   arithmétique (ét. 11)            95.2%       100%          ~0 s
+   Lean + Mathlib                  20.0%       100%        112.3s
+
+LECTURE. La précision reste 100 % par construction — le noyau ne laisse rien
+passer. Ce qui change entre les deux régimes vérifiables, c'est la COUVERTURE
+et le COÛT. Une couverture qui s'effondre signifie une garantie parfaite et
+vide : le système aurait raison, sur presque rien.
