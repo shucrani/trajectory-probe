@@ -1142,3 +1142,69 @@ et la table couverture × force × coût reste incomplète sur sa colonne princi
 C'est faisable maintenant : à 8 s par vérification, 20 énoncés × 8 candidats
 tiennent en ~20 minutes. `src/lean_cost.py` doit d'abord être corrigé pour
 émettre des imports ciblés au lieu de `import Mathlib`.
+
+---
+
+## 2026-08-20 — Étape 12 : coût réel du régime vérifiable (Lean + Mathlib)
+
+Mathlib installé dans `~/mathlib-probe` (7,4 Go, 8 690 fichiers de cache, build
+réussi). Lean 4.33.0.
+
+### Le coût dépend du contexte, pas du noyau
+
+| contexte donné au vérificateur | temps par compilation |
+|---|---|
+| `import Mathlib` — candidat **valide**, cold | **207 s** |
+| `import Mathlib` — candidat valide, warm | **187 s** |
+| `import Mathlib` — candidat **invalide** | **220 s** |
+| `Mathlib.Data.Nat.Basic` | **3.8 s** |
+| core Lean seul (`omega`) | **6.8 s** |
+| `Mathlib.Tactic.Linarith` | **7.3 s** |
+| `Mathlib.Tactic.Ring` | **9.0 s** |
+
+**Facteur 20 à 50** entre un import ciblé et l'import global. Le coût de
+vérification n'est pas une propriété du noyau : c'est une propriété de la
+**taille du contexte** qu'on lui donne à charger.
+
+Erreur de conception de ma part, corrigée par la mesure : `lean_cost.py` écrivait
+`import Mathlib`, soit le pire cas possible. À 200 s par candidat, 8 candidats sur
+20 énoncés coûtaient 20 heures. Avec imports ciblés : ~20 minutes.
+
+### Deux faits structurels
+
+1. **Rejeter coûte autant qu'accepter** (220 s contre 207 s ; l'invalide est même
+   plus cher). Le noyau doit charger tout le contexte avant de pouvoir dire non.
+   Donc, en régime vérifiable, **le coût est proportionnel au nombre de candidats
+   testés, pas au nombre retenus**. La politique « je réponds si un tirage passe »,
+   gratuite à l'étape 11, coûte ici N × le prix unitaire.
+2. **Pas d'amortissement entre invocations** (187 s contre 207 s). Les `.olean`
+   sont rechargés à chaque fois. Un serveur Lean persistant changerait cela ; ce
+   n'est pas le comportement par défaut, donc c'est le prix qu'un système naïf
+   paierait.
+
+### Échelle des trois régimes vérifiables mesurés
+
+| régime | coût par vérification |
+|---|---|
+| arithmétique (étape 11) | < 0.001 s |
+| Lean, imports ciblés | 4 - 9 s |
+| Lean, import global | 187 - 220 s |
+
+Environ **1 000×** entre l'arithmétique et Lean ciblé, **20 à 50×** entre Lean
+ciblé et Lean global.
+
+### Ce que ça dit du recadrage vers l'ingénierie
+
+Le régime vérifiable est viable côté ingénierie logicielle non pas parce que ses
+vérificateurs seraient meilleurs, mais parce que **le contexte y est déjà
+découpé** : `tsc` type-check un fichier avec ses imports, `pytest` exécute une
+suite ciblée. C'est le même geste que `import Mathlib.Tactic.Ring` plutôt que
+`import Mathlib` — borner ce que le vérificateur doit charger. Découper le
+contexte est le geste central, dans les deux domaines.
+
+### Ce qui n'est PAS encore mesuré
+
+**La couverture** : le taux de candidats produits par le modèle qui compilent
+réellement. Le premier run a été interrompu par le coût de l'import global. Sans
+ce chiffre on connaît le prix du régime, pas ce qu'il rapporte. Mesure lancée
+juste après, avec imports ciblés.
