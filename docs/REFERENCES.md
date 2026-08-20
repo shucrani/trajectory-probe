@@ -129,3 +129,93 @@ C'est ce que mesure l'étape 10 : **56 % stochastique / 44 % systématique** sur
 GPT-2 small, et la mesure est en cours sur Qwen2.5-1.5B-Instruct. Si le chiffre
 se déplace fortement avec la taille et l'instruction-tuning, c'est une donnée
 utile au champ ; s'il est stable, c'est une borne.
+
+---
+
+## Transfert vers l'ingénierie logicielle (recherche du 20/08/2026)
+
+### Littérature — la boucle de réparation change l'architecture
+
+**« From Natural Language to Verified Code », arXiv 2604.22601** (dataset NL2VC-60,
+60 problèmes algorithmiques, 7 LLM open-weight, vérification Dafny). Trois régimes
+de prompting, et l'écart entre eux est le résultat :
+
+| régime | succès de vérification |
+|---|---|
+| prompt sans contexte | échec quasi universel |
+| + signature structurelle | forte amélioration |
+| **+ self-healing (feedback itératif du vérificateur)** | **Gemma 4-31B : 90.91 %** · **GPT-OSS 120B : 0 % → 81.82 %** |
+
+**Conséquence directe pour notre système.** Notre politique (étapes 11-12) filtre
+**passivement** : on génère N candidats, on garde ceux qui passent. La couverture
+est alors bornée par ce que le modèle produit spontanément — d'où l'identité
+`couverture = 1 − part systématique`.
+
+Avec une **boucle de réparation**, le vérificateur ne sert plus seulement à
+accepter ou rejeter : il fournit un **signal de correction**. La part dite
+systématique devient partiellement réductible — le modèle ne sait pas d'emblée,
+mais il apprend de l'erreur du noyau. Passer de 0 % à 81.82 % ne s'obtient par
+aucun filtrage passif.
+
+Compléments : **ExVerus** (arXiv 2603.25810) note que le retour du vérificateur
+est « trop grossier et ambigu pour révéler la cause racine » et le raffine par
+contre-exemples — la *qualité* du feedback est un paramètre, pas un acquis.
+**AlphaVerus** (arXiv 2412.06176) combine échantillonnage de trajectoires,
+raffinement en arbre et critique. Communauté active : **VeriCodeGen**, workshop
+NeurIPS 2026 ; benchmark de vericoding à **POPL 2026** (Lean, Rust/Verus, Dafny).
+
+### Terrain — le vérificateur doit être INDÉPENDANT du générateur
+
+Remontée récurrente des praticiens (Hacker News, développeurs expérimentés) :
+
+> les LLM produisent volontiers des tests unitaires qui **renforcent le
+> comportement existant**, sans que personne ne se demande si le code implémente
+> le comportement fonctionnel voulu.
+
+C'est une vérification **circulaire** : des tests écrits par le modèle qui a écrit
+le code encodent ce qu'il a produit, pas ce qui était demandé. Garantie nulle.
+
+**Critère manquant à notre hiérarchie G0-G6**, à ajouter : un niveau ne vaut que
+si son vérificateur est indépendant du générateur.
+
+| vérificateur | indépendant ? |
+|---|---|
+| noyau Lean, type-checker | oui, par construction |
+| tests écrits par un humain, spécification déclarée | oui |
+| property-based avec propriétés déclarées à la main | oui |
+| **tests générés par le modèle qui a écrit le code** | **non — circulaire** |
+
+Autre remontée : même avec un contexte étendu, les agents ne couvrent pas plus de
+la moitié de l'espace de test.
+
+### Terrain — le goulot est mesuré, et il s'aggrave
+
+| indicateur | valeur | source |
+|---|---|---|
+| part du code commité écrite par IA | **42 %** | Sonar, *2026 State of Code* |
+| développeurs ne faisant pas pleinement confiance au code IA | **96 %** | Sonar (1 100+ répondants) |
+| développeurs vérifiant systématiquement avant commit | 48 % | Sonar |
+| confiance dans l'exactitude des sorties | **33 %**, contre 43 % un an plus tôt | Stack Overflow |
+| défauts par pull request, IA vs humain | **×1.7** | CodeRabbit, déc. 2025 |
+| « code qui a l'air correct mais n'est pas fiable » | **61 %** | Sonar |
+| tâches complétées | +21 % | — |
+| pull requests fusionnées | +98 % | — |
+| **temps de revue des PR** | **+91 %** | — |
+
+Le terme qui s'impose est **« verification bottleneck »** : le goulot n'est plus
+la vitesse de génération, c'est la **capacité de vérification**. Formulé ailleurs
+comme « un problème de systèmes de validation et de remédiation ».
+
+Et la confiance **baisse** (43 % → 33 %) pendant que le volume monte.
+
+### Ce que les équipes font aujourd'hui
+
+Artisanal, et assumé comme tel : « review sandwich » (l'IA filtre le superficiel,
+l'humain se concentre sur l'architecture et la logique métier, −30 à −50 % de
+temps humain selon GitHub), plafonds de taille de PR, déplacement des contrôles de
+base hors du regard humain.
+
+Personne ne dispose d'une **table de décision quantifiée** : pour un budget donné,
+quelle force de vérification est atteignable et sur quelle fraction du travail.
+C'est exactement ce que produisent les étapes 11-12, et ce que la boucle de
+réparation viendrait améliorer.

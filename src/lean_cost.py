@@ -35,27 +35,33 @@ SEED = 42
 # contrôle : si elle ne compile pas, l'énoncé ou l'environnement est en cause,
 # pas le modèle.
 STATEMENTS = [
-    ("theorem t1 (a b : ℕ) : a + b = b + a", "omega"),
-    ("theorem t2 (a b c : ℕ) : a + b + c = a + (b + c)", "omega"),
-    ("theorem t3 (a : ℕ) : a + 0 = a", "simp"),
-    ("theorem t4 (a : ℕ) : 0 + a = a", "simp"),
-    ("theorem t5 (a b : ℤ) : a * b = b * a", "ring"),
-    ("theorem t6 (a b : ℤ) : (a + b) ^ 2 = a ^ 2 + 2 * a * b + b ^ 2", "ring"),
-    ("theorem t7 (a : ℤ) : a - a = 0", "ring"),
-    ("theorem t8 (a b : ℝ) : a + b - b = a", "ring"),
-    ("theorem t9 (n : ℕ) : n ≤ n + 1", "omega"),
-    ("theorem t10 (n : ℕ) (h : n > 0) : n ≥ 1", "omega"),
-    ("theorem t11 (a b : ℕ) (h : a = b) : b = a", "omega"),
-    ("theorem t12 (p q : Prop) (hp : p) (hq : q) : p ∧ q", "exact ⟨hp, hq⟩"),
-    ("theorem t13 (p q : Prop) (h : p ∧ q) : p", "exact h.1"),
-    ("theorem t14 (p q : Prop) (h : p) : p ∨ q", "exact Or.inl h"),
-    ("theorem t15 (s : Set ℕ) (x : ℕ) (h : x ∈ s) : s.Nonempty", "exact ⟨x, h⟩"),
-    ("theorem t16 (f : ℕ → ℕ) (a : ℕ) : f a = f a", "rfl"),
-    ("theorem t17 (a b : ℚ) : a + b - a = b", "ring"),
-    ("theorem t18 (l : List ℕ) : l ++ [] = l", "simp"),
-    ("theorem t19 (a : ℕ) : a * 1 = a", "simp"),
-    ("theorem t20 (x : ℝ) (h : x > 0) : x ≥ 0", "linarith"),
+    # (import minimal, énoncé, tactique canonique de contrôle)
+    ("", "theorem t1 (a b : Nat) : a + b = b + a", "omega"),
+    ("", "theorem t2 (a b c : Nat) : a + b + c = a + (b + c)", "omega"),
+    ("", "theorem t3 (a : Nat) : a + 0 = a", "simp"),
+    ("", "theorem t4 (n : Nat) : n <= n + 1", "omega"),
+    ("", "theorem t5 (n : Nat) (h : n > 0) : n >= 1", "omega"),
+    ("", "theorem t6 (a b : Nat) (h : a = b) : b = a", "omega"),
+    ("", "theorem t7 (p q : Prop) (hp : p) (hq : q) : p /\\ q", "exact ⟨hp, hq⟩"),
+    ("", "theorem t8 (p q : Prop) (h : p /\\ q) : p", "exact h.1"),
+    ("", "theorem t9 (p q : Prop) (h : p) : p \\/ q", "exact Or.inl h"),
+    ("", "theorem t10 (f : Nat -> Nat) (a : Nat) : f a = f a", "rfl"),
+    ("import Mathlib.Tactic.Ring", "theorem t11 (a b : Int) : a * b = b * a", "ring"),
+    ("import Mathlib.Tactic.Ring",
+     "theorem t12 (a b : Int) : (a + b) ^ 2 = a ^ 2 + 2 * a * b + b ^ 2", "ring"),
+    ("import Mathlib.Tactic.Ring", "theorem t13 (a : Int) : a - a = 0", "ring"),
+    ("import Mathlib.Tactic.Ring", "theorem t14 (a b : Int) : a + b - b = a", "ring"),
+    ("import Mathlib.Tactic.Ring", "theorem t15 (a b : Int) : (a - b) * (a + b) = a^2 - b^2", "ring"),
+    ("import Mathlib.Tactic.Linarith",
+     "theorem t16 (x : Int) (h : x > 0) : x >= 0", "linarith"),
+    ("import Mathlib.Tactic.Linarith",
+     "theorem t17 (x y : Int) (h1 : x <= y) (h2 : y <= x) : x = y", "linarith"),
+    ("import Mathlib.Tactic.Linarith",
+     "theorem t18 (x : Int) (h : 2 * x = 6) : x = 3", "linarith"),
+    ("import Mathlib.Data.Nat.Basic", "theorem t19 (a : Nat) : a * 1 = a", "simp"),
+    ("import Mathlib.Data.List.Basic", "theorem t20 (l : List Nat) : l ++ [] = l", "simp"),
 ]
+
 
 FENCE = re.compile(r"```(?:lean4?)?\s*(.*?)```", re.S)
 
@@ -77,9 +83,14 @@ def clean_tactic(text):
     return "\n  ".join(lines).strip()
 
 
-def check(project, statement, tactic, idx):
-    """Compile `statement := by tactic`. Renvoie (succès, secondes)."""
-    src = f"import Mathlib\n\nset_option maxHeartbeats 20000 in\n{statement} := by\n  {tactic}\n"
+def check(project, imports, statement, tactic, idx):
+    """Compile `statement := by tactic` avec le contexte MINIMAL nécessaire.
+
+    L'étape 12 a mesuré un facteur 20 à 50 entre un import ciblé (4-9 s) et
+    `import Mathlib` (187-220 s). Le contexte est donc porté par l'énoncé.
+    """
+    head = imports + "\n\n" if imports else ""
+    src = f"{head}set_option maxHeartbeats 20000 in\n{statement} := by\n  {tactic}\n"
     f = project / f"_probe_{idx}.lean"
     f.write_text(src)
     t0 = time.time()
@@ -107,8 +118,8 @@ def main():
     # Contrôle : les preuves canoniques compilent-elles ?
     print("Contrôle des preuves canoniques...")
     canon_ok, canon_times = [], []
-    for i, (st, tac) in enumerate(STATEMENTS):
-        ok, dt = check(project, st, tac, f"canon{i}")
+    for i, (imp, st, tac) in enumerate(STATEMENTS):
+        ok, dt = check(project, imp, st, tac, f"canon{i}")
         canon_ok.append(ok); canon_times.append(dt)
         print(f"  {st.split('(')[0].strip():<14} {'OK' if ok else 'ÉCHEC':<6} {dt:>6.1f}s")
     usable = [i for i, ok in enumerate(canon_ok) if ok]
@@ -124,7 +135,7 @@ def main():
 
     rows, all_times, n_compiled, n_tried = [], [], 0, 0
     for i in usable:
-        st, _ = STATEMENTS[i]
+        imp, st, _ = STATEMENTS[i]
         msgs = [{"role": "user", "content":
                  "Complete this Lean 4 proof using Mathlib. Reply with ONLY the "
                  f"tactic block, no explanation, no theorem statement.\n\n{st} := by\n"}]
@@ -142,12 +153,12 @@ def main():
             if not c:
                 results.append((c, False, 0.0)); n_tried += 1
                 continue
-            ok, dt = check(project, st, c, f"{i}_{j}")
+            ok, dt = check(project, imp, st, c, f"{i}_{j}")
             results.append((c, ok, dt))
             all_times.append(dt); n_tried += 1
             n_compiled += ok
         covered = any(ok for _, ok, _ in results)
-        rows.append({"statement": st, "covered": covered,
+        rows.append({"statement": st, "imports": imp, "covered": covered,
                      "candidates": [{"tactic": c, "ok": ok, "sec": round(dt, 2)}
                                     for c, ok, dt in results]})
         print(f"  {st.split('(')[0].strip():<14} "
@@ -170,7 +181,8 @@ def main():
         w(f"   candidat modèle  : {sum(all_times)/len(all_times):>6.1f}s en moyenne")
         w(f"   coût d'un énoncé : {sum(all_times)/max(len(rows),1):>6.1f}s "
           f"pour {args.n} candidats")
-    w(f"   pour mémoire, arithmétique (étape 11) : < 0.001 s")
+    w(f"   pour mémoire : arithmétique (ét. 11) < 0.001 s · "
+      f"import Mathlib global (ét. 12) 187-220 s")
     w("")
     w("B. TAUX DE COMPILATION")
     w("")
