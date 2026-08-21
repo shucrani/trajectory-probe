@@ -1,0 +1,21 @@
+CHANTIER 2 — INDÉPENDANCE DU VÉRIFICATEUR
+date   : 2026-08-21T13:52:09
+modèle : Qwen/Qwen2.5-1.5B-Instruct · 40 tâches · 4 candidats/tâche
+candidats exécutables retenus : 156 · dont corrects selon A : 87
+
+CONTRÔLE — les tests B2 passent-ils sur le code qui les a engendrés ?
+   53/156 = 34.0%
+   (attendu : quasi-total. Sinon le modèle produit des tests incohérents
+    avec son propre code, ce qui est un autre résultat.)
+
+vérificateur                        faux vérifié   vrai rejeté   accord/A
+-------------------------------------------------------------------------
+B1  tests depuis l'énoncé                  13.2%         48.0%     61.4%
+B2  tests depuis le code                   20.8%         43.7%     64.1%
+
+LECTURE. Le « faux vérifié » est la probabilité qu'un système annonce
+VÉRIFIÉ sur du code que la référence rejette. C'est le chiffre qui manque
+à la table de décision : toutes ses lignes supposent un vérificateur
+indépendant. Un vérificateur avec un taux de faux vérifié élevé ne
+délivre pas une garantie faible — il n'en délivre aucune, tout en
+produisant l'apparence d'une vérification.

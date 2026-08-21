@@ -1445,3 +1445,73 @@ l'analyser avant d'interpréter quoi que ce soit.
 de code par tâche, seed 42, T = 0.7. B1 généré une fois par tâche (l'énoncé ne
 varie pas), B2 généré une fois par candidat. Isolation inchangée : sous-processus,
 timeout 5 s, dossier temporaire hors dépôt.
+
+---
+
+## 2026-08-21 — Chantier 2 : CONTRÔLE EN ÉCHEC, résultat non établi
+
+40 tâches MBPP, 4 candidats, 156 candidats exécutables retenus (87 corrects
+selon la référence A).
+
+### Le contrôle préalable échoue
+
+Déclaré avant le run : *« les tests B2 doivent passer sur le code qui les a
+engendrés dans la quasi-totalité des cas. Si ce n'est pas le cas, le modèle
+produit des tests incohérents avec son propre code — ce serait un résultat
+différent de celui visé, et il faudrait l'analyser avant d'interpréter quoi que
+ce soit. »*
+
+**Mesuré : 53/156 = 34.0 %.** Les deux tiers des tests générés en regardant le
+code échouent sur ce code même.
+
+Le résultat visé — chiffrer la circularité — **n'est donc pas établi**. On ne
+mesure pas un vérificateur circulaire ; on mesure un modèle incapable d'écrire des
+tests cohérents avec ce qu'il vient d'écrire.
+
+### Chiffres bruts, à ne pas lire comme prévu
+
+| vérificateur | faux vérifié | vrai rejeté | accord avec A |
+|---|---|---|---|
+| B1 — tests depuis l'énoncé | 13.2 % | 48.0 % | 61.4 % |
+| B2 — tests depuis le code | 20.8 % | 43.7 % | 64.1 % |
+
+La prédiction de direction **B2 > B1** sur le faux vérifié est vérifiée
+(20.8 % contre 13.2 %) — mais sur une base de 53 candidats seulement, et par un
+mécanisme différent de celui prédit.
+
+### Ce que ces chiffres montrent réellement
+
+Le danger prédit était : *tout passe, donc la garantie est vide*. Le danger mesuré
+est l'inverse : **rien ne passe de façon fiable**. Le taux de **vrai rejeté**
+(43.7 à 48 %) dit que près de la moitié du bon code est rejetée par les tests
+générés. Un tel vérificateur n'est pas complaisant, il est **bruyant** — et
+inutilisable pour la raison opposée à celle attendue.
+
+L'accord avec la référence plafonne à 61-64 %, guère mieux qu'un tirage sur des
+classes déséquilibrées.
+
+### Cause probable, non départagée
+
+Qwen2.5-1.5B-Instruct est trop faible pour écrire des tests. Le résultat mesure
+cette faiblesse, pas la propriété structurelle visée. Deux explications restent
+confondues et le protocole ne les sépare pas :
+
+1. le modèle ne sait pas écrire un `assert` syntaxiquement et sémantiquement
+   cohérent avec une fonction donnée ;
+2. l'extraction ne retient que des lignes `assert` autonomes (garde-fou de
+   sécurité), ce qui écarte les tests que le modèle formulerait autrement
+   (`unittest`, appels préparatoires, variables intermédiaires).
+
+La seconde est de ma responsabilité et pourrait expliquer une part du 66 %
+d'échec. Elle n'a pas été mesurée.
+
+### Statut
+
+**Chantier 2 : non concluant.** Le taux de faux vérifié d'un vérificateur
+circulaire reste non mesuré. Le refaire exigerait un modèle capable d'écrire des
+tests — donc pas sur cette machine — et une extraction plus permissive, ce qui
+rouvrirait la question de l'exécution de code arbitraire.
+
+C'est le septième contrôle de la session à empêcher la publication d'un chiffre
+faux. Sans lui, le tableau ci-dessus se lisait « la vérification circulaire produit
+20.8 % de faux vérifié » — une phrase plausible, citable, et fausse.

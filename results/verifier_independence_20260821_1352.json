@@ -1,0 +1,1422 @@
+{
+ "rows": [
+  {
+   "task_id": 2,
+   "cand": 0,
+   "A": true,
+   "B1": true,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 2,
+   "cand": 1,
+   "A": true,
+   "B1": true,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 2,
+   "cand": 2,
+   "A": true,
+   "B1": true,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 2,
+   "cand": 3,
+   "A": true,
+   "B1": true,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 3,
+   "cand": 0,
+   "A": true,
+   "B1": true,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 3,
+   "cand": 1,
+   "A": true,
+   "B1": true,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 3,
+   "cand": 2,
+   "A": true,
+   "B1": true,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 4
+  },
+  {
+   "task_id": 3,
+   "cand": 3,
+   "A": true,
+   "B1": true,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 4,
+   "cand": 0,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 4,
+   "cand": 1,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 4,
+   "cand": 2,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 4,
+   "cand": 3,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 6,
+   "cand": 0,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 6,
+   "cand": 1,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 6,
+   "cand": 3,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 7,
+   "cand": 0,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 7,
+   "cand": 1,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 7,
+   "cand": 2,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 7,
+   "cand": 3,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 8,
+   "cand": 0,
+   "A": true,
+   "B1": true,
+   "B2": true,
+   "n_b1": 1,
+   "n_b2": 3
+  },
+  {
+   "task_id": 8,
+   "cand": 1,
+   "A": true,
+   "B1": true,
+   "B2": true,
+   "n_b1": 1,
+   "n_b2": 3
+  },
+  {
+   "task_id": 8,
+   "cand": 2,
+   "A": true,
+   "B1": true,
+   "B2": true,
+   "n_b1": 1,
+   "n_b2": 3
+  },
+  {
+   "task_id": 8,
+   "cand": 3,
+   "A": true,
+   "B1": true,
+   "B2": true,
+   "n_b1": 1,
+   "n_b2": 3
+  },
+  {
+   "task_id": 9,
+   "cand": 0,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 1,
+   "n_b2": 3
+  },
+  {
+   "task_id": 9,
+   "cand": 1,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 1,
+   "n_b2": 3
+  },
+  {
+   "task_id": 9,
+   "cand": 2,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 1,
+   "n_b2": 4
+  },
+  {
+   "task_id": 9,
+   "cand": 3,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 1,
+   "n_b2": 3
+  },
+  {
+   "task_id": 11,
+   "cand": 0,
+   "A": false,
+   "B1": null,
+   "B2": false,
+   "n_b1": 0,
+   "n_b2": 3
+  },
+  {
+   "task_id": 11,
+   "cand": 1,
+   "A": false,
+   "B1": null,
+   "B2": false,
+   "n_b1": 0,
+   "n_b2": 3
+  },
+  {
+   "task_id": 11,
+   "cand": 2,
+   "A": false,
+   "B1": null,
+   "B2": false,
+   "n_b1": 0,
+   "n_b2": 3
+  },
+  {
+   "task_id": 11,
+   "cand": 3,
+   "A": false,
+   "B1": null,
+   "B2": false,
+   "n_b1": 0,
+   "n_b2": 4
+  },
+  {
+   "task_id": 12,
+   "cand": 0,
+   "A": false,
+   "B1": null,
+   "B2": false,
+   "n_b1": 0,
+   "n_b2": 3
+  },
+  {
+   "task_id": 12,
+   "cand": 1,
+   "A": false,
+   "B1": null,
+   "B2": false,
+   "n_b1": 0,
+   "n_b2": 3
+  },
+  {
+   "task_id": 12,
+   "cand": 2,
+   "A": false,
+   "B1": null,
+   "B2": false,
+   "n_b1": 0,
+   "n_b2": 3
+  },
+  {
+   "task_id": 12,
+   "cand": 3,
+   "A": true,
+   "B1": null,
+   "B2": true,
+   "n_b1": 0,
+   "n_b2": 3
+  },
+  {
+   "task_id": 14,
+   "cand": 0,
+   "A": false,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 14,
+   "cand": 1,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 14,
+   "cand": 2,
+   "A": false,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 14,
+   "cand": 3,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 16,
+   "cand": 0,
+   "A": false,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 16,
+   "cand": 1,
+   "A": false,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 16,
+   "cand": 2,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 16,
+   "cand": 3,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 17,
+   "cand": 0,
+   "A": true,
+   "B1": true,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 17,
+   "cand": 1,
+   "A": true,
+   "B1": true,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 17,
+   "cand": 2,
+   "A": true,
+   "B1": true,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 17,
+   "cand": 3,
+   "A": true,
+   "B1": true,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 18,
+   "cand": 0,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 18,
+   "cand": 1,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 18,
+   "cand": 2,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 18,
+   "cand": 3,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 19,
+   "cand": 0,
+   "A": false,
+   "B1": true,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 19,
+   "cand": 1,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 19,
+   "cand": 2,
+   "A": false,
+   "B1": true,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 19,
+   "cand": 3,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 20,
+   "cand": 0,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 20,
+   "cand": 1,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 20,
+   "cand": 2,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 20,
+   "cand": 3,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 56,
+   "cand": 0,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 56,
+   "cand": 1,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 56,
+   "cand": 2,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 56,
+   "cand": 3,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 57,
+   "cand": 0,
+   "A": true,
+   "B1": true,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 57,
+   "cand": 1,
+   "A": true,
+   "B1": true,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 57,
+   "cand": 2,
+   "A": true,
+   "B1": true,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 57,
+   "cand": 3,
+   "A": true,
+   "B1": true,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 58,
+   "cand": 0,
+   "A": true,
+   "B1": null,
+   "B2": false,
+   "n_b1": 0,
+   "n_b2": 3
+  },
+  {
+   "task_id": 58,
+   "cand": 1,
+   "A": true,
+   "B1": null,
+   "B2": false,
+   "n_b1": 0,
+   "n_b2": 3
+  },
+  {
+   "task_id": 58,
+   "cand": 2,
+   "A": true,
+   "B1": null,
+   "B2": true,
+   "n_b1": 0,
+   "n_b2": 3
+  },
+  {
+   "task_id": 58,
+   "cand": 3,
+   "A": true,
+   "B1": null,
+   "B2": false,
+   "n_b1": 0,
+   "n_b2": 3
+  },
+  {
+   "task_id": 59,
+   "cand": 0,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 59,
+   "cand": 1,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 59,
+   "cand": 2,
+   "A": true,
+   "B1": true,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 59,
+   "cand": 3,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 61,
+   "cand": 0,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 61,
+   "cand": 2,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 62,
+   "cand": 0,
+   "A": true,
+   "B1": true,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 62,
+   "cand": 1,
+   "A": true,
+   "B1": true,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 62,
+   "cand": 2,
+   "A": true,
+   "B1": true,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 62,
+   "cand": 3,
+   "A": true,
+   "B1": true,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 63,
+   "cand": 0,
+   "A": false,
+   "B1": null,
+   "B2": false,
+   "n_b1": 0,
+   "n_b2": 3
+  },
+  {
+   "task_id": 63,
+   "cand": 1,
+   "A": false,
+   "B1": null,
+   "B2": false,
+   "n_b1": 0,
+   "n_b2": 3
+  },
+  {
+   "task_id": 63,
+   "cand": 2,
+   "A": false,
+   "B1": null,
+   "B2": false,
+   "n_b1": 0,
+   "n_b2": 3
+  },
+  {
+   "task_id": 63,
+   "cand": 3,
+   "A": false,
+   "B1": null,
+   "B2": false,
+   "n_b1": 0,
+   "n_b2": 3
+  },
+  {
+   "task_id": 64,
+   "cand": 0,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 64,
+   "cand": 1,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 64,
+   "cand": 2,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 64,
+   "cand": 3,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 65,
+   "cand": 0,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 65,
+   "cand": 1,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 65,
+   "cand": 2,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 65,
+   "cand": 3,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 66,
+   "cand": 0,
+   "A": true,
+   "B1": true,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 66,
+   "cand": 1,
+   "A": true,
+   "B1": true,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 66,
+   "cand": 2,
+   "A": true,
+   "B1": true,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 66,
+   "cand": 3,
+   "A": true,
+   "B1": true,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 67,
+   "cand": 0,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 67,
+   "cand": 1,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 67,
+   "cand": 2,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 67,
+   "cand": 3,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 68,
+   "cand": 0,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 68,
+   "cand": 1,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 68,
+   "cand": 2,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 68,
+   "cand": 3,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 69,
+   "cand": 0,
+   "A": false,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 69,
+   "cand": 1,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 69,
+   "cand": 2,
+   "A": false,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 69,
+   "cand": 3,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 70,
+   "cand": 0,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 1,
+   "n_b2": 3
+  },
+  {
+   "task_id": 70,
+   "cand": 1,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 1,
+   "n_b2": 3
+  },
+  {
+   "task_id": 70,
+   "cand": 2,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 1,
+   "n_b2": 3
+  },
+  {
+   "task_id": 70,
+   "cand": 3,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 1,
+   "n_b2": 3
+  },
+  {
+   "task_id": 71,
+   "cand": 0,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 71,
+   "cand": 1,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 71,
+   "cand": 3,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 72,
+   "cand": 0,
+   "A": false,
+   "B1": true,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 72,
+   "cand": 1,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 72,
+   "cand": 2,
+   "A": false,
+   "B1": true,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 72,
+   "cand": 3,
+   "A": false,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 74,
+   "cand": 0,
+   "A": false,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 74,
+   "cand": 1,
+   "A": false,
+   "B1": true,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 74,
+   "cand": 2,
+   "A": false,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 74,
+   "cand": 3,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 75,
+   "cand": 0,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 75,
+   "cand": 1,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 1
+  },
+  {
+   "task_id": 75,
+   "cand": 2,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 75,
+   "cand": 3,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 77,
+   "cand": 0,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 77,
+   "cand": 1,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 77,
+   "cand": 2,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 77,
+   "cand": 3,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 79,
+   "cand": 0,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 79,
+   "cand": 1,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 79,
+   "cand": 2,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 79,
+   "cand": 3,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 80,
+   "cand": 0,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 80,
+   "cand": 1,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 80,
+   "cand": 2,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 80,
+   "cand": 3,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 82,
+   "cand": 0,
+   "A": true,
+   "B1": true,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 82,
+   "cand": 1,
+   "A": true,
+   "B1": true,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 82,
+   "cand": 2,
+   "A": true,
+   "B1": true,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 82,
+   "cand": 3,
+   "A": true,
+   "B1": true,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 83,
+   "cand": 0,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 83,
+   "cand": 1,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 83,
+   "cand": 2,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 83,
+   "cand": 3,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 84,
+   "cand": 0,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 4
+  },
+  {
+   "task_id": 84,
+   "cand": 1,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 84,
+   "cand": 2,
+   "A": false,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 84,
+   "cand": 3,
+   "A": false,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 85,
+   "cand": 0,
+   "A": true,
+   "B1": false,
+   "B2": false,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 85,
+   "cand": 1,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 85,
+   "cand": 2,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  },
+  {
+   "task_id": 85,
+   "cand": 3,
+   "A": true,
+   "B1": false,
+   "B2": true,
+   "n_b1": 3,
+   "n_b2": 3
+  }
+ ],
+ "B1": {
+  "n": 140,
+  "n_passed": 38,
+  "faux_verifie": 0.13157894736842105,
+  "vrai_rejete": 0.4803921568627451,
+  "accord_avec_A": 0.6142857142857143
+ },
+ "B2": {
+  "n": 156,
+  "n_passed": 53,
+  "faux_verifie": 0.20754716981132076,
+  "vrai_rejete": 0.4368932038834951,
+  "accord_avec_A": 0.6410256410256411
+ }
+}
