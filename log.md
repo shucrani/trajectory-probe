@@ -1390,3 +1390,58 @@ Les tests MBPP sont peu nombreux (trois par tâche) ; un code qui les passe n'es
 pas correct au sens d'un noyau. C'est exactement l'écart entre la ligne 5 et la
 ligne 6 de `docs/TABLE-DECISION.md`, et c'est ce que le chantier 2 doit chiffrer
 dans sa version dégradée (vérificateur circulaire).
+
+---
+
+## 2026-08-21 — DÉCLARATION DE PROTOCOLE (avant exécution) : chantier 2, indépendance du vérificateur
+
+Les sept lignes de `docs/TABLE-DECISION.md` supposent un vérificateur indépendant
+du générateur. Le terrain rapporte que les tests écrits par un LLM « renforcent le
+comportement existant » — vérification circulaire. Aucune publication trouvée ne
+chiffre ce que cela coûte.
+
+### Trois degrés d'indépendance, au lieu des deux prévus au plan
+
+| condition | qui écrit les tests | sur quoi |
+|---|---|---|
+| **A** | les auteurs de MBPP | l'énoncé (référence) |
+| **B1** | le modèle | l'**énoncé** seul, sans voir le code |
+| **B2** | le modèle | **son propre code** |
+
+B1 n'était pas au plan. Il correspond à une pratique réelle — générer des tests
+depuis la spécification — et il sépare deux effets qui seraient confondus : « les
+tests d'un LLM sont faibles » et « les tests écrits en regardant le code sont
+circulaires ».
+
+### Métrique
+
+Sur les candidats qui **passent** le vérificateur B :
+
+**taux de faux vérifié** = fraction qui échoue aux tests de référence A.
+
+C'est le chiffre qui manque : la probabilité qu'un système annonce « vérifié »
+alors que le code est faux. Métrique secondaire : le **taux de vrai rejeté**
+(passe A, échoue B), qui mesure la sévérité excessive.
+
+### Prédictions déposées
+
+- **B2 > B1** en taux de faux vérifié. Écrire les tests en regardant le code
+  encode le comportement produit, pas la spécification voulue.
+- **B2 sera élevé** — le terrain le décrit comme une garantie nulle ; si le
+  chiffre est bas, c'est le terrain qui a tort et il faudra le dire.
+- **B1 ne sera pas nul non plus** : un test généré depuis l'énoncé par le même
+  modèle partage ses angles morts sur la spécification.
+
+### Contrôle préalable obligatoire
+
+Les tests B2 doivent passer sur le code qui les a engendrés dans la quasi-totalité
+des cas. Si ce n'est pas le cas, le modèle produit des tests incohérents avec son
+propre code — ce serait un résultat différent de celui visé, et il faudrait
+l'analyser avant d'interpréter quoi que ce soit.
+
+### Paramètres
+
+40 tâches MBPP (les 40 premières, sous-ensemble strict du chantier 1), 4 candidats
+de code par tâche, seed 42, T = 0.7. B1 généré une fois par tâche (l'énoncé ne
+varie pas), B2 généré une fois par candidat. Isolation inchangée : sous-processus,
+timeout 5 s, dossier temporaire hors dépôt.
