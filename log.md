@@ -1313,3 +1313,80 @@ que le modèle y produit des candidats valides bien plus souvent. Les deux
 conditions manquent en mathématiques formelles avec un modèle généraliste.
 
 La ligne « code » de la table est en cours de mesure.
+
+---
+
+## 2026-08-20 — Chantier 1 : le régime vérifiable sur du code réel (MBPP)
+
+60 tâches MBPP sanitized, Qwen2.5-1.5B-Instruct, N = 10 candidats, T = 0.7,
+seed 42. Vérificateur indépendant (tests des auteurs du benchmark). Contrôle
+préalable : 60/60 solutions de référence passent leurs propres tests.
+
+### Partition
+
+| catégorie | tâches |
+|---|---|
+| TOUJOURS-CORRECT | 17/60 = 28.3 % |
+| BIFURQUANT | 33/60 = 55.0 % |
+| TOUJOURS-FAUX | 10/60 = 16.7 % |
+
+Sur les 43 tâches échouées au moins une fois : **76.7 % stochastique,
+23.3 % systématique**.
+
+### Couverture par force de vérification
+
+| niveau | couverture | coût par vérification |
+|---|---|---|
+| G4 syntaxe (`compile`) | 100.0 % | 5.3 ms |
+| G3 exécution sans exception | 100.0 % | 152.0 ms |
+| G2 tests fournis | **83.3 %** | 37.0 ms |
+| tirage unique, pour mémoire | 59.2 % | — |
+
+### Les trois contrôles déclarés avant le run passent
+
+1. **couverture G2 > tirage unique** : 83.3 % contre 59.2 %. L'effet « le modèle
+   a la réponse mais ne sait pas laquelle » se reproduit sur un troisième domaine.
+2. **identité `couverture = 1 − part systématique`** : part systématique
+   = 10/60 = 16.667 %, couverture G2 = 83.333 %. **Égalité exacte au flottant
+   près**, sans aucun ajustement.
+3. **décroissance G4 ≥ G3 ≥ G2** : 100 % ≥ 100 % ≥ 83.3 %. Aucun bug signalé.
+
+L'identité de l'étape 11 tient donc sur trois domaines indépendants
+(arithmétique, code, et par construction). Ce n'est plus une observation, c'est
+une régularité.
+
+### Une anomalie apparente, expliquée
+
+G3 (exécution) coûte 152 ms alors que G2 (tests, donc code **plus** long) coûte
+37 ms. Cause : **18 candidats parsent mais n'exécutent pas**, dont des boucles
+infinies coupées par le timeout à 5 000 ms. Ces timeouts gonflent la moyenne G3 ;
+G2 ne les voit jamais, puisqu'un candidat n'atteint G2 que s'il a passé G3.
+
+C'est le même motif qu'en Lean (14 s pour un candidat du modèle contre 6 s pour
+une preuve canonique) : **détecter l'échec coûte plus cher que confirmer le
+succès**, et le surcoût croît avec le taux d'échec. Ce couplage vaut donc dans les
+deux domaines, avec deux vérificateurs sans rapport. À traiter comme une
+contrainte de conception, pas comme un accident : toute politique de filtrage paie
+le plus cher sur ce qu'elle rejette.
+
+### Comparaison des deux domaines vérifiables
+
+| | code MBPP | Lean + Mathlib |
+|---|---|---|
+| couverture | **83.3 %** | 20.0 % |
+| coût par vérification | **37 ms** | 14 s |
+| part systématique | 23.3 % | 80 % |
+
+Facteur **380** sur le coût, facteur **4** sur la couverture, dans le même sens.
+Le régime vérifiable est viable en ingénierie logicielle et hors de portée en
+mathématiques formelles **avec ce modèle** — les deux conditions manquent
+simultanément côté Lean, et c'est ce que le recadrage vers l'ingénierie avait
+anticipé.
+
+### Réserve maintenue
+
+« Précision 100 % » signifie **conforme à la spécification exécutable fournie**.
+Les tests MBPP sont peu nombreux (trois par tâche) ; un code qui les passe n'est
+pas correct au sens d'un noyau. C'est exactement l'écart entre la ligne 5 et la
+ligne 6 de `docs/TABLE-DECISION.md`, et c'est ce que le chantier 2 doit chiffrer
+dans sa version dégradée (vérificateur circulaire).

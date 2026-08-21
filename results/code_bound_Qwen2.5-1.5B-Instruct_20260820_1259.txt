@@ -1,0 +1,39 @@
+CHANTIER 1 — RÉGIME VÉRIFIABLE SUR DU CODE RÉEL (MBPP)
+date    : 2026-08-20T12:59:27
+modèle  : Qwen/Qwen2.5-1.5B-Instruct · 60 tâches · N=10 · T=0.7
+vérificateur : tests fournis par MBPP — INDÉPENDANT du générateur
+
+A. PARTITION
+
+   TOUJOURS-CORRECT      17 / 60 =  28.3%
+   BIFURQUANT            33 / 60 =  55.0%
+   TOUJOURS-FAUX         10 / 60 =  16.7%
+
+   Sur les 43 tâches échouées au moins une fois :
+     stochastique :  76.7%
+     systématique :  23.3%
+
+B. COUVERTURE PAR FORCE DE VÉRIFICATION (au moins un candidat passe)
+
+   niveau                      couverture    coût/vérif
+   G4  syntaxe                    100.0%         5.3 ms
+   G3  exécution                  100.0%       152.0 ms
+   G2  tests fournis               83.3%        37.0 ms
+
+C. STRATÉGIES SANS VÉRIFICATION
+
+   tirage unique (espérance)                59.2%
+
+D. TABLE COUVERTURE × FORCE × COÛT — les trois domaines mesurés
+
+   domaine                       couverture  précision    coût/vérif
+   arithmétique (ét. 11)              95.2%       100%        < 1 ms
+   code MBPP (G2, ici)               83.3%       100%       37.0 ms
+   Lean ciblé (ét. 12)                    ?       100%         4-9 s
+   Lean global (ét. 12)                   ?       100%     187-220 s
+
+LECTURE. La précision est 100 % dans les trois cas — le vérificateur ne
+laisse rien passer. Ce qui distingue les domaines, c'est la couverture et
+le coût. « 100 % de précision » ne signifie ici que : conforme à la
+spécification exécutable fournie. Ce que les tests ne disent pas n'est pas
+vérifié — c'est la limite structurelle du régime hors noyau de preuve.

@@ -14,9 +14,9 @@ garantie est atteignable, et sur quelle fraction du travail.
 |---|---|---|---|---|---|
 | 1 | **empirique** — dispersion des tirages, seuil 0.70 | 57.6 % | **70.6 %** | ~0 | étape 10 |
 | 2 | **arithmétique** — substitution, modulo, produit | **95.2 %** | 100 % | < 1 ms | étape 11 |
-| 3 | **code** — syntaxe (`compile`) | *en cours* | — | ~0 ms | chantier 1 |
-| 4 | **code** — exécution sans exception | *en cours* | — | **~40 ms** | chantier 1 |
-| 5 | **code** — tests fournis par le benchmark | *en cours* | 100 %\* | **~40 ms** | chantier 1 |
+| 3 | **code** — syntaxe (`compile`) | **100 %** | — | **5.3 ms** | chantier 1 |
+| 4 | **code** — exécution sans exception | **100 %** | — | **152 ms** | chantier 1 |
+| 5 | **code** — tests fournis par le benchmark | **83.3 %** | 100 %\* | **37 ms** | chantier 1 |
 | 6 | **Lean + Mathlib** — imports ciblés | **20.0 %** | 100 % | **14 s** | étape 12 |
 | 7 | **Lean + Mathlib** — `import Mathlib` | non mesurée | 100 % | **187-220 s** | étape 12 |
 
@@ -59,6 +59,10 @@ comparaison, ne capture qu'une fraction du stochastique — 95.2 % contre 76.2 %
 pour un vote majoritaire sur le même corpus. C'est la différence entre **vérifier**
 et **graduer**.
 
+**1-bis. L'identité se vérifie exactement sur un troisième domaine** (chantier 1)
+Part systématique MBPP = 10/60 = 16.67 %. Couverture G2 mesurée = 83.33 %.
+`1 − 0.1667 = 0.8333`. Égalité au flottant près, non ajustée.
+
 **2. Le rendement de l'agrégation suit la part stochastique** (étapes 10 et 10-bis)
 
 | modèle et corpus | part stochastique | réduction d'erreur par le vote |
@@ -73,9 +77,6 @@ difficulté pour ce modèle. Non comparable à la ligne précédente.
 
 ## Ce qui manque encore
 
-- **Lignes 3 à 5** — le run est en cours. Trois contrôles ont été déclarés avant
-  lancement : couverture G2 supérieure au tirage unique ; identité de la loi 1
-  retrouvée ; décroissance G4 ≥ G3 ≥ G2 (violation = bug, pas résultat).
 - **Ligne 7** — la couverture avec contexte global n'a pas été mesurée : à
   187-220 s par candidat, le run aurait duré vingt heures.
 - **La boucle de réparation** (chantier 3). NL2VC-60 (arXiv 2604.22601) rapporte

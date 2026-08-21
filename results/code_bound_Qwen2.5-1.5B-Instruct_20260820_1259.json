@@ -1,0 +1,3489 @@
+{
+ "categories": {
+  "BIFURQUANT": 33,
+  "TOUJOURS-CORRECT": 17,
+  "TOUJOURS-FAUX": 10
+ },
+ "rows": [
+  {
+   "task_id": 2,
+   "categorie": "BIFURQUANT",
+   "n_ok": 9,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 3,
+   "categorie": "TOUJOURS-CORRECT",
+   "n_ok": 10,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 4,
+   "categorie": "BIFURQUANT",
+   "n_ok": 5,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 6,
+   "categorie": "BIFURQUANT",
+   "n_ok": 8,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 7,
+   "categorie": "TOUJOURS-CORRECT",
+   "n_ok": 10,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 8,
+   "categorie": "TOUJOURS-CORRECT",
+   "n_ok": 10,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 9,
+   "categorie": "BIFURQUANT",
+   "n_ok": 2,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 11,
+   "categorie": "BIFURQUANT",
+   "n_ok": 3,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": false,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 12,
+   "categorie": "BIFURQUANT",
+   "n_ok": 2,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": false,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 14,
+   "categorie": "BIFURQUANT",
+   "n_ok": 2,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 16,
+   "categorie": "TOUJOURS-FAUX",
+   "n_ok": 0,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 17,
+   "categorie": "TOUJOURS-CORRECT",
+   "n_ok": 10,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 18,
+   "categorie": "BIFURQUANT",
+   "n_ok": 9,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 19,
+   "categorie": "BIFURQUANT",
+   "n_ok": 5,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 20,
+   "categorie": "BIFURQUANT",
+   "n_ok": 3,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 56,
+   "categorie": "BIFURQUANT",
+   "n_ok": 9,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 57,
+   "categorie": "BIFURQUANT",
+   "n_ok": 6,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": false,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 58,
+   "categorie": "BIFURQUANT",
+   "n_ok": 9,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 59,
+   "categorie": "BIFURQUANT",
+   "n_ok": 1,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 61,
+   "categorie": "BIFURQUANT",
+   "n_ok": 1,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 62,
+   "categorie": "TOUJOURS-CORRECT",
+   "n_ok": 10,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 63,
+   "categorie": "TOUJOURS-FAUX",
+   "n_ok": 0,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 64,
+   "categorie": "BIFURQUANT",
+   "n_ok": 7,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 65,
+   "categorie": "BIFURQUANT",
+   "n_ok": 9,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": false,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 66,
+   "categorie": "TOUJOURS-CORRECT",
+   "n_ok": 10,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 67,
+   "categorie": "TOUJOURS-FAUX",
+   "n_ok": 0,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": false,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 68,
+   "categorie": "TOUJOURS-CORRECT",
+   "n_ok": 10,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 69,
+   "categorie": "TOUJOURS-FAUX",
+   "n_ok": 0,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 70,
+   "categorie": "BIFURQUANT",
+   "n_ok": 9,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 71,
+   "categorie": "TOUJOURS-CORRECT",
+   "n_ok": 10,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 72,
+   "categorie": "BIFURQUANT",
+   "n_ok": 3,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 74,
+   "categorie": "TOUJOURS-FAUX",
+   "n_ok": 0,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": false,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": false,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": false,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 75,
+   "categorie": "BIFURQUANT",
+   "n_ok": 9,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": false,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 77,
+   "categorie": "BIFURQUANT",
+   "n_ok": 4,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 79,
+   "categorie": "TOUJOURS-CORRECT",
+   "n_ok": 10,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 80,
+   "categorie": "TOUJOURS-CORRECT",
+   "n_ok": 10,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 82,
+   "categorie": "TOUJOURS-CORRECT",
+   "n_ok": 10,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 83,
+   "categorie": "TOUJOURS-FAUX",
+   "n_ok": 0,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 84,
+   "categorie": "TOUJOURS-FAUX",
+   "n_ok": 0,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": false,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": false,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": false,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 85,
+   "categorie": "TOUJOURS-CORRECT",
+   "n_ok": 10,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 86,
+   "categorie": "TOUJOURS-FAUX",
+   "n_ok": 0,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 87,
+   "categorie": "TOUJOURS-FAUX",
+   "n_ok": 0,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": false,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 88,
+   "categorie": "BIFURQUANT",
+   "n_ok": 8,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 89,
+   "categorie": "BIFURQUANT",
+   "n_ok": 1,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": false,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 90,
+   "categorie": "BIFURQUANT",
+   "n_ok": 9,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 91,
+   "categorie": "BIFURQUANT",
+   "n_ok": 7,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 92,
+   "categorie": "BIFURQUANT",
+   "n_ok": 3,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": false,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 93,
+   "categorie": "TOUJOURS-CORRECT",
+   "n_ok": 10,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 94,
+   "categorie": "BIFURQUANT",
+   "n_ok": 7,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 95,
+   "categorie": "TOUJOURS-CORRECT",
+   "n_ok": 10,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 96,
+   "categorie": "TOUJOURS-CORRECT",
+   "n_ok": 10,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 97,
+   "categorie": "TOUJOURS-CORRECT",
+   "n_ok": 10,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 98,
+   "categorie": "BIFURQUANT",
+   "n_ok": 5,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 99,
+   "categorie": "TOUJOURS-CORRECT",
+   "n_ok": 10,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 100,
+   "categorie": "BIFURQUANT",
+   "n_ok": 2,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 101,
+   "categorie": "BIFURQUANT",
+   "n_ok": 7,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  },
+  {
+   "task_id": 102,
+   "categorie": "BIFURQUANT",
+   "n_ok": 4,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": false,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 103,
+   "categorie": "TOUJOURS-FAUX",
+   "n_ok": 0,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": false,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": false,
+     "runs": false,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": false,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 104,
+   "categorie": "BIFURQUANT",
+   "n_ok": 8,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    }
+   ]
+  },
+  {
+   "task_id": 105,
+   "categorie": "BIFURQUANT",
+   "n_ok": 9,
+   "n": 10,
+   "results": [
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": false
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    },
+    {
+     "syntax": true,
+     "runs": true,
+     "tests": true
+    }
+   ]
+  }
+ ]
+}
