@@ -31,6 +31,31 @@ tâches avec une garantie totale relative aux tests, pour 37 ms de vérification
 
 ---
 
+## Le dépôt jumeau — pourquoi la première ligne plafonne
+
+La ligne « empirique — dispersion des tirages » est la seule qui juge le modèle **par
+lui-même**. Elle plafonne à 70,6 % de précision. Toutes les lignes au-dessus font
+appel à un vérificateur **extérieur**, de force croissante et de prix croissant.
+
+Cette forme n'est pas un accident de mesure. Elle a une contrepartie démontrée, et
+elle est formalisée dans un dépôt séparé : [`lean-lab`](https://github.com/shucrani/lean-lab)
+suit le fil du **diagonal** — Cantor, puis le théorème de point fixe de Lawvere qui
+l'abstrait, puis l'arrêt et Tarski. Ces quatre énoncés disent la même chose sous
+quatre habits : *un système ne décide pas de sa propre vérité depuis l'intérieur.*
+Chaque fichier y est vérifié par le noyau, sans `sorry`, et `check_axioms.lean`
+l'atteste.
+
+**Ce que le lien est.** Les no-go donnent la **forme** de la table : pourquoi une
+colonne « précision » ne monte pas à 100 % sans sortir du système, et pourquoi
+chaque sortie se paie.
+
+**Ce que le lien n'est pas.** Lawvere n'implique pas 70,6 %. Aucun théorème ne
+prédit un chiffre mesuré sur GPT-2. La cohérence entre les deux dépôts est une
+cohérence, pas une déduction — et la confondre serait précisément la machinerie
+avant le fait que ce projet s'interdit.
+
+---
+
 ## Deux régularités mesurées
 
 **`couverture = 1 − part systématique`**
