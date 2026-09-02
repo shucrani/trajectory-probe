@@ -8,3 +8,7 @@ venv/
 *.npz
 *.npy
 .venv/
+
+# Fichiers d'assistance locale — jamais versionnés
+CLAUDE.md
+.claude/

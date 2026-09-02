@@ -24,6 +24,7 @@ Usage :
 """
 import argparse
 import json
+import os
 import re
 import subprocess
 import sys
@@ -39,8 +40,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "sanitized-mbpp.json"
 SEED = 42
-SCRATCH = Path("/private/tmp/claude-502/-Users-lamar/"
-               "6e94d663-523d-476d-b9cc-404bf29252da/scratchpad/mbpp_sandbox")
+SCRATCH = Path(os.environ.get("MBPP_SANDBOX", ROOT / "build" / "mbpp_sandbox"))
 FENCE = re.compile(r"```(?:python)?\s*(.*?)```", re.S)
 
 

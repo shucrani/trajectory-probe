@@ -1213,8 +1213,8 @@ juste après, avec imports ciblés.
 
 ## 2026-08-20 — DÉCLARATION DE PROTOCOLE (avant exécution) : chantier 1, code réel
 
-Plan approuvé (`~/.claude/plans/luminous-greeting-chipmunk.md`). Transfert du
-régime vérifiable vers l'ingénierie logicielle.
+Protocole arrêté avant exécution. Transfert du régime vérifiable vers
+l'ingénierie logicielle.
 
 ### Protocole
 
