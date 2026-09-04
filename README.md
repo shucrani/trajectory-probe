@@ -6,6 +6,15 @@ outside knowledge, and at what price?
 This repository answers by measurement. Thirteen steps, every protocol declared
 before it ran, every control recorded whether it passed or failed.
 
+## Start here
+
+    python3 the_price.py
+
+One file, standard library only, no GPU and no model download. It reads real
+runs recorded on 2026-08-20, prints the sampling ceiling and its exact identity,
+then times four verifiers of rising strength on your machine. Everything below
+is detail.
+
 ## Main result: the decision table
 
 For a given budget, which strength of guarantee is reachable, and over what
