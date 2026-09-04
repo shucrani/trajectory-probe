@@ -178,3 +178,43 @@ Both files also record that 28 of 87 prompts are silent, 32 %, the model
 asserting nothing at all. Silence is not error and is excluded from the coverage
 figure. Whether it should be is a question about what the measurement is for,
 and it has been argued nowhere.
+
+---
+
+## Raising the budget on the tasks that failed · `budget_scaling_100_partiel_10sur17`
+
+Added 2026-09-04, and the only measurement here that was made rather than found.
+
+The 100-task run leaves 17 tasks with no correct sample in ten draws. Part A of
+`the_price.py` had already shown, on the factual corpus, that unsolved at a
+budget is not unsolvable: 8 of 17 prompts unsolved at 20 draws are solved at 40.
+That comparison used two independent runs. This one raises K on a single
+population, on code, with a budget ten times larger.
+
+| | draws | |
+|---|---|---|
+| task 63 | 7/100 | p > 0 established |
+| task 69 | 6/100 | p > 0 established |
+| task 84 | 5/100 | p > 0 established |
+| task 87 | 4/100 | p > 0 established |
+| task 67 | 2/100 | p > 0 established |
+| task 86 | 2/100 | p > 0 established |
+| tasks 16, 74, 83, 103 | 0/100 | bounded under 3 %, not shown to be 0 |
+
+**Six of the ten tasks measured produce a correct candidate.** Those candidates
+were generated and passed the supplied tests. Ten draws counted them beyond the
+model's reach; they were rare, at two to seven percent. No test is needed for
+that part and no unmeasured task can undo it.
+
+What the conclusion is asymmetric about: a task still at zero after 100 draws is
+not shown impossible. The rule of three bounds its probability under 3 % at
+95 %, and the bound tightens with the budget without ever reaching zero. Nothing
+in this repository can establish that a task is unreachable; it can only push
+the bound down.
+
+Two reservations, both structural. The population is conditioned on a failure
+observed at K=10, so selecting on an observed zero biases it downward and the
+60 % reads among these tasks, never as a corpus rate. And the measurement is
+incomplete: 7 of 17 tasks were not drawn, six successive runs having been killed
+by the machine's memory supervisor. The proportion is therefore not quotable.
+The conclusion does not depend on it.

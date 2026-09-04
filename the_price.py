@@ -44,6 +44,8 @@ CODE_RUNS = (Path(__file__).parent / "results" /
              "code_bound_Qwen2.5-1.5B-Instruct_20260904_1045.json")
 DEEP = (Path(__file__).parent / "results" /
         "bifurcation_gpt2_typed_20260820_0056.json")
+BUDGET = (Path(__file__).parent / "results" /
+          "budget_scaling_100_partiel_10sur17.json")
 
 
 # ---------------------------------------------------------------- Part A
@@ -349,7 +351,16 @@ def main():
     print("   conditioned on what the first lets through.")
     print("\n   Neither is a ceiling. The first is measured at K=10 and the second is")
     print("   read against the supplied tests, which stand in for truth and are not")
-    print("   truth. Both bounds move if either assumption is tested.\n")
+    print("   truth. Both bounds move if either assumption is tested.")
+
+    b = json.loads(BUDGET.read_text())
+    out = [r for r in b["rows"] if r["m"] > 0]
+    print(f"\n   The first assumption was tested. Of the {b['taches_visees']} tasks with no good")
+    print(f"   sample in ten draws, {b['taches_mesurees']} were drawn {b['total_tirages']} times: {len(out)} produced a correct")
+    rates = ", ".join(f"{r['m']}%" for r in sorted(out, key=lambda r: -r["m"]))
+    print(f"   one, at {rates}. Ten draws counted them out of reach and they")
+    print(f"   were rare. The other {b['taches_mesurees'] - len(out)} are bounded under 3% by the rule of three,")
+    print(f"   which is a bound and not a zero. {b['taches_visees'] - b['taches_mesurees']} tasks remain unmeasured.\n")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,26 @@
+
+RÉSULTAT — 10 tâches non résolues à K=10, portées à 100   [PARTIEL : 10/17]
+
+   p > 0 établi            6/10 = 60.0%
+   toujours zéro           4/10   -> p < 3.0% à 95% (règle de trois), pas p = 0
+
+      task 63      7/100   p estimé 7.0%
+      task 69      6/100   p estimé 6.0%
+      task 84      5/100   p estimé 5.0%
+      task 87      4/100   p estimé 4.0%
+      task 67      2/100   p estimé 2.0%
+      task 86      2/100   p estimé 2.0%
+
+LECTURE. Chaque tâche sortie du zéro est une tâche que dix tirages
+comptaient hors de portée et qui ne l'était pas. Les tâches restées à
+zéro ne sont pas démontrées impossibles : elles sont bornées, et la
+borne se resserre avec le budget sans jamais atteindre zéro.
+
+Population conditionnée à un échec observé à K=10. Le taux ci-dessus
+se lit parmi ces tâches, et ne s'applique pas au corpus entier.
+MESURE INCOMPLÈTE. 7 tâches sur 17 n'ont pas été
+portées à 100 tirages : le superviseur mémoire de la machine a interrompu
+six exécutions successives. Ce qui manque est la proportion, dont
+l'intervalle sur 10 tâches est trop large pour être cité. Ce qui ne
+manque pas est la conclusion : chaque tâche sortie du zéro l'a fait par
+des complétions observées, et aucune tâche non mesurée ne peut les retirer.

@@ -124,11 +124,14 @@ def main():
 
 def resume(ckpt, attendu):
     rows = [json.loads(l) for l in ckpt.read_text().splitlines() if l.strip()]
-    if len(rows) < attendu:
-        print(f"\n{len(rows)}/{attendu} tâches faites, relancer pour terminer.")
+    if not rows:
         return
+    partiel = len(rows) < attendu
     sortis = [r for r in rows if r["m"] > 0]
-    lignes = ["", f"RÉSULTAT — {len(rows)} tâches non résolues à K=10, portées à {TOTAL}", ""]
+    titre = f"RÉSULTAT — {len(rows)} tâches non résolues à K=10, portées à {TOTAL}"
+    if partiel:
+        titre += f"   [PARTIEL : {len(rows)}/{attendu}]"
+    lignes = ["", titre, ""]
     lignes.append(f"   p > 0 établi          {len(sortis):>3}/{len(rows)} = {len(sortis)/len(rows):.1%}")
     lignes.append(f"   toujours zéro         {len(rows)-len(sortis):>3}/{len(rows)}"
                   f"   -> p < 3.0% à 95% (règle de trois), pas p = 0")
@@ -143,10 +146,24 @@ def resume(ckpt, attendu):
                "",
                "Population conditionnée à un échec observé à K=10. Le taux ci-dessus",
                "se lit parmi ces tâches, et ne s'applique pas au corpus entier.", ""]
+    if partiel:
+        lignes[-1:] = [
+            f"MESURE INCOMPLÈTE. {attendu - len(rows)} tâches sur {attendu} n'ont pas été",
+            "portées à 100 tirages : le superviseur mémoire de la machine a interrompu",
+            "six exécutions successives. Ce qui manque est la proportion, dont",
+            f"l'intervalle sur {len(rows)} tâches est trop large pour être cité. Ce qui ne",
+            "manque pas est la conclusion : chaque tâche sortie du zéro l'a fait par",
+            "des complétions observées, et aucune tâche non mesurée ne peut les retirer.",
+            ""]
     out = "\n".join(lignes)
     print(out)
-    (ROOT / "results" / f"budget_scaling_{TOTAL}.txt").write_text(out)
-    print(f"-> results/budget_scaling_{TOTAL}.txt")
+    suffixe = f"_partiel_{len(rows)}sur{attendu}" if partiel else ""
+    (ROOT / "results" / f"budget_scaling_{TOTAL}{suffixe}.txt").write_text(out)
+    (ROOT / "results" / f"budget_scaling_{TOTAL}{suffixe}.json").write_text(
+        json.dumps({"total_tirages": TOTAL, "taches_visees": attendu,
+                    "taches_mesurees": len(rows), "rows": rows}, indent=1))
+    print(f"-> results/budget_scaling_{TOTAL}{suffixe}.txt")
+    return
 
 
 if __name__ == "__main__":

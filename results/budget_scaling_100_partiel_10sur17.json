@@ -1,0 +1,67 @@
+{
+ "total_tirages": 100,
+ "taches_visees": 17,
+ "taches_mesurees": 10,
+ "rows": [
+  {
+   "task_id": 16,
+   "m": 0,
+   "n": 100,
+   "secondes": 582.7
+  },
+  {
+   "task_id": 63,
+   "m": 7,
+   "n": 100,
+   "secondes": 770.2
+  },
+  {
+   "task_id": 67,
+   "m": 2,
+   "n": 100,
+   "secondes": 836.9
+  },
+  {
+   "task_id": 69,
+   "m": 6,
+   "n": 100,
+   "secondes": 219.3
+  },
+  {
+   "task_id": 74,
+   "m": 0,
+   "n": 100,
+   "secondes": 710.4
+  },
+  {
+   "task_id": 83,
+   "m": 0,
+   "n": 100,
+   "secondes": 379.1
+  },
+  {
+   "task_id": 84,
+   "m": 5,
+   "n": 100,
+   "secondes": 670.2
+  },
+  {
+   "task_id": 86,
+   "m": 2,
+   "n": 100,
+   "secondes": 231.4
+  },
+  {
+   "task_id": 87,
+   "m": 4,
+   "n": 100,
+   "secondes": 688.7
+  },
+  {
+   "task_id": 103,
+   "m": 0,
+   "n": 100,
+   "secondes": 1259.0
+  }
+ ]
+}
