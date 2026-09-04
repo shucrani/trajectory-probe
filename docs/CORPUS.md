@@ -105,3 +105,28 @@ than first.
 Reproduce the counts with:
 
     pdftotext each PDF, then grep -cioE over the patterns named above
+
+## Second pass, 2026-09-04: one axis falls
+
+Five more papers, corpus now at 24.
+
+`2606.22864`, When AUC 0.998 Is Not Enough (Northeastern, UIUC, SMU, 22 June
+2026), already performs the C1 move: a paired-construction scalar baseline over
+text-side surfaces, on the same train/val/test split, showing that a near-perfect
+headline AUC does not license the reading placed on it. Twenty-three occurrences
+of surface-shortcut vocabulary.
+
+`2508.08285` The Illusion of Progress and `2605.17028` PARALLAX work the same
+seam: benchmark construction artefacts, and length-based baselines matching
+complex probes.
+
+C1 therefore stops being a contribution here. It becomes an instrument confirmed
+by independent convergence, arrived at without knowledge of these papers. Running
+it against `2606.02628` stays a useful replication and stops being a new result.
+
+`2507.16488` ICR Probe exists, ACL 2025. An earlier note in this project recorded
+it as untraceable, which was wrong.
+
+The two remaining axes survive the pass. No paper in the corpus composes the
+generator-side and verifier-side ceilings, and none takes price as a first-class
+axis.
