@@ -44,13 +44,30 @@ def main():
     print(f"{len(cibles)} tâches non résolues à K=10, {TOTAL} tirages chacune\n")
 
     ckpt = ROOT / "results" / f"checkpoint_budget_{TOTAL}.jsonl"
+    # Une tâche prend une dizaine de minutes et le superviseur mémoire de
+    # l'environnement tue les processus longs. Le checkpoint descend donc au
+    # lot : la graine ne dépend que de la tâche et du numéro de lot, donc un lot
+    # repris est exactement le lot qui aurait été tiré. Rien n'est approximé.
+    lots = ROOT / "results" / f"checkpoint_budget_{TOTAL}_lots.jsonl"
     fait = {}
     if ckpt.exists():
         for line in ckpt.read_text().splitlines():
             if line.strip():
                 r = json.loads(line)
                 fait[r["task_id"]] = r
-        print(f"  reprise : {len(fait)} tâches déjà faites\n")
+        print(f"  reprise : {len(fait)} tâches déjà faites")
+    partiels = {}
+    if lots.exists():
+        for line in lots.read_text().splitlines():
+            if line.strip():
+                r = json.loads(line)
+                partiels.setdefault(r["task_id"], {})[r["batch"]] = r["m"]
+    en_cours = {t: d for t, d in partiels.items() if t not in fait}
+    if en_cours:
+        print(f"  dont {len(en_cours)} tâche(s) entamée(s) : "
+              + ", ".join(f"{t} à {len(d)}/{TOTAL // BATCH} lots"
+                          for t, d in sorted(en_cours.items())))
+    print()
 
     device = "mps" if torch.backends.mps.is_available() else "cpu"
     tok = AutoTokenizer.from_pretrained(MODEL)
@@ -68,8 +85,11 @@ def main():
         text = tok.apply_chat_template([{"role": "user", "content": msg}],
                                        tokenize=False, add_generation_prompt=True)
         t0 = time.perf_counter()
-        m = 0
+        deja = partiels.get(tid, {})
+        m = sum(deja.values())
         for b in range(TOTAL // BATCH):
+            if b in deja:
+                continue
             enc = tok(text, return_tensors="pt").to(device)
             # Graine distincte par lot : les 100 tirages sont indépendants, et
             # les dix premiers ne rejouent pas ceux du run d'origine.
@@ -78,16 +98,22 @@ def main():
                 out = model.generate(**enc, do_sample=True, temperature=0.7,
                                      max_new_tokens=256, num_return_sequences=BATCH,
                                      pad_token_id=tok.eos_token_id, top_k=0, top_p=1.0)
+            m_lot = 0
             for o in out:
                 code = extract_code(tok.decode(o[enc["input_ids"].shape[1]:],
                                                skip_special_tokens=True))
                 ok, _ = check_tests(code, imports, p["test_list"])
-                m += bool(ok)
+                m_lot += bool(ok)
             del out, enc
             if device == "mps":
                 torch.mps.empty_cache()
+            m += m_lot
+            with lots.open("a") as f:
+                f.write(json.dumps({"task_id": tid, "batch": b, "m": m_lot}) + "\n")
+            print(f"  task {tid:<5} lot {b + 1:>2}/{TOTAL // BATCH}   {m}/{(b + 1) * BATCH}",
+                  flush=True)
         row = {"task_id": tid, "m": m, "n": TOTAL,
-               "secondes": round(time.perf_counter() - t0, 1)}
+               "secondes": round(time.perf_counter() - t0, 1)}  # de cette session
         with ckpt.open("a") as f:
             f.write(json.dumps(row) + "\n")
         verdict = "p > 0 ÉTABLI" if m else "toujours zéro"
