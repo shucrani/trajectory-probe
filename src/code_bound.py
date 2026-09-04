@@ -131,9 +131,27 @@ def main():
     rows = []
     times = {"G4": [], "G3": [], "G2": []}
 
+    tag = args.model.split("/")[-1]
+    ckpt = ROOT / "results" / f"checkpoint_{tag}_n{args.n}_T{args.temperature}.jsonl"
+    done = {}
+    if ckpt.exists():
+        for line in ckpt.read_text().splitlines():
+            if line.strip():
+                r = json.loads(line)
+                done[r["task_id"]] = r
+        print(f"  reprise : {len(done)} tâches déjà faites dans {ckpt.name}")
+
     for i in usable:
         p = problems[i]
         imports = p.get("test_imports", [])
+
+        if p["task_id"] in done:
+            r = done[p["task_id"]]
+            cats[r["categorie"]] += 1
+            for g in times:
+                times[g].extend(r["t"][g])
+            rows.append({k: v for k, v in r.items() if k != "t"})
+            continue
         # Protocole MBPP standard : le premier test sert de spécification (il
         # donne la signature). Les trois tests servent à la vérification.
         msg = (f"{p['prompt']}\n\nYour code should satisfy this test:\n"
@@ -148,26 +166,38 @@ def main():
                                  pad_token_id=tok.eos_token_id, top_k=0, top_p=1.0)
         cands = [extract_code(tok.decode(o[enc["input_ids"].shape[1]:],
                                          skip_special_tokens=True)) for o in out]
+        # Deux runs tués par le seuil mémoire du système, à 57 et 21 tâches. Le
+        # cache d'allocation MPS n'est pas rendu entre les tâches et croît avec
+        # elles. Les tenseurs sont libérés dès que le texte en est extrait.
+        del out, enc
+        if device == "mps":
+            torch.mps.empty_cache()
 
         res = []
+        t_task = {"G4": [], "G3": [], "G2": []}
         for c in cands:
             s_ok, s_dt = check_syntax(c)
-            times["G4"].append(s_dt)
+            t_task["G4"].append(s_dt)
             r_ok = t_ok = False
             if s_ok:
                 r_ok, r_dt = check_runs(c, imports)
-                times["G3"].append(r_dt)
+                t_task["G3"].append(r_dt)
                 if r_ok:
                     t_ok, t_dt = check_tests(c, imports, p["test_list"])
-                    times["G2"].append(t_dt)
+                    t_task["G2"].append(t_dt)
             res.append({"syntax": s_ok, "runs": r_ok, "tests": t_ok})
 
         n_ok = sum(r["tests"] for r in res)
         cat = ("TOUJOURS-CORRECT" if n_ok == len(res)
                else "TOUJOURS-FAUX" if n_ok == 0 else "BIFURQUANT")
         cats[cat] += 1
-        rows.append({"task_id": p["task_id"], "categorie": cat, "n_ok": n_ok,
-                     "n": len(res), "results": res})
+        row = {"task_id": p["task_id"], "categorie": cat, "n_ok": n_ok,
+               "n": len(res), "results": res}
+        rows.append(row)
+        for g in times:
+            times[g].extend(t_task[g])
+        with ckpt.open("a") as f:
+            f.write(json.dumps({**row, "t": t_task}) + "\n")
         print(f"  task {p['task_id']:<5} {n_ok}/{len(res)} passent  {cat}")
 
     lines = []
@@ -223,7 +253,6 @@ def main():
     out = "\n".join(lines)
     print("\n" + out)
     stamp = datetime.now().strftime("%Y%m%d_%H%M")
-    tag = args.model.split("/")[-1]
     (ROOT / "results" / f"code_bound_{tag}_{stamp}.txt").write_text(out + "\n")
     (ROOT / "results" / f"code_bound_{tag}_{stamp}.json").write_text(
         json.dumps({"categories": dict(cats), "rows": rows}, indent=1))

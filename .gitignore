@@ -14,3 +14,13 @@ CLAUDE.md
 .claude/
 corpus/*.pdf
 corpus/*.txt
+
+# Fichiers de travail d'un run, pas des résultats
+results/checkpoint_*.jsonl
+results/*.log
+*.bak-*
+
+# Runs de calibration du 04/09 : 5 et 3 tâches, mesure du coût avant
+# d'engager les 100. Conservés sur disque, hors dépôt.
+results/code_bound_Qwen2.5-1.5B-Instruct_20260904_0856.*
+results/code_bound_Qwen2.5-1.5B-Instruct_20260904_0859.*
