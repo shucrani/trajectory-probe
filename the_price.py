@@ -28,6 +28,8 @@ import time
 from pathlib import Path
 
 RUNS = Path(__file__).parent / "results" / "reduction_bound_20260820_0115.json"
+CODE_RUNS = (Path(__file__).parent / "results" /
+             "code_bound_Qwen2.5-1.5B-Instruct_20260820_1259.json")
 
 
 # ---------------------------------------------------------------- Part A
@@ -122,12 +124,11 @@ def v_execution(code, tests):
 
 
 def price():
-    """Time each verifier over the same work, once.
+    """Time each verifier over the same work, once. Returns (name, seconds).
 
-    Returns (name, acceptance, precision, seconds). Acceptance is the share the
-    verifier lets through. Precision is the share of those that are actually
-    correct, which is the only sense in which a verifier is strong. A verifier
-    that accepts everything has acceptance 1 and precision equal to the raw rate.
+    Price only. How strong each verifier is gets measured in part D, on recorded
+    runs, because strength read off three hand-written candidates would say more
+    about the candidates than about the verifier.
     """
     rows = []
 
@@ -142,23 +143,22 @@ def price():
     t0 = time.perf_counter()
     for _ in range(100):
         v_dispersion(samples)
-    dt = (time.perf_counter() - t0) / 100
-    rows.append(("dispersion across samples", 1.0, None, dt))
+    rows.append(("dispersion across samples", (time.perf_counter() - t0) / 100))
 
     t0 = time.perf_counter()
-    hits = [v_arithmetic(e, x) for e, x in ARITHMETIC]
-    dt = (time.perf_counter() - t0) / len(ARITHMETIC)
-    rows.append(("arithmetic, substitution", 1.0, sum(hits) / len(hits), dt))
+    for e, x in ARITHMETIC:
+        v_arithmetic(e, x)
+    rows.append(("arithmetic, substitution", (time.perf_counter() - t0) / len(ARITHMETIC)))
 
     t0 = time.perf_counter()
-    verdicts = [(v_syntax(c, t), truth) for c, t, truth in CODE]
-    dt = (time.perf_counter() - t0) / len(CODE)
-    rows.append(("code, syntax", *score(verdicts), dt))
+    for c, t, _ in CODE:
+        v_syntax(c, t)
+    rows.append(("code, syntax", (time.perf_counter() - t0) / len(CODE)))
 
     t0 = time.perf_counter()
-    verdicts = [(v_execution(c, t), truth) for c, t, truth in CODE]
-    dt = (time.perf_counter() - t0) / len(CODE)
-    rows.append(("code, supplied tests", *score(verdicts), dt))
+    for c, t, _ in CODE:
+        v_execution(c, t)
+    rows.append(("code, supplied tests", (time.perf_counter() - t0) / len(CODE)))
 
     return rows
 
@@ -169,6 +169,52 @@ def score(verdicts):
     acceptance = len(accepted) / len(verdicts)
     precision = (sum(accepted) / len(accepted)) if accepted else None
     return acceptance, precision
+
+
+# ---------------------------------------------------------------- Part D
+
+def ceilings():
+    """The two ceilings, measured on recorded runs.
+
+    60 MBPP tasks, 10 samples each, Qwen2.5-1.5B-Instruct, recorded 2026-08-20.
+    Every sample carries the verdict of three verifiers of rising strength:
+    syntax, runs without exception, supplied tests.
+
+    Tests stand in for ground truth here. They are the strongest verifier on
+    hand, not truth, and a candidate that passes the supplied tests can still be
+    wrong. Every number below inherits that limit.
+    """
+    rows = json.loads(CODE_RUNS.read_text())["rows"]
+    samples = [s for r in rows for s in r["results"]]
+
+    # Ceiling one, on the generator. Tasks where no sample ever passes.
+    never = sum(1 for r in rows if r["n_ok"] == 0)
+    systematic = never / len(rows)
+
+    # Ceiling two, on the verifier. Over the samples the strongest verifier
+    # rejects, the share a weaker one waves through. These are the errors it
+    # cannot see, at any number of calls, because its verdict is a function of
+    # the candidate and does not vary between calls.
+    wrong = [s for s in samples if not s["tests"]]
+    stats = {}
+    for weak in ("syntax", "runs"):
+        accepted = [s for s in samples if s[weak]]
+        stats[weak] = {
+            "blind": sum(s[weak] for s in wrong) / len(wrong),
+            "accepts": len(accepted) / len(samples),
+            "precision": sum(s["tests"] for s in accepted) / len(accepted),
+        }
+
+    # Two different verifiers in series. Stacking one verifier k times changes
+    # nothing, so the only lever is a second verifier that fails differently.
+    both = [s for s in samples if s["syntax"] and s["runs"]]
+    stats["syntax AND runs"] = {
+        "blind": sum(s["syntax"] and s["runs"] for s in wrong) / len(wrong),
+        "accepts": len(both) / len(samples),
+        "precision": sum(s["tests"] for s in both) / len(both),
+    }
+
+    return len(rows), len(samples), systematic, stats
 
 
 # ---------------------------------------------------------------- Part C
@@ -188,19 +234,38 @@ def main():
 
     print("\nB. What each verifier costs, timed on this machine now\n")
     rows = price()
-    print(f"   {'verifier':<28}{'accepts':>10}{'precision':>11}{'cost':>12}")
-    for name, cov, prec, dt in rows:
-        p = f"{prec:.0%}" if prec is not None else "n/a"
-        unit = f"{dt * 1e3:.2f} ms" if dt < 1 else f"{dt:.2f} s"
-        print(f"   {name:<28}{cov:>9.0%}{p:>11}{unit:>12}")
+    print(f"   {'verifier':<28}{'cost per check':>16}")
+    for name, dt in rows:
+        unit = f"{dt * 1e3:.3f} ms" if dt < 1 else f"{dt:.2f} s"
+        print(f"   {name:<28}{unit:>16}")
 
     # Only rows that certify. Dispersion returns no precision, and dividing by
     # its near-zero cost would inflate the ratio without meaning anything.
-    certifying = [r for r in rows if r[2] is not None]
-    span = max(r[3] for r in certifying) / min(r[3] for r in certifying)
-    print(f"\nC. Among verifiers that certify, cost spans a factor of {span:,.0f}.")
-    print("   Strength and price move together. Choosing a verifier is a budget")
-    print(f"   decision, and {systematic:.1%} of the work stays out of reach at any budget.\n")
+    # Dispersion reads no ground truth, so it certifies nothing and its near-zero
+    # cost would inflate the ratio without meaning anything.
+    certifying = [r for r in rows if not r[0].startswith("dispersion")]
+    span = max(r[1] for r in certifying) / min(r[1] for r in certifying)
+
+    n_tasks, n_samples, sys_code, stats = ceilings()
+    print(f"\nD. The second ceiling, over {n_samples} recorded samples on {n_tasks} tasks\n")
+    print(f"   {'verifier':<20}{'accepts':>9}{'precision':>11}{'blind spot':>12}")
+    for name, st in stats.items():
+        print(f"   {name:<20}{st['accepts']:>8.0%}{st['precision']:>11.0%}{st['blind']:>12.0%}")
+    print("\n   Blind spot is the share of genuinely wrong samples a verifier accepts.")
+    print("   Calling the same verifier k times does not move it: the verdict is a")
+    print("   function of the candidate. Only a verifier that fails differently does.")
+    gained = stats["runs"]["blind"] - stats["syntax AND runs"]["blind"]
+    print(f"\n   Chaining syntax and runs buys {gained:.1%} of blind spot back, because")
+    print("   running without exception already implies parsing. Two gates that fail")
+    print("   the same way are one gate, and the series costs twice.")
+
+    print(f"\nE. Composing the two\n")
+    print(f"   generator ceiling    {1 - sys_code:6.1%}   tasks with at least one good sample")
+    print(f"   best verifier here   {stats['syntax AND runs']['precision']:6.1%}   precision once it accepts")
+    print(f"   composed             {(1 - sys_code) * stats['syntax AND runs']['precision']:6.1%}   what actually gets through, correct")
+    print(f"\n   Among verifiers that certify, cost spans a factor of {span:,.0f}.")
+    print("   One ceiling sits on the generator and one on the verifier. They are")
+    print("   different quantities and they multiply.\n")
 
 
 if __name__ == "__main__":
