@@ -20,6 +20,7 @@ Part C composes the two.
 Everything else in this repository is detail. Read this and you have the result.
 """
 import json
+import math
 import statistics
 import subprocess
 import sys
@@ -214,7 +215,27 @@ def ceilings():
         "precision": sum(s["tests"] for s in both) / len(both),
     }
 
-    return len(rows), len(samples), systematic, stats
+    # The two ceilings do not multiply as they stand. Verifier precision is 0 on
+    # tasks where no sample is good and 72 percent where one is, so the marginal
+    # precision already carries the systematic loss and multiplying it by the
+    # generator ceiling counts that loss twice. The composition needs the
+    # precision conditioned on tasks the first ceiling lets through.
+    reachable = [s for r in rows if r["n_ok"] > 0 for s in r["results"]]
+    accepted = [s for s in reachable if s["runs"]]
+    conditional = sum(s["tests"] for s in accepted) / len(accepted)
+
+    return len(rows), len(samples), systematic, stats, conditional
+
+
+def wilson(k, n, z=1.96):
+    """95 percent Wilson interval. A rate quoted on 60 tasks without one misleads."""
+    if n == 0:
+        return 0.0, 0.0
+    p = k / n
+    d = 1 + z * z / n
+    c = p + z * z / (2 * n)
+    h = z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n))
+    return (c - h) / d, (c + h) / d
 
 
 # ---------------------------------------------------------------- Part C
@@ -246,7 +267,7 @@ def main():
     certifying = [r for r in rows if not r[0].startswith("dispersion")]
     span = max(r[1] for r in certifying) / min(r[1] for r in certifying)
 
-    n_tasks, n_samples, sys_code, stats = ceilings()
+    n_tasks, n_samples, sys_code, stats, conditional = ceilings()
     print(f"\nD. The second ceiling, over {n_samples} recorded samples on {n_tasks} tasks\n")
     print(f"   {'verifier':<20}{'accepts':>9}{'precision':>11}{'blind spot':>12}")
     for name, st in stats.items():
@@ -259,13 +280,21 @@ def main():
     print("   running without exception already implies parsing. Two gates that fail")
     print("   the same way are one gate, and the series costs twice.")
 
+    reach = 1 - sys_code
     print(f"\nE. Composing the two\n")
-    print(f"   generator ceiling    {1 - sys_code:6.1%}   tasks with at least one good sample")
-    print(f"   best verifier here   {stats['syntax AND runs']['precision']:6.1%}   precision once it accepts")
-    print(f"   composed             {(1 - sys_code) * stats['syntax AND runs']['precision']:6.1%}   what actually gets through, correct")
+    print(f"   generator ceiling    {reach:6.1%}   tasks with at least one good sample")
+    print(f"   verifier precision   {conditional:6.1%}   among those tasks only, once it accepts")
+    print(f"   composed             {reach * conditional:6.1%}   what gets through and is correct")
+    print(f"\n   The marginal precision, {stats['runs']['precision']:.1%}, must not be used here. It is 0 on")
+    print("   tasks with no good sample and mixes that loss back in, so multiplying it")
+    print("   by the generator ceiling counts the same loss twice.")
+    lo, hi = wilson(int(round(reach * n_tasks)), n_tasks)
+    print(f"\n   n = {n_tasks} tasks, so the generator ceiling carries a 95% interval of")
+    print(f"   [{lo:.1%}, {hi:.1%}]. Every figure in D and E inherits that width.")
     print(f"\n   Among verifiers that certify, cost spans a factor of {span:,.0f}.")
     print("   One ceiling sits on the generator and one on the verifier. They are")
-    print("   different quantities and they multiply.\n")
+    print("   different quantities, and they compose only once the second is")
+    print("   conditioned on what the first lets through.\n")
 
 
 if __name__ == "__main__":
