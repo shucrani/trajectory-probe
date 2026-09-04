@@ -1,199 +1,182 @@
 # trajectory-probe
 
-**Combien d'hallucination peut-on retirer d'un modèle de langage sans lui apporter
-la moindre connaissance extérieure — et à quel prix ?**
+How much hallucination can be removed from a language model without giving it any
+outside knowledge, and at what price?
 
-Ce dépôt répond par la mesure. Treize étapes, chaque protocole déclaré avant son
-exécution, chaque contrôle consigné qu'il passe ou qu'il échoue.
+This repository answers by measurement. Thirteen steps, every protocol declared
+before it ran, every control recorded whether it passed or failed.
 
----
+## Main result: the decision table
 
-## Résultat principal — la table de décision
+For a given budget, which strength of guarantee is reachable, and over what
+fraction of the work. Detail and sources in
+[`docs/TABLE-DECISION.md`](docs/TABLE-DECISION.md).
 
-Pour un budget donné, quelle force de garantie est atteignable, et sur quelle
-fraction du travail. Détail et sources : [`docs/TABLE-DECISION.md`](docs/TABLE-DECISION.md).
-
-| domaine / vérificateur | couverture | précision | coût par vérification |
+| domain and verifier | coverage | precision | cost per check |
 |---|---|---|---|
-| empirique — dispersion des tirages | 57.6 % | **70.6 %** | ~0 |
-| arithmétique — substitution, modulo | **95.2 %** | 100 % | < 1 ms |
-| code — syntaxe (`compile`) | 100 % | — | 5.3 ms |
-| code — exécution sans exception | 100 % | — | 152 ms |
-| **code — tests fournis** | **83.3 %** | 100 %\* | **37 ms** |
-| Lean + Mathlib — imports ciblés | 20.0 % | 100 % | 14 s |
-| Lean + Mathlib — `import Mathlib` | non mesurée | 100 % | 187-220 s |
+| empirical, spread across samples | 57.6 % | 70.6 % | ~0 |
+| arithmetic, substitution and modulo | 95.2 % | 100 % | < 1 ms |
+| code, syntax (`compile`) | 100 % | n/a | 5.3 ms |
+| code, runs without exception | 100 % | n/a | 152 ms |
+| code, supplied tests | 83.3 % | 100 %\* | 37 ms |
+| Lean and Mathlib, targeted imports | 20.0 % | 100 % | 14 s |
+| Lean and Mathlib, `import Mathlib` | not measured | 100 % | 187-220 s |
 
-\* conforme à la spécification exécutable fournie, pas correct au sens d'un noyau
-de preuve.
+\* meets the executable specification supplied, which is weaker than correctness
+in the sense of a proof kernel.
 
-Une ligne se lit ainsi : *avec des tests d'intégration, on répond à 83 % des
-tâches avec une garantie totale relative aux tests, pour 37 ms de vérification.*
+A row reads: with integration tests, 83 % of tasks get an answer carrying a total
+guarantee relative to those tests, for 37 ms of checking.
 
----
+## The twin repository: why the first line tops out
 
-## Le dépôt jumeau — pourquoi la première ligne plafonne
+The row "empirical, spread across samples" is the only one that judges the model
+by itself. It tops out at 70.6 % precision. Every row above it calls an outside
+verifier, of rising strength and rising price.
 
-La ligne « empirique — dispersion des tirages » est la seule qui juge le modèle **par
-lui-même**. Elle plafonne à 70,6 % de précision. Toutes les lignes au-dessus font
-appel à un vérificateur **extérieur**, de force croissante et de prix croissant.
+That shape has a proved counterpart, formalized in a separate repository.
+[`lean-lab`](https://github.com/shucrani/lean-lab) follows the diagonal thread:
+Cantor, then Lawvere's fixed-point theorem which abstracts it, then halting and
+Tarski. The four statements say one thing in four costumes, that a system does
+not decide its own truth from the inside. Every file there is kernel-checked with
+no `sorry`, and `check_axioms.lean` attests it.
 
-Cette forme n'est pas un accident de mesure. Elle a une contrepartie démontrée, et
-elle est formalisée dans un dépôt séparé : [`lean-lab`](https://github.com/shucrani/lean-lab)
-suit le fil du **diagonal** — Cantor, puis le théorème de point fixe de Lawvere qui
-l'abstrait, puis l'arrêt et Tarski. Ces quatre énoncés disent la même chose sous
-quatre habits : *un système ne décide pas de sa propre vérité depuis l'intérieur.*
-Chaque fichier y est vérifié par le noyau, sans `sorry`, et `check_axioms.lean`
-l'atteste.
+What the link is. The no-go results give the shape of the table: why a precision
+column does not reach 100 % without stepping outside the system, and why every
+step outside is paid for.
 
-**Ce que le lien est.** Les no-go donnent la **forme** de la table : pourquoi une
-colonne « précision » ne monte pas à 100 % sans sortir du système, et pourquoi
-chaque sortie se paie.
+What the link is not. Lawvere does not imply 70.6 %. No theorem predicts a number
+measured on GPT-2. The agreement between the two repositories is a coherence, and
+it is not a deduction. Confusing them would be the machinery-before-the-fact this
+project rules out.
 
-**Ce que le lien n'est pas.** Lawvere n'implique pas 70,6 %. Aucun théorème ne
-prédit un chiffre mesuré sur GPT-2. La cohérence entre les deux dépôts est une
-cohérence, pas une déduction — et la confondre serait précisément la machinerie
-avant le fait que ce projet s'interdit.
+## Two measured regularities
 
----
+### `coverage = 1 − systematic share`
 
-## Deux régularités mesurées
+Once at least one sample is correct, a verifier finds it. Checked on three
+independent domains, once to exact equality: systematic share on MBPP is
+10/60 = 16.667 %, measured coverage 83.333 %.
 
-**`couverture = 1 − part systématique`**
+Aggregation captures only part of the stochastic share: 95.2 % against 76.2 % for
+majority voting on the same corpus. Verifying and grading part company here.
 
-Dès qu'au moins un tirage est correct, un vérificateur le trouve. Vérifiée sur
-trois domaines indépendants, dont une fois à l'égalité exacte : part systématique
-MBPP = 10/60 = 16.667 %, couverture mesurée = 83.333 %.
+### Aggregation pays in proportion to the stochastic share
 
-Une agrégation, elle, ne capture qu'une fraction du stochastique — 95.2 % contre
-76.2 % pour un vote majoritaire sur le même corpus. C'est la différence entre
-**vérifier** et **graduer**.
-
-**Le rendement de l'agrégation suit la part stochastique**
-
-| modèle, corpus | part stochastique | réduction d'erreur par le vote |
+| model, corpus | stochastic share | error reduction by vote |
 |---|---|---|
-| GPT-2 small, factuel | 56 % | 25.3 % |
-| Qwen2.5-1.5B, code MBPP | 76.7 % | — |
-| Qwen2.5-1.5B, factuel | 100 %† | 70.2 % |
+| GPT-2 small, factual | 56 % | 25.3 % |
+| Qwen2.5-1.5B, MBPP code | 76.7 % | n/a |
+| Qwen2.5-1.5B, factual | 100 %† | 70.2 % |
 
-† plafond de corpus : les questions, écrites pour GPT-2, ne contiennent plus de
-difficulté pour ce modèle.
+† corpus ceiling: the questions were written for GPT-2 and no longer carry
+difficulty for this model.
 
----
+## The levers, with numbers
 
-## Les leviers, chiffrés
-
-| levier | gain | prix |
+| lever | gain | price |
 |---|---|---|
-| prendre le mode (vote ou greedy) | −25 % à −70 % d'erreur | nul |
-| s'abstenir sur désaccord entre tirages | −60 % des erreurs | 42 % de couverture |
-| vérifier par exécution de tests | 100 % de précision sur 83.3 % | 37 ms |
-| vérifier par noyau de preuve | 100 % sur 20 % | 14 s |
+| take the mode (vote or greedy) | 25 % to 70 % fewer errors | none |
+| abstain on disagreement across samples | 60 % fewer errors | 42 % of coverage |
+| verify by running tests | 100 % precision over 83.3 % | 37 ms |
+| verify by proof kernel | 100 % over 20 % | 14 s |
 
-Et une **borne** : de 23 % à 44 % des erreurs sont systématiques selon le couple
-modèle-corpus — le modèle se trompe à chaque tirage. Aucune agrégation, aucun
-décodage, aucune perturbation ne les corrige. Elles exigent une source externe.
+And a bound: 23 % to 44 % of errors are systematic depending on the model and
+corpus pair, meaning the model gets it wrong on every sample. No aggregation, no
+decoding scheme and no perturbation corrects them. They require an outside
+source.
 
-Le coût de vérification dépend du **contexte chargé**, pas du vérificateur :
-facteur 20 à 50 entre un import Lean ciblé et l'import global. Et **rejeter coûte
-plus cher qu'accepter** — 14 s contre 6 s en Lean, timeouts à 5 s en Python — un
-couplage vérifié sur deux vérificateurs sans rapport entre eux.
+Check cost tracks the loaded context rather than the verifier: a factor of 20 to
+50 between a targeted Lean import and the global one. Rejecting also costs more
+than accepting, 14 s against 6 s in Lean and timeouts at 5 s in Python, a
+coupling seen on two unrelated verifiers.
 
----
+## Negative results, which are results
 
-## Résultats négatifs — ils sont des résultats
+A signal can be carried entirely by sentence length. On a hand-written
+hallucination dataset, counting characters reaches AUC 0.942 where a full
+pipeline over hidden states reaches 0.939. Any work on this kind of corpus has to
+clear that control before being read.
 
-**Un signal peut être entièrement porté par la longueur des phrases.** Sur un
-dataset d'hallucinations écrit à la main, compter les caractères atteint
-**AUC 0.942** là où un pipeline complet sur états cachés atteint 0.939. Tout
-travail sur ce type de corpus doit passer ce contrôle avant d'être interprété.
+Nothing in the prompt predicts the outcome. Under same-prompt bifurcation both
+classes share the prompt state, and AUC comes out at 0.500 exactly, to the float.
+This is an identity, and it closes certification prior to generation.
 
-**Rien dans le prompt ne prédit l'issue.** En protocole *same-prompt bifurcation*,
-les deux classes partagent le même état de prompt : AUC = 0.500 exactement, au
-flottant près. Ce n'est pas une mesure faible, c'est une identité — et elle ferme
-toute certification préalable à la génération.
+Cross-layer separation is lexical. The embedding layer reaches 0.84 and the best
+layer 0.89, so the twelve transformer blocks add 0.05.
 
-**La séparation inter-couches est lexicale.** La couche d'embedding atteint 0.84,
-la meilleure couche 0.89 : les douze blocs transformer ajoutent 0.05.
+The attractor sits on the correct side. Noise of matched amplitude repairs a
+hallucinated trajectory in 6.4 % of cases and corrupts a correct one in 0.8 %.
+This contradicts the asymmetry reported on a larger model
+([arXiv 2604.15400](https://arxiv.org/abs/2604.15400)), with the scale caveat
+assumed.
 
-**L'attracteur est du côté correct.** Un bruit de même amplitude répare une
-trajectoire hallucinée dans 6.4 % des cas et n'en corrompt une correcte que dans
-0.8 %. Contredit l'asymétrie rapportée sur un modèle plus grand
-([arXiv 2604.15400](https://arxiv.org/abs/2604.15400)) — réserve d'échelle assumée.
+The repairing direction does not transfer. Cosine similarity across prompts is
+0.36, yet transfer repairs 0.8 % against 8.3 % for the prompt's own direction.
+Repair works by injecting the answer, which closes autonomous corrective
+steering.
 
-**La direction qui répare n'est pas transférable.** Similarité cosinus de 0.36
-entre prompts, mais 0.8 % de réparation en transfert contre 8.3 % avec la
-direction propre au prompt. Réparer, c'est injecter la réponse — ce qui ferme le
-steering correctif autonome.
+## Method
 
----
-
-## Méthode
-
-Chaque mesure est précédée d'un contrôle qui peut l'invalider, et le protocole est
-déclaré dans [`log.md`](log.md) **avant** le run, avec sa prédiction et son critère
-de réfutation. Les degrés de liberté sont figés dans
+Every measurement is preceded by a control able to invalidate it, and the
+protocol goes into [`log.md`](log.md) before the run, with its prediction and its
+refutation criterion. Degrees of freedom are frozen in
 [`docs/DEGRES-DE-LIBERTE.md`](docs/DEGRES-DE-LIBERTE.md).
 
-Sept contrôles ont attrapé sept erreurs réelles, chacune produisant un chiffre
-plausible et faux :
+Seven controls caught seven real errors, each of which had produced a plausible
+and false number:
 
-- `"0"` reconnu comme sous-chaîne de `"110"` → 15 faux « corrects »
-- non-réponses comptées comme hallucinations → taux de bifurcation juste par accident
-- texte et activation issus de runs différents → self-patch à 18 % au lieu de 0 %
-- effet d'amplitude confondu avec effet de contenu → un z de 2.96 réduit à néant
-- agrégation par tirage au lieu de par tâche → un vote à −10.4 % au lieu de +6.8 %
-- accord approximé au lieu d'exact → une AUC de 0.436 au lieu de 0.666
-- tests générés incohérents avec leur propre code → chantier 2 déclaré non concluant
+- `"0"` matched as a substring of `"110"`, giving 15 false positives
+- non-answers counted as hallucinations, making the bifurcation rate right by accident
+- text and activations drawn from different runs, putting self-patch at 18 % instead of 0 %
+- an amplitude effect read as a content effect, reducing a z of 2.96 to nothing
+- aggregation per sample instead of per task, turning a vote of +6.8 % into −10.4 %
+- agreement approximated instead of exact, turning an AUC of 0.666 into 0.436
+- generated tests inconsistent with their own code, which made chantier 2 inconclusive
 
-Le dernier illustre le principe : sans ce contrôle, la phrase « la vérification
-circulaire produit 20.8 % de faux vérifié » entrait dans le journal — citable,
-plausible, et fausse.
+The last one shows the principle. Without that control, the sentence "circular
+verification produces 20.8 % false verified" would have entered the log: citable,
+plausible and false.
 
----
+## What is not measured
 
-## Ce qui n'est pas mesuré
+- Verifier circularity. Chantier 2 is inconclusive: the model used does not write
+  tests consistent with its own code (34 % where near-total was expected). The
+  number is absent from this repository and from the literature.
+- The repair loop. [NL2VC-60](https://arxiv.org/html/2604.22601v1) reports 0 % to
+  81.82 % through iterative verifier feedback. Were that to reproduce here,
+  `coverage = 1 − systematic share` would stop being a bound. Untested.
+- Scale. Everything is measured on GPT-2 small (124 M) and Qwen2.5-1.5B-Instruct,
+  on a single machine. The partition depends on the model and corpus pair. It is
+  measured per model and does not travel.
 
-- **La circularité du vérificateur.** Le chantier 2 est non concluant : le modèle
-  utilisé n'écrit pas de tests cohérents avec son propre code (34 % au lieu du
-  quasi-total attendu). Le chiffre reste absent de ce dépôt comme de la littérature.
-- **La boucle de réparation.** [NL2VC-60](https://arxiv.org/html/2604.22601v1)
-  rapporte 0 % → 81.82 % par feedback itératif du vérificateur. Si cela se
-  reproduisait ici, `couverture = 1 − part systématique` cesserait d'être une
-  borne. Non testé.
-- **L'échelle.** Tout est mesuré sur GPT-2 small (124 M) et Qwen2.5-1.5B-Instruct,
-  sur une machine unique. La partition dépend du couple modèle-corpus : elle se
-  mesure par modèle, elle ne se transporte pas.
-
----
-
-## Reproduire
+## Reproducing
 
 ```bash
 uv venv --python 3.12 .venv && VIRTUAL_ENV=.venv uv pip install torch transformers scikit-learn numpy matplotlib
-.venv/bin/python src/c1_surface_confound.py      # contrôle de confond de surface
-.venv/bin/python src/reduction_bound.py          # partition + stratégies sans connaissance
-.venv/bin/python src/verifiable_bound.py         # régime vérifiable, arithmétique
-.venv/bin/python src/code_bound.py               # régime vérifiable, code (MBPP)
+.venv/bin/python src/c1_surface_confound.py      # surface confound control
+.venv/bin/python src/reduction_bound.py          # partition and knowledge-free strategies
+.venv/bin/python src/verifiable_bound.py         # verifiable regime, arithmetic
+.venv/bin/python src/code_bound.py               # verifiable regime, code (MBPP)
 ```
 
-Lean : voir [`docs/PROTOCOLE-CIBLE.md`](docs/PROTOCOLE-CIBLE.md). Toute exécution
-de code généré se fait en sous-processus isolé, avec timeout, hors du dépôt.
+For Lean, see [`docs/PROTOCOLE-CIBLE.md`](docs/PROTOCOLE-CIBLE.md). Generated code
+runs in an isolated subprocess, with a timeout, outside the repository.
 
-## Structure
+## Layout
 
 ```
-src/        scripts de mesure, un par étape
-results/    sorties brutes horodatées — jamais seulement les figures
-docs/       table de décision, degrés de liberté, références vérifiées
-log.md      journal daté : protocoles, prédictions, contrôles, échecs
-figures/    gpt2/ = mesuré · synthetic/ = simulé, ne valide rien du réel
+src/        measurement scripts, one per step
+results/    raw timestamped outputs, never the figures alone
+docs/       decision table, degrees of freedom, checked references
+log.md      dated journal: protocols, predictions, controls, failures
+figures/    gpt2/ = measured · synthetic/ = simulated, validates nothing real
 ```
 
-## Origine
+## Origin
 
-Le dépôt part d'un programme antérieur (ProbatioH1) qui cherchait à certifier les
-trajectoires latentes. Les mesures ont fermé cette voie et en ont ouvert une
-autre : le régime vérifiable. L'audit de ce programme, ses axiomes et leur statut
-après mesure sont conservés dans [`docs/`](docs/) — corriger une archive
-falsifierait la trace.
+The repository grows out of an earlier programme, ProbatioH1, which set out to
+certify latent trajectories. The measurements closed that route and opened
+another one, the verifiable regime. The audit of that programme, its axioms and
+their status after measurement stay in [`docs/`](docs/). Correcting an archive
+would falsify the trace.
